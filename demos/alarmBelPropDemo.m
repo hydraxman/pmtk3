@@ -20,7 +20,7 @@ infEngArgs = { ...
     {'updateProtocol', 'residual'}, ...
     {} };
 names = {'bp-asynch', 'bp-synch', 'bp-residual', 'bp-libdai'};
-if ~libdaiInstalled
+if ~isLibdaiInstalled()
     disp('alarmBelPropDemo: libdai not installed');
    infEngNames = infEngNames(1:end-1);
    infEngArgs = infEngArgs(1:end-1);

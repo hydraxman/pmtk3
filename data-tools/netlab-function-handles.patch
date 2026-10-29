@@ -1,0 +1,15 @@
+diff --git a/netlab3.3/scg.m b/netlab3.3/scg.m
+--- a/netlab3.3/scg.m
++++ b/netlab3.3/scg.m
+@@ -67,5 +67,9 @@
+ % Set up strings for evaluating function and gradient
+-f = fcnchk(f, length(varargin));
+-gradf = fcnchk(gradf, length(varargin));
++if ischar(f)
++    f = str2func(f);
++end
++if ischar(gradf)
++    gradf = str2func(gradf);
++end
+ 
+ nparams = length(x);

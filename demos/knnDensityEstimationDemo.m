@@ -41,12 +41,10 @@ end
 
     function data = generateData()
         %Generate data from a mixture of gaussians.
-        pdf1 = @(n)gaussSample(struct('mu', mu(1), 'Sigma', sigma(1)), n);
-        pdf2 = @(n)gaussSample(struct('mu', mu(2), 'Sigma', sigma(2)), n);
         data = rand(n,1);
         nmix1 = data <= mix(1);
-        data(nmix1) = pdf1(sum(nmix1));
-        data(~nmix1) = pdf2(sum(~nmix1));
+        data(nmix1) = gaussSample(struct('mu', mu(1), 'Sigma', sigma(1)), sum(nmix1));
+        data(~nmix1) = gaussSample(struct('mu', mu(2), 'Sigma', sigma(2)), sum(~nmix1));
     end
 
     function window = growWindow(trainingPoints,testPoints,K)

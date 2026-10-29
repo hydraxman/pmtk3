@@ -91,13 +91,11 @@ for j=1:(nr*nc)
   line([mini maxi], [mini maxi]);
   axis square
   grid on
-   stats = regstats(Xfull(miss,j), Ximpute(miss,j));
-  r = stats.rsquare;
+  r = regressionRSquared(Xfull(miss,j), Ximpute(miss,j));
   title(sprintf('R^2 = %5.3f', r))
 end
 suptitle(ttl)
 printPmtkFigure(fname);
 end
-
 
 

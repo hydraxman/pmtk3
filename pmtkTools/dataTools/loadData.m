@@ -11,8 +11,8 @@ function varargout = loadData(dataset, varargin) %destnRoot, quiet, isMatFile)
 % Previously the data was downloaded if necessary from pmtkdata.googlecode.com
 % This is no longer supported.
 %
-% Deprecated Options: [default]
-% isMatFile - [true] will try to load in to work space
+% Options: [default]
+% isMatFile - [true] load a MAT file; false adds a local data directory to path
 % isZipFile - [true] will download and unzip
 %
 %% Examples:
@@ -39,6 +39,44 @@ function varargout = loadData(dataset, varargin) %destnRoot, quiet, isMatFile)
 %if nargin < 3, quiet = false; end
 %if nargin < 4, isMatFile = true; end
 
+
+isMatFile = process_options(varargin, 'isMatFile', true);
+if ~isscalar(isMatFile) || ~(islogical(isMatFile) || isnumeric(isMatFile)) ...
+        || ~ismember(isMatFile, [0 1])
+    error('loadData:invalidOption', 'isMatFile must be a scalar logical value.');
+end
+if ~isMatFile
+    root = pmtk3Root();
+    candidates = {dataset, fullfile(root, 'data', dataset), ...
+        fullfile(root, 'data', 'recovered', dataset), fullfile(root, 'bigData', dataset)};
+    pathEntries = regexp(path(), pathsep(), 'split');
+    for i = 1:numel(pathEntries)
+        [~, name] = fileparts(pathEntries{i});
+        if strcmpi(name, dataset)
+            candidates{end+1} = pathEntries{i};
+        end
+    end
+    for i = 1:numel(candidates)
+        if exist(candidates{i}, 'dir') == 7
+            if exist('canonicalize_file_name', 'builtin')
+                directory = canonicalize_file_name(candidates{i});
+                found = ~isempty(directory);
+            else
+                [found, attributes] = fileattrib(candidates{i});
+                if found, directory = attributes.Name; end
+            end
+            if ~found
+                error('loadData:directoryUnavailable', 'Cannot resolve local dataset directory: %s', candidates{i});
+            end
+            addpath(genpath(directory));
+            if nargout > 0
+                varargout{1} = directory;
+            end
+            return;
+        end
+    end
+    error('loadData:directoryNotFound', 'Local dataset directory not found: %s', dataset);
+end
 
 try
     D = load([dataset, '.mat']);

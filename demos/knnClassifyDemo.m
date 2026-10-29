@@ -136,7 +136,8 @@ ndx = Ks;
 
 xlabel('K', 'fontsize', fs)
 ylabel('misclassification rate', 'fontsize', fs)
-errorbar(ndx, mu, se, 'ko-','linewidth', 2, 'MarkerSize', 12);
+errorBars = errorbar(ndx, mu, se, 'ko-');
+set(errorBars, 'linewidth', 2, 'MarkerSize', 12);
 title(sprintf('%d-fold cross validation, ntrain = %d', nfolds, N), 'fontsize', fs)
 set(gca, 'xlim', [0 130])
 % draw vertical line at best value

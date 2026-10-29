@@ -1,0 +1,11 @@
+diff --git a/markSchmidt-9march2011/markSchmidt/minFunc/minFunc_processInputOptions.m b/markSchmidt-9march2011/markSchmidt/minFunc/minFunc_processInputOptions.m
+--- a/markSchmidt-9march2011/markSchmidt/minFunc/minFunc_processInputOptions.m
++++ b/markSchmidt-9march2011/markSchmidt/minFunc/minFunc_processInputOptions.m
+@@ -137,6 +137,6 @@
+ HessianIter = getOpt(o,'HESSIANITER',HessianIter);
+ outputFcn = getOpt(o,'OUTPUTFCN',[]);
+-useMex = getOpt(o,'USEMEX',1);
++useMex = getOpt(o,'USEMEX',exist('lbfgsC','file') == 3 && exist('mcholC','file') == 3);
+ useNegCurv = getOpt(o,'USENEGCURV',1);
+ precFunc = getOpt(o,'PRECFUNC',[]);
+ LS_type = getOpt(o,'LS_type',LS_type);

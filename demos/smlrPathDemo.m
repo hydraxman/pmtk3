@@ -69,7 +69,11 @@ nDataSets = numel(dataSets);
 
 %% Models
 methods = {'smlrPath', 'smlrNoPath', 'rmlrPath', 'rmlrNoPath'};
-if ~glmnetInstalled
+glmnetOptions = glmnetDemoOptions();
+kernelPathOptions = glmnetOptions;
+kernelPathOptions.standardize = false;
+if exist('glmnetMex', 'file') ~= 3
+  warning('PMTK:OptionalNativeDependency', 'GLMnet is unavailable; excluding only the optional native path methods.');
   methods = setdiff(methods, 'smlrPath');
   methods = setdiff(methods, 'rmlrPath');
 end
@@ -103,11 +107,11 @@ for d=1:nDataSets
         model = svmFit(Xtrain, ytrain, 'C', Crange,  'kernel', 'linear');
         predFn = @(m,X) svmPredict(m,X);
       case 'rvm'
-        model = rvmFit(Xtrain, ytrain, [], 'kernelFn', @kernelLinear);
+        model = rvmFit(Xtrain, ytrain, 'kernelFn', @kernelLinear);
         predFn = @(m,X) rvmPredict(m,X);
       case 'smlrpath'
         model = smlrFit(Xtrain, ytrain, 'kernelFn', @kernelLinear, ...
-          'usePath', true);
+          'usePath', true, 'pathOpts', kernelPathOptions);
         predFn = @(m,X) smlrPredict(m,X);
       case {'smlrnopath', 'smlr'}
         model = smlrFit(Xtrain, ytrain,  'kernelFn', @kernelLinear, ...
@@ -115,17 +119,17 @@ for d=1:nDataSets
         predFn = @(m,X) smlrPredict(m,X);
       case 'rmlrpath'
         model = smlrFit(Xtrain, ytrain, 'kernelFn', @kernelLinear, ...
-          'regtype', 'L2', 'usePath', true);
+          'regtype', 'L2', 'usePath', true, 'pathOpts', kernelPathOptions);
         predFn = @(m,X) smlrPredict(m,X);
       case {'rmlrnopath', 'rmlr'}
         model = smlrFit(Xtrain, ytrain, 'kernelFn', @kernelLinear, ...
           'regtype', 'L2', 'usePath', false);
         predFn = @(m,X) smlrPredict(m,X);
       case 'logregl2'
-        model = logregFitPathCv(Xtrain, ytrain, 'regtype', 'L2');
+        model = logregFitPathCv(Xtrain, ytrain, 'regtype', 'L2', 'options', glmnetOptions);
         predFn = @(m,X) logregPredict(m,X);
       case 'logregl1'
-        model = logregFitPathCv(Xtrain, ytrain, 'regtype', 'L1');
+        model = logregFitPathCv(Xtrain, ytrain, 'regtype', 'L1', 'options', glmnetOptions);
         predFn = @(m,X) logregPredict(m,X);
     end
     trainingTime(d,m) = toc;

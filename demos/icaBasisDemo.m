@@ -13,8 +13,7 @@ function icaBasisDemo()
 %PMTKslow % about 80 seconds
 
 %imgFolder= 'C:\kmurphy\Books\aapoBook\data';
-loadFolder('hyvarinenBookImages')
-imgFolder = [];
+imgFolder = loadFolder('hyvarinenBookImages');
 
 setSeed(0);
 
@@ -109,8 +108,7 @@ for i=(1:dataNum)
   
   % Load the image. Change the path here if needed.
   
-  %I = imread(fullfile(folder, sprintf('%d.tiff', i)));
-  I = imread(fullfile(sprintf('%d.tiff', i)));
+  I = imread(fullfile(folder, sprintf('%d.tiff', i)));
 
   % Transform to double precision
   I = double(I);
@@ -137,7 +135,7 @@ end
 
 function W=ica(Z,n)
 %Simple code for ICA of images
-%Aapo Hyvärinen, for the book Natural Image Statistics
+%Aapo Hyvï¿½rinen, for the book Natural Image Statistics
 
 global convergencecriterion
 

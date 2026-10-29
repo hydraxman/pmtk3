@@ -40,6 +40,9 @@ function model = svmlibFit(X, y, C, kernelParam, kernelType, varargin)
 
 % This file is from pmtk3.googlecode.com
 
+if nargin < 3 || isempty(C), C = 1; end
+if nargin < 4 || isempty(kernelParam), kernelParam = 1/size(X, 2); end
+if nargin < 5 || isempty(kernelType), kernelType = 'rbf'; end
 y = colvec(y); 
 [shrink, epsilonTube, estProb, customOptions] = process_options...
     (varargin, 'shrink', 0, 'epsilonTube', 0.1, 'estProb', 0, 'customOptions', '');
@@ -47,29 +50,24 @@ shrinkSwitch = sprintf('-h %d', shrink);
 estProbSwitch = sprintf('-b %d', estProb);
 
 if isempty(customOptions)
-    if nargin < 5
-        if nargin < 4
-            kernelType = 'default';
-        else
-            kernelType = 'rbf';
-        end
-    end
     switch lower(kernelType)
         case 'rbf'
             kernelSwitch = '-t 2';
-            paramSwitch = sprintf('-g %f', kernelParam);
-        case 'polynomial'
+            paramSwitch = sprintf('-g %.17g', kernelParam);
+        case {'poly', 'polynomial'}
             kernelSwitch = '-t 1';
-            paramSwitch = sprintf('-d %f', kernelParam);
+            paramSwitch = sprintf('-d %.17g', kernelParam);
         case 'linear'
             kernelSwitch = '-t 0';
             paramSwitch = '';
         case 'sigmoid'
             kernelSwitch = '-t 3';
-            paramSwitch = sprintf('-g %f', kernelParam);
-        otherwise
-            kernelSwitch = '';
+            paramSwitch = sprintf('-g %.17g', kernelParam);
+        case 'precomputed'
+            kernelSwitch = '-t 4';
             paramSwitch = '';
+        otherwise
+            error('PMTK:SvmKernel', 'Unsupported LIBSVM kernel: %s', kernelType);
     end
     
     if isequal(y, round(y)) 
@@ -77,16 +75,28 @@ if isempty(customOptions)
         epsilonTubeSwitch = '';
     else
         typeSwitch = '-s 3'; %regression
-        epsilonTubeSwitch = sprintf('-p %d', epsilonTube);
+        epsilonTubeSwitch = sprintf('-p %.17g', epsilonTube);
     end
-    Cswitch = sprintf('-c %f', C);
+    Cswitch = sprintf('-c %.17g', C);
     options = sprintf('%s %s %s %s %s %s %s', ...
         Cswitch, typeSwitch, kernelSwitch, paramSwitch,...
         epsilonTubeSwitch, shrinkSwitch, estProbSwitch);
 else
     options = customOptions;
 end
-model = libsvmTrain(y, X, options);
+if exist('OCTAVE_VERSION', 'builtin'), options = [options ' -q']; end
+model = svmLibsvmBackend('train', double(y), double(X), options);
+if ~isstruct(model)
+    error('PMTK:SvmFitModel', 'svmlibFit requires a fitted model, not LIBSVM -v cross-validation output');
+end
+model.libsvmFields = fieldnames(model); % retain native additions such as ProbDensityMarks
+model.libsvmProvider = svmLibsvmBackend('info');
+if isfield(model, 'sv_indices')
+    model.svi = model.sv_indices(:);
+    % Signed native dual coefficients, aligned to original training rows.
+    model.alpha = zeros(size(X, 1), size(model.sv_coef, 2));
+    model.alpha(model.svi, :) = model.sv_coef;
+end
 model.C = C;
 model.fitEngine = mfilename();
 end

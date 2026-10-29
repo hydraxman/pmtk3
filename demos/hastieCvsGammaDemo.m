@@ -44,7 +44,7 @@ for i=1:ng
         'MarkerSize',       8          );
     set(gca, 'xscale', 'log');
     hline = horizontalLine(data.bayesError, 'LineStyle', '--', 'Color', colors{3}, 'LineWidth', 2);  
-    uistack(hline, 'bottom');
+    uistackPMTK(hline, 'bottom');
     xlabel('C');
     ylabel('test error'); 
     title(['\gamma',sprintf(' = %.2f', gammas(i))]); 

@@ -10,5 +10,5 @@ ns = [n00 n10 n01 n11];
 model.alpha = alphas+ns; 
 thetas = dirichletSample(model, S);
 diff = thetas(:,2) - thetas(:,3); % n10-n01
-[post, deltas] = ksdensity(diff);
+[post, deltas] = ksdensityPMTK(diff);
 end

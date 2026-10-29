@@ -25,7 +25,7 @@ G = adj;
 Nnodes = D;
 nodeNames = cellfun(@(d) sprintf('%d', d), num2cell(1:Nnodes), 'uniformoutput', false);
 
-graphviz(G, 'labels', nodeNames, 'directed', 1, 'filename', 'tmp');
+graphviz(G, 'labels', nodeNames, 'directed', 1, 'filename', 'tmp', 'preview', true);
 
 
 [G, toporder, invtoporder] = toporderDag(G);
@@ -33,4 +33,4 @@ graphviz(G, 'labels', nodeNames, 'directed', 1, 'filename', 'tmp');
 for j=1:Nnodes
   nodeNames2{j} = sprintf('%d (orig %d)', j, toporder(j));
 end
-graphviz(G, 'labels', nodeNames2, 'directed', 1, 'filename', 'tmp2');
+graphviz(G, 'labels', nodeNames2, 'directed', 1, 'filename', 'tmp2', 'preview', true);

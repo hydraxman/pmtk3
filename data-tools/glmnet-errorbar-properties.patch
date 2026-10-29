@@ -1,0 +1,10 @@
+diff --git a/glmnet-matlab/cvglmnetPlot.m b/glmnet-matlab/cvglmnetPlot.m
+--- a/glmnet-matlab/cvglmnetPlot.m
++++ b/glmnet-matlab/cvglmnetPlot.m
+@@ -4,4 +4,5 @@
+ %   CVglmnet: output from cvglmnet(...) function
+-    errorbar(log(CVglmnet.glmnetOptions.lambda),CVglmnet.cvm,CVglmnet.stderr,'linewidth',2)
++    bars = errorbar(log(CVglmnet.glmnetOptions.lambda),CVglmnet.cvm,CVglmnet.stderr);
++    set(bars, 'linewidth', 2);
+     hold on
+     plot(log(CVglmnet.glmnetOptions.lambda),CVglmnet.cvm,'r-o','linewidth',2)

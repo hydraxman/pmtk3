@@ -69,7 +69,7 @@ if ~isempty(S)
         hold on; 
         h = plot(xx, yy, dataprop{:}); 
     end
-    uistack(h, 'bottom');
+    uistackPMTK(h, 'bottom');
 end
 if pos
     a = axis;

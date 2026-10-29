@@ -22,7 +22,7 @@ trainData.discrete(miss) = NaN;
 
 
 Dz = 2;
-[model, loglikTrace] = catFAfit(trainData.discrete',  trainData.continuous', Dz);
+[model, loglikTrace] = catFAfit(trainData.discrete',  trainData.continuous', Dz, 'nClass', nClass);
 
 [mu, Sigma, loglik] = catFAinferLatent(model, testData.discrete', testData.continuous')
 
@@ -114,4 +114,3 @@ function [trainData, testData, idx] = splitData(yc, yd, ratio)
   end
  
 end
-

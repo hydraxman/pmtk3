@@ -37,7 +37,10 @@ function [model, varargout] = svmFit(X, y, varargin)
 % svmQPregFit     |  no    |    no      |    yes     |   yes             
 % svmlightFit     |  yes   |    no      |    yes     |   no              
 % svmlibFit       |  yes   |    yes     |    yes     |   no              
-% svmlibLinearFit |  yes   |    yes     |    yes     |   no (only linear)
+% svmlibLinearFit |  yes   |    yes     |    no      |   no (only linear)
+% Octave's automatic route remains native LIBSVM, including linear kernels.
+% Set fitFn=@svmlibLinearFit explicitly for the pinned native LIBLINEAR
+% classification adapter. Regression/probability are not claimed by it.
 %
 %% Requirements:
 % svmQP*Fit         requires quadprog and thus the optimization toolbox
@@ -111,7 +114,7 @@ if isempty(fitFn)
             case 'multiclass'
                 error('multiclass with custom kernel not yet supported');
         end
-    elseif strcmpi(kernel, 'linear')
+    elseif strcmpi(kernel, 'linear') && ~exist('OCTAVE_VERSION', 'builtin')
         fitFn = @svmlibLinearFit;
     else
         if isempty(kernel), kernel = 'rbf'; end
@@ -122,8 +125,12 @@ elseif ischar(fitFn)
 end
 
 %% Preprocess Data
+if ischar(kernel) && strcmpi(kernel, 'precomputed') && (standardizeX || rescaleX)
+    error('PMTK:SvmPrecomputedTransform', 'Precomputed LIBSVM rows must retain their serial column and Gram values; set standardizeX=false and rescaleX=false');
+end
 if standardizeX
-    X = mkUnitVariance(centerCols(X));
+    [X, svmCenter] = centerCols(X);
+    [X, svmScale] = mkUnitVariance(X);
 end
 if rescaleX
     [X, minx, rangex] = rescaleData(X, -1, 1);    
@@ -153,6 +160,9 @@ model.kernelParam = kernelParam;
 model.fitEngine = funcName(fitFn);
 model.type = type;
 model.standardizeX = standardizeX;
+if standardizeX
+    model.svmPreprocess = struct('center', svmCenter, 'scale', svmScale);
+end
 model.rescaleX = rescaleX;
 if rescaleX
     model.minx = minx;
@@ -161,6 +171,9 @@ end
 model.ySupport = ySupport;
 model.outputType = outputType;
 model.kernel = kernel; 
+if strcmp(model.fitEngine, 'svmlibFit') && ~strcmp(outputType, 'regression')
+    model.probabilityLabels = ySupport;
+end
 %% support vectors
 switch lower(model.fitEngine)
     
@@ -171,10 +184,15 @@ switch lower(model.fitEngine)
         
     case 'svmliblinearfit'
         
+        % LIBLINEAR's native "bias" is the bias-feature value (-1 disables it),
+        % not an intercept to add to every score. Keep native fields intact.
+        linearScores = bsxfun(@plus, X*model.linearWeights', model.linearIntercept');
         [model.svi, cols] = find(arrayfun(@(x)approxeq(x, 1, 0.01),... 
-            abs(X*model.w' + model.bias))); %#ok need to have two outputs
+            abs(linearScores))); %#ok need to have two outputs
         model.supportVectors = X(model.svi, :);
         model.nsvecs = numel(model.svi);
+        model.supportVectorInterpretation = 'Legacy near-unit-margin heuristic; LIBLINEAR does not expose native support-vector indices.';
+        model.decisionLabels = ySupport;
         
     case 'svmlightfit'
         

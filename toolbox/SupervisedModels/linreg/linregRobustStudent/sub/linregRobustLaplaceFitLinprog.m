@@ -13,11 +13,11 @@ function model = linregRobustLaplaceFitLinprog(X, y)
 [N,D] = size(X);
 D1 = D+1;
 f = [zeros(1,D1) ones(1,2*N)]';
-LB = [-inf*ones(1,D1) , zeros(1,2*N)];
+LB = [-inf*ones(D1,1); zeros(2*N,1)];
 UB = [];
 Aeq = [ones(N,1), X, eye(N,N), -eye(N,N)];
 beq = y;
-if isOctave()
+if exist('OCTAVE_VERSION', 'builtin')
     w = linprog(f,zeros(1,length(f)),0,Aeq,beq,LB,UB);
 else
     w = linprog(f,[],[],Aeq,beq,LB,UB);

@@ -28,8 +28,7 @@ prior.Sigma = 0.1*eye(2);
 plotContour(@(x)exp(gaussLogprob(prior, x)), xyrange);
 axis(xyrange); title('prior'); grid off; axis square
 %printPmtkFigure(sprintf('gauss2dUpdatePrior'))
-%for i=1:length(ns)
- n=10;   
+for i=1:length(ns)
     data  = X(1:ns(i), :); 
     n     = ns(i); 
     %% Update Sigma
@@ -51,7 +50,6 @@ axis(xyrange); title('prior'); grid off; axis square
     axis(xyrange); title(sprintf('post after %d obs', n)); grid off; axis square
     %printPmtkFigure(sprintf('gauss2dUpdatePost%d', n))
     printPmtkFigure(sprintf('gauss2dUpdatePostSubplot'))
-%end
-
+end
 
 

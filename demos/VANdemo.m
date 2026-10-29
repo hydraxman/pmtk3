@@ -124,13 +124,22 @@ contourf(mu, sig, L', 30);
 hold on;
 
 factors = [0.71 0.8 0.65 0.83 0.775 0.79 0.72 0.76 0.79 0.7 0.6];
+useDataArrows = exist('ds2nfu', 'file') == 0;
+if useDataArrows
+    warning('PMTK:DataCoordinateArrows', ...
+        'ds2nfu is unavailable; using unscaled data-coordinate quiver arrows with the same endpoints.');
+end
 for i = 1:(length(points_to_plot)-1)
     x1 = v(1,points_to_plot(i));
     x2 = x1 + factors(i)*(v(1,points_to_plot(i+1)) - x1);
     y1 = v(2,points_to_plot(i));
     y2 = y1 + factors(i)*(v(2,points_to_plot(i+1)) - y1);
-    [xf, yf]=ds2nfu([x1,x2],[y1,y2]);
-    annotation(gcf,'arrow', xf,yf,'color','r','headstyle','plain', 'headlength', 3, 'headwidth', 3);
+    if useDataArrows
+        quiver(x1, y1, x2-x1, y2-y1, 0, 'color', 'r', 'maxheadsize', 0.3);
+    else
+        [xf, yf]=ds2nfu([x1,x2],[y1,y2]);
+        annotation(gcf,'arrow', xf,yf,'color','r','headstyle','plain', 'headlength', 3, 'headwidth', 3);
+    end
 end
 plot(v(1,points_to_plot), v(2,points_to_plot),'ro', 'linewidth', 1, 'MarkerFaceColor', [1,1,1]);
 
@@ -180,4 +189,3 @@ function y = quantize(x, N, xMin, xMax)
       y = floor( N * log(x/xMin) / log(xMax/xMin) ) ;
  end
    
-

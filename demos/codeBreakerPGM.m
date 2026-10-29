@@ -365,11 +365,7 @@ end
     end
 
     function saveFigure(fname)
-         printFolder = '/home/kpmurphy/github/pmtk3/figures';
-         format = 'png';
-         fname = sprintf('%s/%s.%s', printFolder, fname, format);
-        fprintf('printing to %s\n', fname);
-         print(gcf, '-dpng', fname);
+        printPmtkFigure(fname, 'png');
     end
 
  function testUnifPrior()

@@ -20,7 +20,7 @@ i = 1; j = 1;
 for log2c = c_begin:c_step:c_end
     for log2g = g_begin:g_step:g_end
         cmd = ['-v ',num2str(fold),' -c ',num2str(2^log2c),' -g ',num2str(2^log2g)];
-        cv = svmtrain(label,inst,cmd);
+        cv = svmLibsvmBackend('train', label, inst, cmd);
         if (cv > bestcv) || ((cv == bestcv) && (2^log2c < bestc) && (2^log2g == bestg))
             bestcv = cv; bestc = 2^log2c; bestg = 2^log2g;
         end
@@ -62,4 +62,3 @@ title({['Best log2(C) = ',num2str(log2(bestc)),',  log2(gamma) = ',num2str(log2(
     ['(C = ',num2str(bestc),',  gamma = ',num2str(bestg),')']})
 xlabel('log2(C)')
 ylabel('log2(gamma)')
-

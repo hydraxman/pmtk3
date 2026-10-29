@@ -96,9 +96,11 @@ end
 labels{end,1} = 'y';
 
 % Plot Network
-figure;
-%drawGraph(adj,'labels',labels);
-drawNetwork('-adjMat',adj,'-nodeLabels',labels)
+if exist('OCTAVE_VERSION', 'builtin') && exist('dynamicprops', 'class') ~= 8
+    plotGraphvizStatic(adj, labels, 'directed', true, 'filename', 'sparse-neural-network');
+else
+    figure;
+    drawNetwork('-adjMat',adj,'-nodeLabels',labels)
+end
 title('Neural Network');
-
 

@@ -4,13 +4,17 @@ function visualizeAlarmNetwork()
 
 [G, names] = parseAlarmData();
 N = camelCaseNames(); 
-g = drawNetwork('-adjMat', G, '-nodeLabels', N, '-splitLabels', 1, '-layout', Treelayout);
-maximizeFigure;
-g.tightenAxes;
-g.growNodes;
-g.growNodes;
-g.increaseFontSize;
-g.increaseFontSize; 
+if exist('OCTAVE_VERSION', 'builtin') && exist('dynamicprops', 'class') ~= 8
+    plotGraphvizStatic(G, N, 'directed', true, 'filename', 'alarm-network');
+else
+    g = drawNetwork('-adjMat', G, '-nodeLabels', N, '-splitLabels', 1, '-layout', Treelayout);
+    maximizeFigure;
+    g.tightenAxes;
+    g.growNodes;
+    g.growNodes;
+    g.increaseFontSize;
+    g.increaseFontSize;
+end
 
 
 end

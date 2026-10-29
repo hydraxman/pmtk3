@@ -10,7 +10,7 @@ n = 7;
 rand('state',28);
 randn('state',28);
 xs = 15*(rand(n,1)-0.5);
-K = inline('exp(-0.5*(repmat(p'',size(q))-repmat(q,size(p''))).^2)');
+K = @(p,q) exp(-0.5*(repmat(p',size(q))-repmat(q,size(p'))).^2);
 fs = chol(K(xs,xs)+0.01*eye(n))'*randn(n,1);      % Cholesky decomp.
 n=41;
 [X,Y] = meshgrid(linspace(log(0.1),log(80),n), linspace(log(0.03),log(3),n));

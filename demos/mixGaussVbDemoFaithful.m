@@ -40,12 +40,20 @@ end
 title(sprintf('iter %d', iter))
 if ismember(iter, [1 15 94])
     figure(1);
-    snapnow % for publishing
+    if exist('OCTAVE_VERSION', 'builtin')
+        drawnow;
+    else
+        snapnow;
+    end
     printPmtkFigure(sprintf('mixGaussVbFaithful%d', iter))
     figure(2); clf; 
     bar(alpha);  
     title(sprintf('iter %d', iter))
-    snapnow 
+    if exist('OCTAVE_VERSION', 'builtin')
+        drawnow;
+    else
+        snapnow;
+    end
     printPmtkFigure(sprintf('mixGaussVbFaithfulAlphas%d', iter))
 end
 pause(0.1);

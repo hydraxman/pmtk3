@@ -27,7 +27,7 @@ for i=1:numel(loghypers)
   figure;
   contour(t1,t2,reshape(prob,size(t1)),[0.1:0.1:0.9]);
   hold on
-  contour(t1,t2,reshape(prob,size(t1)),[0.5], 'linewidth', 3, 'color', 'k');
+  contour(t1,t2,reshape(prob,size(t1)),[0.5 0.5], 'linewidth', 3, 'LineColor', 'k');
   plot(x1(1,:),x1(2,:),'b+','markersize',12)
   plot(x2(1,:),x2(2,:),'ro','markersize',12)
   str = sprintf('SE kernel, %s=%5.3f, %s=%5.3f', ...

@@ -35,6 +35,7 @@ end
 function model = initGauss(model, X, restartNum, initParams, prior)
 %% Initialize 
 nmix = model.nmix; 
+d = model.d;
 if restartNum == 1
     if ~isempty(initParams)
         mu              = initParams.mu;
@@ -77,6 +78,10 @@ function [model, valid] = mstepGaussOr(model, modelBO, eta)
 % parameterization
 mixWeight = model.mixWeight.*(modelBO.mixWeight ./ model.mixWeight).^eta;
 mixWeight = normalize(mixWeight);
+if ~all(isfinite(mixWeight))
+    valid = rejectNonfiniteStep();
+    return;
+end
 Sigma     = zeros(D, D, nmix);
 mu        = zeros(D, nmix);
 valid = true;
@@ -85,6 +90,9 @@ muReg    = model.cpd.mu;
 muBO     = modelBO.cpd.mu;
 SigmaReg = model.cpd.Sigma;
 SigmaBO  = modelBO.cpd.Sigma; 
+if ~all(isfinite(SigmaReg(:))) || ~all(isfinite(SigmaBO(:)))
+    error('PMTK:InvalidCovariance', 'Over-relaxed EM requires finite current and regular-EM covariances.');
+end
 
 for c = 1:nmix
     % Regular update
@@ -97,11 +105,20 @@ for c = 1:nmix
         matLogSigma    = logm(SigmaReg(:, :, c));
         matLogSigma_BO = logm(SigmaBO(:, :, c));
         matLogSigma    = matLogSigma + eta*(matLogSigma_BO - matLogSigma);
+        if ~all(isfinite(matLogSigma(:)))
+            valid = rejectNonfiniteStep();
+            return;
+        end
         Sigma(:, :, c) = expm(matLogSigma);
     catch %#ok
         valid  = false; return;
     end
-    if ~isposdef(Sigma(:, :, c))
+    candidate = Sigma(:, :, c);
+    if ~all(isfinite(candidate(:)))
+        valid = rejectNonfiniteStep();
+        return;
+    end
+    if ~isposdef(candidate)
         valid = false; return;
     end
 end
@@ -110,3 +127,7 @@ model.cpd.Sigma = Sigma;
 model.mixWeight = mixWeight;
 end
 
+function valid = rejectNonfiniteStep()
+warning('PMTK:RejectedOverrelaxation', 'Nonfinite over-relaxed candidate rejected; adaptive EM will use its regular EM step.');
+valid = false;
+end

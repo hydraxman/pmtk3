@@ -2,6 +2,7 @@
 
 %[X, y, bs, perm] = logregGradeMH();
 [X, y, bs] = logregSatMhDemo(0);
+Nsamples = size(bs,1);
 perm = sortidx(X(:, 2), 'ascend');
 SATscores = X(:,2);
 %[X,y] = satDataLoad;
@@ -60,9 +61,9 @@ printPmtkFigure('logregSatOutliers')
 
 unif = rand(N,1);
 figure;
-qqplot(pred, unif);
+qqplot(ppredobs(:), unif);
 xlabel('quantiles of uniform')
-ylabel('quantiles of predictive distribution')
+ylabel('quantiles of observed-class predictive probabilities (not PIT residuals)')
 
 
 
@@ -92,4 +93,3 @@ suspiciousCases = find(ppredobsCV < 0.3)
 xlabel('SAT score')
 ylabel('p(y_i|y(-i))')
 figure; bar(ppredobsCV); title('CV predictive applied to observed data')
-

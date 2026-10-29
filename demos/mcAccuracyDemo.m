@@ -37,7 +37,7 @@ for i=1:length(SS)
    S = SS(i);
   figure; plot(xs, p, 'LineWidth', 2.5, 'color', 'r');
   hold on;
-  [f, xi] = ksdensity(samples(1:S));
+  [f, xi] = ksdensityPMTK(samples(1:S));
   plot(xi, f, 'linewidth', 3, 'linestyle', ':', 'color', 'b');
   title(sprintf('%d samples', S))
   printPmtkFigure(sprintf('mcAccuracyDemoKsd%s%d', name, S));

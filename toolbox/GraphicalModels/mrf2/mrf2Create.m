@@ -25,6 +25,7 @@ function model = mrf2Create(adj, nStates, varargin)
 % ising = 2: diag(v1, v2, ..., vD)
 %
 %  method - name of inference engine, can be one of the following:
+%  useMex - use compiled UGM extensions (default false on Octave, true on MATLAB)
 %
 %    AlphaBetaSwap: 
 %      Decoding only 
@@ -90,10 +91,11 @@ function model = mrf2Create(adj, nStates, varargin)
 
 % This file is from pmtk3.googlecode.com
 
-[nodePot, edgePot, tied, ising, method, maxIter, cutset, nRestarts, burnIn, nSamples, varProb, blocks] =...
+[nodePot, edgePot, tied, ising, method, maxIter, cutset, nRestarts, burnIn, nSamples, varProb, blocks, useMex] =...
   process_options(varargin, ...
   'nodePot', [], 'edgePot', [], 'tied', 1, 'ising', 1, 'method', 'dummy', 'maxIter', 0, ...
-  'cutset', [], 'nRestarts', 1, 'burnIn', 0, 'nSamples', 0, 'varProb', 0, 'blocks', []);
+  'cutset', [], 'nRestarts', 1, 'burnIn', 0, 'nSamples', 0, 'varProb', 0, 'blocks', [], ...
+  'useMex', exist('OCTAVE_VERSION', 'builtin') == 0);
 
 maxNstates = max(nStates); 
 if isempty(nodePot)
@@ -106,7 +108,7 @@ end
 
 model.adj = adj;
 model.nStates = nStates;
-model.edgeStruct = UGM_makeEdgeStruct(adj,nStates);
+model.edgeStruct = UGM_makeEdgeStruct(adj,nStates,useMex);
 model.tied = tied;
 model.ising = ising;
 model.nNodes = size(adj, 1);

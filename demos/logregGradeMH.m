@@ -3,29 +3,41 @@ function [X, y, bs, perm] = logregGradeMH();
 
 %logregGradeData() % X,y,N
 
-stat = load('stat2.dat'); % Johnson and Albert p77 table 3.1
-% stat=[pass(0/1), 1, 1, sat_score, grade in prereq]
-% where the grade in prereq is encoded as A=5,B=4,C=3,D=2,F=1
-y = stat(:,1);
-N = length(y);
-X = [ones(N,1) stat(:,4)];
+[X, y] = satDataLoad();
+N = size(X,1);
 
 
-[beta, C] = logregFitFminunc(y, X, 0)
+loss = @(w) LogisticLossSimple(w, X, 2*y-1);
+options = optimset('GradObj', 'on', 'Display', 'off', ...
+    'TolFun', 1e-10, 'TolX', 1e-10, 'MaxIter', 2000, 'MaxFunEvals', 10000);
+[beta, ~, exitflag] = fminunc(loss, zeros(size(X,2),1), options);
+if exitflag <= 0
+    error('PMTK:LogregMLEConvergence', 'The fminunc logistic MLE did not converge.');
+end
+[~, ~, information] = loss(beta);
+C = information \ eye(size(information))
+betaFminunc = beta;
 sqrt(diag(C))
 
-[beta, C] = logregFitIRLS(y, X, 0)
+% Newton steps on logistic likelihood are the canonical IRLS updates.
+fitOptions = struct('Method', 'newton', 'Display', 'off', ...
+    'optTol', 1e-8, 'progTol', 1e-12, 'MaxIter', 1000);
+fitted = logregFit(X, y, 'lambda', 0, 'preproc', preprocessorCreate(), ...
+    'fitOptions', fitOptions);
+beta = fitted.w;
+[~, ~, information] = loss(beta);
+assert(norm(X*(beta-betaFminunc), inf) < 1e-4, 'Logistic MLE optimizers disagree.');
+C = information \ eye(size(information))
 sqrt(diag(C))
 
 % MH
 seed = 1; randn('state', seed); rand('state', seed);
 xinit = beta;
 Nsamples = 5000;
-lambda = 0;
-targetArgs = {X,y,lambda};
 sigmaMH = 1.5;
-proposalArgs = {sigmaMH*C};
-[bs, naccept] = metrop(@logpost, @proposal, xinit, Nsamples,  targetArgs, proposalArgs);
+target = @(b) -LogisticLossSimple(b(:), X, 2*y-1);
+proposal = @(b) b + mvnrnd(zeros(1, numel(b)), sigmaMH*C);
+[bs, naccept] = metropolisHastings(target, proposal, xinit, Nsamples);
 
 % trace plots
 figure(1); clf
@@ -71,10 +83,4 @@ for ii=1:N
 end
 
 
-%%%%%%%%%
-function bnew = proposal(b, Sigma)
-bnew = b + mvnrnd(zeros(1, length(b)), Sigma);
-
-function p = logpost(b, X, y, lambda)
-logprior = 0;  % log(1)
-p = -logregNLLgradHess(b(:), X, y, lambda) + logprior;
+end

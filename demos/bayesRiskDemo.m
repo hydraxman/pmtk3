@@ -24,7 +24,8 @@ V =[[-0.6561    0.7547         0   -0.0493];
 % If you get weird errors about the view function, uncomment the line
 % below.
 V = 3
-normpdf = @(val,mean,sd) (1/(2*pi*sd^2))*exp(-(val-mean).^2/(2*sd));
+% The third argument is a variance, not a standard deviation.
+normpdf = @(val,mean,variance) exp(-(val-mean).^2/(2*variance))/sqrt(2*pi*variance);
 %% Frequentist Diagrams
 
 figure;
@@ -181,18 +182,18 @@ function [L] = lines3d( X, Y, f , varargin )
 % Draw a 3d function, f, as a series of line segments.
 
 p = inputParser;   % Create an instance of the inputParser class.
-p.addOptional('border', 1 );
-p.addOptional('xdraw', 1);
-p.addOptional('ydraw', 1);
-p.addOptional('xcol', @(c)[0, 0, 0] );
-p.addOptional('ycol', @(c)[0, 0, 0] );
-p.addOptional('yfunction', 0);
-p.addOptional('xfunction', 0);
-p.addOptional('sumscale', 1/16);
-p.addOptional('scale',2);
-p.addOptional('xsum',0);
-p.addOptional('ysum',0);
-p.addOptional('axis',[]);
+p.addParameter('border', 1 );
+p.addParameter('xdraw', 1);
+p.addParameter('ydraw', 1);
+p.addParameter('xcol', @(c)[0, 0, 0] );
+p.addParameter('ycol', @(c)[0, 0, 0] );
+p.addParameter('yfunction', 0);
+p.addParameter('xfunction', 0);
+p.addParameter('sumscale', 1/16);
+p.addParameter('scale',2);
+p.addParameter('xsum',0);
+p.addParameter('ysum',0);
+p.addParameter('axis',[]);
 
 p.parse(varargin{:});
 p.Results;

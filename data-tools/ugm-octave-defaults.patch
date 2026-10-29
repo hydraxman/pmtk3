@@ -1,0 +1,21 @@
+diff --git a/markSchmidt-9march2011/markSchmidt/UGM/misc/UGM_makeEdgeStruct.m b/markSchmidt-9march2011/markSchmidt/UGM/misc/UGM_makeEdgeStruct.m
+--- a/markSchmidt-9march2011/markSchmidt/UGM/misc/UGM_makeEdgeStruct.m
++++ b/markSchmidt-9march2011/markSchmidt/UGM/misc/UGM_makeEdgeStruct.m
+@@ -7,5 +7,5 @@
+ if nargin < 3
+-    useMex = 1;
++    useMex = ~exist('OCTAVE_VERSION', 'builtin');
+ end
+ if nargin < 4
+     maxIter = 100;
+diff --git a/markSchmidt-9march2011/markSchmidt/UGM/misc/UGM_generate.m b/markSchmidt-9march2011/markSchmidt/UGM/misc/UGM_generate.m
+--- a/markSchmidt-9march2011/markSchmidt/UGM/misc/UGM_generate.m
++++ b/markSchmidt-9march2011/markSchmidt/UGM/misc/UGM_generate.m
+@@ -61,5 +61,5 @@
+ % Make edges from adjacency matrix
+-useMex = 1;
+-edgeStruct=UGM_makeEdgeStruct(adjMatrix,nStates,useMex,maxIter);
++edgeStruct=UGM_makeEdgeStruct(adjMatrix,nStates);
++edgeStruct.maxIter=maxIter;
+ V = edgeStruct.V;
+ E = edgeStruct.E;

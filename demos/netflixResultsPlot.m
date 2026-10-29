@@ -59,7 +59,7 @@ function koren
 
     set(gca, 'XScale', 'log');
     set(gca, 'XTick',     [10000000, 100000000, 1000000000, 10000000000, 100000000000]);
-    set(gca, 'XTickLabe', {    '10',     '100',     '1000',     '10000',     '100000'});
+    set(gca, 'XTickLabel', {    '10',     '100',     '1000',     '10000',     '100000'});
     set(gca, 'YGrid', 'on');
     xlim([10000000, 100000000000]);
     ylim([0.875, 0.91]);
@@ -89,4 +89,3 @@ function plot_dimension(data)
         text(data(k,4), data(k,5), sprintf('%d', data(k,3)), 'FontWeight', 'bold');
     end
 end
-

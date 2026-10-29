@@ -74,6 +74,9 @@ htmlTableSimple('data', [nClasses(:) nFeatures(:) nCases(:)], ...
 % a discrete grid of lambdas.)
 %methods = {'SVM', ' RVM', 'SMLR', 'RMLR', 'SMLRpath', 'RMLRpath', 'logregL2', 'logregL1'};
 methods = {'SVM', 'RVM', 'SKLR', 'RKLR', 'L1' };
+glmnetOptions = glmnetDemoOptions();
+kernelPathOptions = glmnetOptions;
+kernelPathOptions.standardize = false;
 
 
 nMethods = numel(methods);
@@ -114,7 +117,7 @@ for d=1:nDataSets
         
       case 'smlrpath'
         model = smlrFit(Xtrain, ytrain, 'kernelFn', @kernelLinear, ...
-          'regType', 'L1', 'usePath', true);
+          'regType', 'L1', 'usePath', true, 'pathOpts', kernelPathOptions);
         predFn = @(m,X) smlrPredict(m,X);
         
       case {'smlrnopath', 'smlr', 'sklr'}
@@ -124,7 +127,7 @@ for d=1:nDataSets
   
       case 'rmlrpath'
         model = smlrFit(Xtrain, ytrain, 'kernelFn', @kernelLinear, ...
-          'regtype', 'L2', 'usePath', true);
+          'regtype', 'L2', 'usePath', true, 'pathOpts', kernelPathOptions);
         predFn = @(m,X) smlrPredict(m,X);
         
       case {'rmlrnopath', 'rmlr', 'rklr'}
@@ -134,11 +137,11 @@ for d=1:nDataSets
         
  
       case {'l2', 'logregl2'}
-        model = logregFitPathCv(Xtrain, ytrain, 'regtype', 'L2');
+        model = logregFitPathCv(Xtrain, ytrain, 'regtype', 'L2', 'options', glmnetOptions);
         predFn = @(m,X) logregPredict(m,X);
         
       case {'l1', 'logregl1'}
-        model = logregFitPathCv(Xtrain, ytrain, 'regtype', 'L1');
+        model = logregFitPathCv(Xtrain, ytrain, 'regtype', 'L1', 'options', glmnetOptions);
         predFn = @(m,X) logregPredict(m,X);
     end
     trainingTime(d,m,s) = toc;
@@ -205,4 +208,3 @@ for d=1:nDataSets
   ylabel('total training time (seconds)')
 end
 %print(gcf, '-dpng', fullfile(folder, 'linearKernelBoxplotTime.png'))
-

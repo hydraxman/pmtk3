@@ -36,7 +36,7 @@ function mixGaussPlotDemo()
            '-scaleFactor'   , mixmat(k),...
            '-xrange'        , xrange(k, :));
        
-        set(h, 'color'      , colors{k}, 'linewidth', 3);
+        set(h, 'LineColor'  , colors{k}, 'linewidth', 3);
     end
     axis tight;
     printPmtkFigure('mixgauss3Components')
@@ -55,7 +55,7 @@ function mixGaussPlotDemo()
     hold on;
     view([-27.5 30]);
     camlight right;
-    lighting phong;
+    lightingPMTK('phong');
     axis off;
     axis tight;
     printPmtkFigure('mixgauss3Surf');

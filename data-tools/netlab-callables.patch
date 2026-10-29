@@ -1,0 +1,115 @@
+diff --git a/netlab3.3/scg.m b/netlab3.3/scg.m
+--- a/netlab3.3/scg.m
++++ b/netlab3.3/scg.m
+@@ -67,5 +67,5 @@
+ % Set up strings for evaluating function and gradient
+-f = fcnchk(f, length(varargin));
+-gradf = fcnchk(gradf, length(varargin));
++f = pmtkNetlabFunction(f, length(varargin));
++gradf = pmtkNetlabFunction(gradf, length(varargin));
+ 
+ nparams = length(x);
+diff --git a/netlab3.3/conjgrad.m b/netlab3.3/conjgrad.m
+--- a/netlab3.3/conjgrad.m
++++ b/netlab3.3/conjgrad.m
+@@ -77,4 +77,4 @@
+ % Next two lines allow conjgrad to work with expression strings
+-f = fcnchk(f, length(varargin));
+-gradf = fcnchk(gradf, length(varargin));
++f = pmtkNetlabFunction(f, length(varargin));
++gradf = pmtkNetlabFunction(gradf, length(varargin));
+ 
+diff --git a/netlab3.3/graddesc.m b/netlab3.3/graddesc.m
+--- a/netlab3.3/graddesc.m
++++ b/netlab3.3/graddesc.m
+@@ -106,4 +106,4 @@
+ % Check function string
+-f = fcnchk(f, length(varargin));
+-gradf = fcnchk(gradf, length(varargin));
++f = pmtkNetlabFunction(f, length(varargin));
++gradf = pmtkNetlabFunction(gradf, length(varargin));
+ 
+diff --git a/netlab3.3/gradchek.m b/netlab3.3/gradchek.m
+--- a/netlab3.3/gradchek.m
++++ b/netlab3.3/gradchek.m
+@@ -28,4 +28,4 @@
+ 
+-func = fcnchk(func, length(varargin));
+-grad = fcnchk(grad, length(varargin));
++func = pmtkNetlabFunction(func, length(varargin));
++grad = pmtkNetlabFunction(grad, length(varargin));
+ 
+diff --git a/netlab3.3/hmc.m b/netlab3.3/hmc.m
+--- a/netlab3.3/hmc.m
++++ b/netlab3.3/hmc.m
+@@ -122,4 +122,4 @@
+ % Set up strings for evaluating potential function and its gradient.
+-f = fcnchk(f, length(varargin));
+-gradf = fcnchk(gradf, length(varargin));
++f = pmtkNetlabFunction(f, length(varargin));
++gradf = pmtkNetlabFunction(gradf, length(varargin));
+ 
+diff --git a/netlab3.3/linef.m b/netlab3.3/linef.m
+--- a/netlab3.3/linef.m
++++ b/netlab3.3/linef.m
+@@ -18,3 +18,3 @@
+ % Check function string
+-fn = fcnchk(fn, length(varargin));
++fn = pmtkNetlabFunction(fn, length(varargin));
+ 
+diff --git a/netlab3.3/linemin.m b/netlab3.3/linemin.m
+--- a/netlab3.3/linemin.m
++++ b/netlab3.3/linemin.m
+@@ -44,3 +44,3 @@
+ % Check function string
+-f = fcnchk(f, length(varargin));
++f = pmtkNetlabFunction(f, length(varargin));
+ 
+diff --git a/netlab3.3/metrop.m b/netlab3.3/metrop.m
+--- a/netlab3.3/metrop.m
++++ b/netlab3.3/metrop.m
+@@ -92,3 +92,3 @@
+ % Set up string for evaluating potential function.
+-f = fcnchk(f, length(varargin));
++f = pmtkNetlabFunction(f, length(varargin));
+ 
+diff --git a/netlab3.3/minbrack.m b/netlab3.3/minbrack.m
+--- a/netlab3.3/minbrack.m
++++ b/netlab3.3/minbrack.m
+@@ -26,3 +26,3 @@
+ % Check function string
+-f = fcnchk(f, length(varargin));
++f = pmtkNetlabFunction(f, length(varargin));
+ 
+diff --git a/netlab3.3/quasinew.m b/netlab3.3/quasinew.m
+--- a/netlab3.3/quasinew.m
++++ b/netlab3.3/quasinew.m
+@@ -80,4 +80,4 @@
+ % Next two lines allow quasinew to work with expression strings
+-f = fcnchk(f, length(varargin));
+-gradf = fcnchk(gradf, length(varargin));
++f = pmtkNetlabFunction(f, length(varargin));
++gradf = pmtkNetlabFunction(gradf, length(varargin));
+ 
+diff --git a/netlab3.3/pmtkNetlabFunction.m b/netlab3.3/pmtkNetlabFunction.m
+new file mode 100644
+--- /dev/null
++++ b/netlab3.3/pmtkNetlabFunction.m
+@@ -0,0 +1,17 @@
++function fun = pmtkNetlabFunction(fun, varargin)
++if exist('OCTAVE_VERSION', 'builtin') == 0
++    fun = fcnchk(fun, varargin{:});
++    return;
++end
++if ischar(fun)
++    fun = strtrim(fun);
++    if strncmp(fun, '@', 1) || ~isempty(regexp(fun, '^[A-Za-z]\w*(\.[A-Za-z]\w*)*$', 'once'))
++        fun = str2func(fun);
++    else
++        fun = inline(fun, varargin{:});
++    end
++end
++if ~isa(fun, 'function_handle') && ~isa(fun, 'inline')
++    error('PMTK:InvalidNetlabFunction', 'Expected a function handle, inline object, function name or expression.');
++end
++end

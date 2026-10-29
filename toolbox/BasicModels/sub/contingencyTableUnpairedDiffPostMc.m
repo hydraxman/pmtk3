@@ -13,6 +13,6 @@ theta1 = betaSample(y1+alphas(1), n1-y1+alphas(2), S);
 %theta2 = betaSample(struct('a',y2+alphas(1),'b',n2-y2+alphas(2)),S);
 theta2 = betaSample(y2+alphas(1), n2-y2+alphas(2) ,S);
 diff = theta1-theta2;
-[post, deltas] = ksdensity(diff);
+[post, deltas] = ksdensityPMTK(diff);
 thetas = [theta1 theta2];
 end

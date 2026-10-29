@@ -47,7 +47,7 @@ for i=1:length(dofs)
     for s=1:n
         Rs(:, :, s) = cov2cor(Rs(:, :, s));
     end
-    [f, xi] = ksdensity(squeeze(Rs(1, 2, :)));
+    [f, xi] = ksdensityPMTK(squeeze(Rs(1, 2, :)));
     plot(xi, f, 'linewidth', 2.5);
     title(sprintf('%s(1, 2)','\rho'));
     

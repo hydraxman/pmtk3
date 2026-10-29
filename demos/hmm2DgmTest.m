@@ -38,7 +38,7 @@ if 1
 end
 %%
 %% infer single marginals using libdai's Jtree code
-if libdaiInstalled
+if isLibdaiInstalled()
     tic;
     dgm        = hmmToDgm(model, T, 'infEngine', 'libdaiJtree');
     margLD     = dgmInferNodes(dgm, 'localev', X);
@@ -51,7 +51,6 @@ end
 mapDGM = dgmMap(dgm, 'localev', X); 
 mapHMM = hmmMap(model, X); 
 assert(isequal(mapDGM, mapHMM)); 
-
 
 
 

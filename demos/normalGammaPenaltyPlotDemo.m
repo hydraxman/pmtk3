@@ -24,7 +24,7 @@ for i=1:length(lambdas)
   Z=pen(X(:)) + pen(Y(:)) - pen(1) - pen(pas);
   str{i} = sprintf('%s=%3.2f', '\lambda', lambda);
   cout = contour(X, Y, reshape(Z, size(X)), [0 0], styles{i}, ...
-    'color', colors(i),   'linewidth', 3, 'displayname', str{i});
+    'LineColor', colors(i), 'linewidth', 3, 'displayname', str{i});
   %set(h(i), 'color', colors(i));
   h(i) = plot(0, 0, [styles{i}, colors(i)], 'linewidth', 3); 
 end
@@ -44,7 +44,7 @@ for i=1:length(bs)
   Z=pen(X(:)) + pen(Y(:)) - pen(1) - pen(pas);
   str{i} = sprintf('a=1, b=%3.2f', b);
   cout = contour(X, Y, reshape(Z, size(X)), [0 0], styles{1}, ...
-    'color', colors(i),   'linewidth', 3, 'displayname', str{i}); % 'name', str{i});
+    'LineColor', colors(i), 'linewidth', 3, 'displayname', str{i}); % 'name', str{i});
   %set(h(i), 'color', colors(i));
   h(i) = plot(0, 0, [styles{1}, colors(i)], 'linewidth', 3); 
 end

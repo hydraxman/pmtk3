@@ -59,7 +59,8 @@ for i=1:Nplayers
 end
 
 figure;
-errorbar(1:Nplayers, Ms, sigmas, 'linewidth', 3);
+h = errorbar(1:Nplayers, Ms, sigmas);
+set(h, 'linewidth', 3);
 printPmtkFigure('trueskillDemo')
 
 
@@ -127,4 +128,3 @@ for iter=1:5
 end
 
 end
-

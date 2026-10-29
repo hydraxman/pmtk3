@@ -3,8 +3,8 @@ function elasticDistortionsDemo()
 %PMTKauthor Kevin Swersky
 
 %load goodsix.mat
-loadData('pmtkImages', 'isMatFile', false)
-I = imread('digit6.png');
+imageFolder = loadData('pmtkImages', 'isMatFile', false);
+I = imread(fullfile(imageFolder, 'digit6.png'));
 
 setSeed(2);
 %rand('seed',30);

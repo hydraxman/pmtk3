@@ -25,14 +25,14 @@ for i=1:nellipsoids
     c = C{i};  r  = R{i};
     [D(i).X D(i).Y D(i).Z] = ellipsoid(c(1), c(2), c(3), r(1), r(2), r(3), npoints);
     surf(D(i).X, D(i).Y, D(i).Z, 'FaceColor', colors{i});
-    contour(D(i).X, D(i).Y, D(i).Z, 'LineWidth', 2.5, 'LevelStep', 10, 'Color', colors{i})
+    contour(D(i).X, D(i).Y, D(i).Z, 'LineWidth', 2.5, 'LevelStep', 10, 'LineColor', colors{i})
 end
 view([-13, 30])
 grid on
 set(gca, 'XLim', [-5 40], 'YLim', [-10, 8], 'LineWidth', 1.5)
 f2 = figure; hold on;
 for i=1:nellipsoids
-    contour(D(i).Z, D(i).Y, D(i).X, 'LineWidth', 2.5, 'LevelStep', 10, 'Color', colors{i})
+    contour(D(i).Z, D(i).Y, D(i).X, 'LineWidth', 2.5, 'LevelStep', 10, 'LineColor', colors{i})
 end
 view([-145, -88])
 grid on
@@ -45,6 +45,5 @@ close(f2)
 xlabel('X', 'FontSize', 14)
 ylabel('Y', 'FontSize', 14)
 zlabel('Z', 'FontSize', 14)
-
 
 

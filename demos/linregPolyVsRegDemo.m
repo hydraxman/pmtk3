@@ -136,7 +136,8 @@ figure; hold on
 ndx =  lambdas; %%log(lambdas); % 1:length(lambdas);
 xlabel('log lambda')
 ylabel('mse')
-errorbar(ndx, mu, se, 'ko-','linewidth', 2, 'markersize', 12 );
+errorBars = errorbar(ndx, mu, se, 'ko-');
+set(errorBars, 'linewidth', 2, 'markersize', 12);
 set(gca, 'xscale', 'log') %%%% new
 title(sprintf('%d-fold cross validation, ntrain = %d', nfolds, N))
 if n <= 21
@@ -170,12 +171,14 @@ fitFn2 = @(Xtr,ytr,lam) linregFit(Xtr, ytr, 'lambda', lam, 'preproc', pp);
   end
   
 % do it again using path algo
-if glmnetInstalled()
+if exist('glmnetMex', 'file') == 3
   [bestModel, path] = linregFitPathCv(Xtrain, ytrain, 'regtype', 'l2',  'preproc', pp,...
-    'nfolds', nfolds);
+    'nfolds', nfolds, 'options', glmnetDemoOptions());
   figure;
   %plot(path.errMean)
   plot(path.cvErr)
+else
+  warning('PMTK:OptionalNativeDependency', 'GLMnet is unavailable; skipping only its optional path-algorithm comparison.');
 end
 
 
@@ -234,7 +237,8 @@ cvErr = log(mu); cvErr = cvErr/max(cvErr);
 cvSE = log(se);
 cvSE = cvSE/max(cvSE); 
 cvSE = cvSE/2;
-errorbar(lambdas, cvErr, cvSE, 'rx-','linewidth', 2, 'markersize', 12 );
+errorBars = errorbar(lambdas, cvErr, cvSE, 'rx-');
+set(errorBars, 'linewidth', 2, 'markersize', 12);
 set(gca, 'xscale', 'log')  
 %set(gca, 'yscale', 'log')
 xlabel('log lambda')

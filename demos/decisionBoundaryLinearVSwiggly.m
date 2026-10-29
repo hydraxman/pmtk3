@@ -25,8 +25,10 @@ class2 = [class2; class1(31,:)];
 class1(31,:) = [];
 class1 = [class1; class2(11,:)];
 class2(11,:) = [];
-class2 = [class2;class1(45,:)];
-class1(45,:) = [];
+% RNGs can yield fewer than 45 rows; do not move the already transferred last point.
+outlier = min(45, size(class1,1)-1);
+class2 = [class2;class1(outlier,:)];
+class1(outlier,:) = [];
 class1 = [class1;class2(33,:)];
 class2(33,:) = [];
 

@@ -10,14 +10,14 @@ f = @(x) -log(5*x) - 5;
 domain = 0.01:0.01:5;
 offset = 0.04;
 t = @(x) -(1/3)*x + f(3)+1-offset;
-figureA;
+figureA(t);
 printPmtkFigure('conjugateFunctionA');
 figureB;
 printPmtkFigure('conjugateFunctionB');
 
-    function figureA
+    function figureA(tangent)
         setup;
-        t1 = @(x) t(x) - 0.5;
+        t1 = @(x) tangent(x) - 0.5;
         plot([1,1],[t1(1),f(1)],'--g',...
             [2,2],[t1(2),f(2)],'--g',...
             [3,3],[t1(3),f(3)],'--g',...

@@ -11,7 +11,7 @@ switch class(X)
 % This file is from pmtk3.googlecode.com
 
         axes(distplot);
-        ksdensity(X);
+        ksdensityPMTK(X);
         
         quants = quantilePMTK(X, [0.25, 0.50, 0.75]);
         % [Q1, med, Q3] = quantile(X, [0.25, 0.50, 0.75]); Again, does not work

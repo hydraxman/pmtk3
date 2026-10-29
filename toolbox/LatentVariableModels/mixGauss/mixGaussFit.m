@@ -29,6 +29,7 @@ end
 function model = initGauss(model, X, restartNum, initParams, prior)
 %% Initialize 
 nmix = model.nmix; 
+d = model.d;
 if restartNum == 1
     if ~isempty(initParams)
         mu              = initParams.mu;
@@ -64,4 +65,3 @@ model.mixWeight = normalize(ess.wsum + model.mixPrior - 1);
 end
 
 %
-

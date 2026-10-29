@@ -42,7 +42,7 @@ for c=1:length(unique(yy))
     ndx = find(yy==c);
     n = length(ndx);
     k = randi(n, 1, 1); %floor(rand(1,1)*n)+1;
-    fprintf('%s ', wordlist{XX(ndx(k),:)}); fprintf('\n');
+    fprintf('%s ', wordlist{find(XX(ndx(k),:))}); fprintf('\n');
     assert(yy(ndx(k))==c) % book-keeping sanity check!
   end
   fprintf('\n\n');

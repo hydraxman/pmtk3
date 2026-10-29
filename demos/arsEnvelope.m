@@ -10,19 +10,22 @@ function arsEnvelope
     plot(xout, n, '-b', 'LineWidth', 3);
     
     x1 = -0.7;
-    ind1 = find(xout == x1);
+    [~, ind1] = min(abs(xout - x1));
+    x1 = xout(ind1);
     ratio1 = (n(ind1+1) - n(ind1-1)) / (xout(ind1+1) - xout(ind1-1));
     plot([x1 - 0.5, x1 + 0.5], [n(ind1)-0.5*ratio1, n(ind1)+0.5*ratio1], '-r', 'LineWidth', 3);
     plot([x1, x1], [n(ind1),min(n)-0.1], '--r', 'LineWidth', 3);
     
     x2 = 0;
-    ind2 = find(xout == x2);
+    [~, ind2] = min(abs(xout - x2));
+    x2 = xout(ind2);
     ratio2 = (n(ind2+1) - n(ind2-1)) / (xout(ind2+1) - xout(ind2-1));
     plot([x2 - 0.7, x2 + 0.7], [n(ind2)-0.7*ratio2, n(ind2)+0.7*ratio2], '-r', 'LineWidth', 3);
     plot([x2, x2], [n(ind2),min(n)-0.1], '--r', 'LineWidth', 3);
     
     x3 = 0.7;
-    ind3 = find(xout == x3);
+    [~, ind3] = min(abs(xout - x3));
+    x3 = xout(ind3);
     ratio3 = (n(ind3+1) - n(ind3-1)) / (xout(ind3+1) - xout(ind3-1));
     plot([x3 - 0.5, x3 + 0.5], [n(ind3)-0.5*ratio3, n(ind3)+0.5*ratio3], '-r', 'LineWidth', 3);
     plot([x3, x3], [n(ind3),min(n)-0.1], '--r', 'LineWidth', 3);    

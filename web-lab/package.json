@@ -1,0 +1,40 @@
+{
+  "name": "pmtk3-web-lab",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": { "node": ">=24 <25" },
+  "scripts": {
+    "dev": "tsx scripts/dev.ts",
+    "dev:api": "tsx watch server/index.ts",
+    "dev:ui": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "build": "npm run typecheck && vite build && tsc -p tsconfig.server.json",
+    "start": "node dist/server/server/index.js",
+    "numerics": "tsx scripts/numerics.ts",
+    "test:browser": "playwright test",
+    "test:original": "tsx scripts/smoke-original.ts",
+    "test:parity": "tsx scripts/check-parity.ts",
+    "test:queue": "tsx scripts/smoke-queue.ts",
+    "reproduce": "tsx scripts/reproduce.ts",
+    "test:full": "npm run build && npm test && npm run test:parity && npm run test:queue && npm run test:browser"
+  },
+  "dependencies": {
+    "fastify": "5.12.7",
+    "plotly.js-basic-dist-min": "4.1.2",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@types/node": "24.19.2",
+    "@types/plotly.js": "3.0.15",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  }
+}

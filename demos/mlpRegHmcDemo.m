@@ -73,7 +73,7 @@ set(gca, 'box', 'on');
 h3 = plot(plotvals, pred, '-r', 'LineWidth', 3);
 
 lstrings = char('Data', 'Function', 'Prediction', 'Samples');
-legend([h1 h2 h3 h4], lstrings, 3);
+legend([h1 h2 h3 h4], cellstr(lstrings), 'Location', 'southwest');
 hold off
 
 disp('Note how the predictions become much further from the true function')

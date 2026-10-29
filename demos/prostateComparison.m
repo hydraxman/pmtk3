@@ -113,14 +113,15 @@ end
 
 function data = getData()
 %data = loadData('prostate'); % data in pmtkdata is incorrect!
-url = 'http://statweb.stanford.edu/~tibs/ElemStatLearn/datasets/prostate.data';
-fname = 'prostate.csv';
-urlwrite(url, fname);
+fname = fullfile(pmtk3Root(), 'data', 'prostate', 'prostate.csv');
 %data = importdata(fname, ',', 1);
 % matlab is so primitive it cannot use csvread for text
-fid = fopen('prostate.csv');
+fid = fopen(fname);
+if fid < 0
+    error('prostateComparison:dataMissing', 'Cannot open bundled dataset: %s', fname);
+end
+cleanup = onCleanup(@() fclose(fid));
 C = textscan(fid,'%f%f%f%f%f%f%f%f%f%f%s', 'headerlines', 1);
-fclose(fid);
 % columns are: rownum lcavol lweight age lbph svi lcp gleason pgg45 lpsa 
 data.names = {'lcavol', 'lweight', 'age',  'lbph', 'svi', 'lcp', 'gleason', 'pgg45', 'lpsa'};
 istrain = [C{end}{:}]=='T';
@@ -133,5 +134,4 @@ data.ytrain = y(find(istrain),:);
 data.Xtest = X(find(~istrain),:);
 data.ytest = y(find(~istrain),:);
 end
-
 

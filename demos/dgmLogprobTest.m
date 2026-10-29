@@ -21,7 +21,7 @@ for trial=1:2
    dgm.infEngine = 'varelim';
    [b, logZ3] = dgmInferNodes(dgm, 'clamped', clamped);
    [b, logZ4] = dgmInferQuery(dgm, 4, 'clamped', clamped);
-   if libdaiInstalled
+   if isLibdaiInstalled()
        dgm.infEngine = 'libdaiJtree';
        [b, logZ5] = dgmInferNodes(dgm, 'clamped', clamped);
        [b, logZ6] = dgmInferQuery(dgm, 4, 'clamped', clamped);
@@ -35,7 +35,7 @@ for trial=1:2
    assert(approxeq(logZ3, logZ1, tol));
    assert(approxeq(logZ4, logZ1, tol));
    
-   if libdaiInstalled
+   if isLibdaiInstalled()
        assert(approxeq(logZ5, logZ1, tol));
        assert(approxeq(logZ6, logZ1, tol));
    end
@@ -66,7 +66,7 @@ for trial=1:2
    [b, logZ3] = dgmInferNodes(dgm, 'clamped', clamped);
    [b, logZ4] = dgmInferQuery(dgm, 11, 'clamped', clamped);
    
-   if libdaiInstalled
+   if isLibdaiInstalled()
        dgm.infEngine = 'libdaiJtree';
        [b, logZ5] = dgmInferNodes(dgm, 'clamped', clamped);
        [b, logZ6] = dgmInferQuery(dgm, 11, 'clamped', clamped);
@@ -82,7 +82,7 @@ for trial=1:2
       assert(approxeq(logZ3, logZ1, tol));
       assert(approxeq(logZ4, logZ1, tol));
    end
-   if libdaiInstalled
+   if isLibdaiInstalled()
        assert(approxeq(logZ5, logZ1, tol));
        assert(approxeq(logZ6, logZ1, tol));
    end
@@ -92,4 +92,3 @@ for trial=1:2
    %assert(approxeq(logZ7, logZ1, tol));
   
 end
-

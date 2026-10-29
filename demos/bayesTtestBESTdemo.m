@@ -53,7 +53,7 @@ for expt=1:3
     samples1 = post1.random(1,S);
     samples2 = post2.random(1,S);
     samplesDelta = samples2 - samples1;
-    [postDelta, deltas] = ksdensity(samplesDelta);
+    [postDelta, deltas] = ksdensityPMTK(samplesDelta);
     
     subplot2(Nr, Nc, expt, 1);
     hist(y1, 100);
@@ -91,7 +91,7 @@ printPmtkFigure(sprintf('bayesTtestBEST'));
 % Frequentist method
 % According to p587 of his paper, t(87) = 1.62, pval = .110
 % 95% CI -0.361 to 3.477 using Welch modification for dof
-[h,pval] = ttest(x, 0, 0.95, 'right')
+[h,pval] = ttest(x, 0, 'alpha', 0.95, 'tail', 'right')
 assert(approxeq(probH1, pval))
 %}
        

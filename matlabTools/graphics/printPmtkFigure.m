@@ -10,6 +10,10 @@ if nargin < 3, printFolder = []; end
 if isempty(printFolder)
   printFolder = 'figures';
 end
+if ~exist(printFolder, 'dir')
+  [created, message] = mkdir(printFolder);
+  if ~created, error('printPmtkFigure:OutputDirectory', '%s', message); end
+end
 if strcmpi(format, 'pdf')
   pdfcrop(gcf, 0, 0);
 end
@@ -27,8 +31,7 @@ if 0
   export_fig(fname)
 end
 if 1
-   print(gcf, '-dpdf', fname);
+   print(gcf, ['-d' format], fname);
 end
 
 end
-

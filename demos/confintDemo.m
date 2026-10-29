@@ -1,5 +1,5 @@
 %% Larsen and Marx p332
-% PMTKneedsStatsToolbox mle, chi2inv (or Matlab version > 2009a)
+% PMTKneedsStatsToolbox normfit, chi2inv (or Matlab version > 2009a)
 %% 
 
 % This file is from pmtk3.googlecode.com
@@ -23,11 +23,11 @@ UU = N*sigma2HatMLE/chi2invPMTK(alpha/2,nu);
 sigma2CI = [LL UU] % 418.75       1603.96
 sigmaCI = sqrt([LL, UU])  % 20.46         40.05
 
-%% stats toolbox
-[pHat, pCI] = mle(D, 'distribution', 'normal')
-%pHat = [mean(D), std(D, 1)];
-assert(approxeq(pHat, [muHat sqrt(sigma2HatMLE)]))
+%% stats toolbox: normfit reports the unbiased variance, not the MLE.
+[muToolbox, sigmaToolbox, muCIToolbox, sigmaCIToolbox] = normfit(D, alpha);
+pHat = [muToolbox sigmaToolbox]
+pCI = [muCIToolbox sigmaCIToolbox]
+assert(approxeq(pHat, [muHat sqrt(S2)]))
 assert(approxeq(pCI, [muCI(:) sigmaCI(:)]))
-
 
 

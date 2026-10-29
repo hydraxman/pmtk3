@@ -28,7 +28,7 @@ chosen = [ndx(1:5)' ndx(end-2:end-1)']; % sentence indexes
 for i=1:length(chosen)
   j = chosen(i);
   fprintf('words in sentence %d with loglik %5.3f\n', j, ll(j));
-  wordlist(X(j,:))
+  wordlist(find(X(j,:)))
 end
 
 % loglik decreases as number of density of bit vector increases

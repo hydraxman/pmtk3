@@ -52,9 +52,9 @@ h3=line([mu(1)-s*wPCA(1) mu(1)+s*wPCA(1)],...
 set(h3, 'color', 'g', 'linewidth', 5, 'linestyle', '--',...
     'YLimInclude', 'off', 'XLimInclude', 'off')
 %%
-uistack(h1, 'bottom');
-uistack(h2, 'bottom');
-uistack(h3, 'bottom');
+uistackPMTK(h1, 'bottom');
+uistackPMTK(h2, 'bottom');
+uistackPMTK(h3, 'bottom');
 str = {'means', 'fisher', 'pca'};
 legend([h1 h2 h3],str, 'location', 'northwest')
 set(gca, 'ytick', 0:4); 

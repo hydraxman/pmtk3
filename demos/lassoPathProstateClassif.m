@@ -4,18 +4,17 @@
 % This file is from pmtk3.googlecode.com
 
 
-clear all
-if ~glmnetInstalled
-    fprintf('cannot run %s without glmnet; skipping\n', mfilename());
-    return;
+if exist('glmnetMex', 'file') ~= 3
+    error('PMTK:MissingNativeDependency', 'This demo requires a compatible native GLMnet glmnetMex extension.');
 end
+clear all
 load prostateStnd
 mu = mean(y);
 y = (y>mu); % dichotimize
 [N,D] = size(X); %#ok
 
 pp = preprocessorCreate();
-options = glmnetSet();
+options = glmnetDemoOptions();
 %options.lambda = lambdas;
 %options.standardize = false;
 options.nlambda = 30;

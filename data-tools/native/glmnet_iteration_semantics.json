@@ -1,0 +1,29 @@
+{
+  "old_core": {
+    "source": "pmtksupportCopy/packages/glmnet-matlab/GLMnet.f",
+    "sha256": "b326e97ba86d2a37a8b2864ae95b8120d1b5eb25b3c69d33b1ef975c9fab7b72",
+    "release": "GLMnet 2008-05-17, bundled 2009 gateway",
+    "gaussian": "14-input gateway; elnet1/elnet2 count nlp but accept no maxit argument and contain no maxit check",
+    "logistic": "15-input gateway; lognet2n/lognetn reset nit for each lambda and compare IRLS outer-iteration nit with maxit; nlp counts inner coordinate passes separately",
+    "evidence_routines": ["elnet1", "elnet2", "lognet2n", "lognetn"]
+  },
+  "new_core": {
+    "source": ".demo-runtime/native-providers/sources/glmnet-2013/GLMnet.f",
+    "sha256": "6f59bd53ab3ce291ed86646c4cd7ea086def492b0a4a798dcd8d00d0bd0db7e6",
+    "release": "newGLMnet 2013-02-15, official Matlab release 2014-04-28",
+    "all_reviewed_families": "nlp initialized once for the path, incremented by full/active coordinate sweeps, checked against maxit",
+    "exhaustion": "native negative jerr and completed prefix; detection can increment nlp to maxit+1"
+  },
+  "translation": "No fixed conversion from old per-lambda outer iterations to new whole-path coordinate passes is justified by source.",
+  "bridge_defaults": {
+    "gaussian_max_passes": 100000,
+    "gaussian_reason": "Explicit bridge default matching official 2013 Matlab default; not a legacy-2008 cap and not options.maxit=100",
+    "logistic_without_explicit_control": "Legacy maxit numeric value passed unchanged, with the new unit explicitly reported; no silent increase"
+  },
+  "explicit_octave_options": {
+    "octave_max_passes": "Positive int32 whole-path coordinate-descent pass budget; works for Gaussian/binomial/multinomial",
+    "octave_require_complete": "Require native jerr=0 and completed_lambda_count=requested_lambda_count; otherwise PMTK:GlmnetIncompletePath. This also rejects intentional native automatic-path early stopping.",
+    "metadata": "fit.octave_budget: actual limit/unit/source, passes_used, requested/completed lambda counts, native jerr"
+  },
+  "matlab": "Original compiled-platform routes and original eight-output calls remain in the non-Octave branch; new fields only enabled under OCTAVE_VERSION."
+}

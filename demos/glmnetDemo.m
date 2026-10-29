@@ -1,8 +1,7 @@
 
 
-if ~glmnetInstalled
-    fprintf('cannot run %s without glmnet; skipping\n', mfilename());
-    return;
+if exist('glmnetMex', 'file') ~= 3
+    error('PMTK:MissingNativeDependency', 'This demo requires a compatible native GLMnet glmnetMex extension.');
 end
 
 if 0
@@ -21,7 +20,7 @@ end
 if 0
 clear all
 load('prostateStnd');
-options = glmnetSet;
+options = glmnetDemoOptions();
 
 % ridge path
 
@@ -45,7 +44,7 @@ w = lars(XS,y);
 figure; plot(w, '-o'); title('lars')
 
 % cv
-options = glmnetSet;
+options = glmnetDemoOptions();
 options.nlambda = 10;
 CVerr=cvglmnet(X,y,10,[],'response','gaussian',options,1);
 
@@ -54,7 +53,7 @@ end
 if 1
   load('soy'); % 3 class, X is 307*35, Y is 307*1
   family = 'multinomial';
-options = glmnetSet;
+options = glmnetDemoOptions();
 models = glmnet(X, Y, family, options);
 
 %options.nlambda = 10;

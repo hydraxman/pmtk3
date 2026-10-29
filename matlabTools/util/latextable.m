@@ -116,7 +116,7 @@ function latextable(X,varargin)
     if ~isempty(a.horiz)&& size(a.horiz,2) == c ; 
         for i = 1:size(a.horiz,1)
             H{i,1} = sprintf('%s & ',a.horiz{i,:}); 
-            H{i} = [Hprfx,' ',regexprep(H{i},'& ','\\\',c)];   
+            H{i} = [Hprfx,' ',replaceOccurrence(H{i},'& ','\\',c)];
         end
     end
     
@@ -142,7 +142,7 @@ function latextable(X,varargin)
         if v(i) == 0; col = ['|',col];
         elseif isnan(v(i)); col = [col,'|'];
         else
-            col = regexprep(col,'c','c|',v(i));
+            col = replaceOccurrence(col,'c','c|',v(i));
         end
     end
 
@@ -228,6 +228,16 @@ end
     if size(a.vert,1) == 1; a.vert = a.vert'; end
 end
 %--------------------------------------------------------------------------
+function text = replaceOccurrence(text, pattern, replacement, occurrence)
+positions = strfind(text, pattern);
+if ~isscalar(occurrence) || occurrence < 1 || occurrence ~= fix(occurrence) ...
+        || occurrence > numel(positions)
+    error('latextable:invalidOccurrence', 'Requested separator occurrence is out of range.');
+end
+position = positions(occurrence);
+text = [text(1:position-1), replacement, text(position+length(pattern):end)];
+end
+
 function A = convertdata(X,form)
 % CONVERTDATA changes numeric and cell arrays into strings for each row
 % X must be a numeric array or a cell array, with a string of numeric value
@@ -240,7 +250,7 @@ function A = convertdata(X,form)
     if isnumeric(X);
         for i = 1:r;
             A{i,1} = sprintf([form,' & '],X(i,:)); 
-            A{i} = regexprep(A{i},'& ','\\\',c);
+            A{i} = replaceOccurrence(A{i},'& ','\\',c);
         end
         
 % For cell arrays        

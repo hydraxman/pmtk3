@@ -39,7 +39,7 @@ end
 opt = {'k', 'b', 'g', 'r'};
 figure(); hold on;
 for k=k0
-  [f,xi] = ksdensity(thetaBoot(:,k+1));
+  [f,xi] = ksdensityPMTK(thetaBoot(:,k+1));
   plot(xi, f, opt{k+1});
 end
 legend(strread(num2str(k0), '%s'), 'Location', 'Best');
@@ -56,4 +56,3 @@ for k=k0
 end
 title('True sampling distribution based on theory');
 legend(strread(num2str(k0), '%s'), 'Location', 'Best');
-

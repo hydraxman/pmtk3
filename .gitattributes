@@ -1,0 +1,2 @@
+# Patch hunk context must retain literal whitespace and line endings.
+*.patch -text -whitespace

@@ -13,7 +13,7 @@ CPT = alarmNetwork.CPT;
 nstates = alarmNetwork.nodeSizes;
 nnodes = 37;
 
-if libdaiInstalled
+if isLibdaiInstalled()
     engines = {'jtree', 'libdaiJtree'};
 else
     engines = {'jtree'};
@@ -85,7 +85,6 @@ if 0
     end
     meanTime = mean(tBNT);
 end
-
 
 
 

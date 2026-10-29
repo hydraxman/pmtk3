@@ -67,7 +67,7 @@ for trial=1:length(polyOrders)
     figure;
     % plot P(C=1|x)=0.5 i.e. the separating line
     [cc,hh]=contour(xs,ys,reshape(Posterior,[ngrid,ngrid]),[0.5 0.5]);
-    set(hh,'linewidth',4,'color','k');
+    set(hh,'linewidth',4,'LineColor','k');
     hold on
     plot(Xtrain(find(ytrain==1),1), Xtrain(find(ytrain==1),2),'r.');
     plot(Xtrain(find(ytrain==0),1), Xtrain(find(ytrain==0),2),'o');
@@ -92,5 +92,4 @@ figure; bar(post);
 set(gca,'xticklabel',polyOrders);
 title('p(m|D)')
 printPmtkFigure('logregDemoGirolamiPost');
-
 

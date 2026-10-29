@@ -8,7 +8,7 @@ requireStatsToolbox
 %requireBioinfoToolbox
 loadData('yeastData310') % 'X', 'genes', 'times');
 
-corrDist = pdist(X, 'corr');
+corrDist = pdist(X, 'correlation');
 clusterTree = linkage(corrDist, 'average');
 clusters = cluster(clusterTree, 'maxclust', 16);
 figure(1);clf

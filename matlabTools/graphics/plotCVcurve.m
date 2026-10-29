@@ -47,9 +47,9 @@ else
     set(gca, 'ylim', ylimits); 
     vline = verticalLine(lambdaBest, 'Color', colors{3},...
         'LineWidth', 2, 'LineStyle', '--');
-    uistack(vline, 'bottom')
+    uistackPMTK(vline, 'bottom')
     if ~isempty(hline)
-       uistack(hline, 'bottom');  
+       uistackPMTK(hline, 'bottom');
     end
     %legend(hline, sprintf('%.2f', lambdaBest));
     title(sprintf('selected value: %.2f', lambdaBest)); 

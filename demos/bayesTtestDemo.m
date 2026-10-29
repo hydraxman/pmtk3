@@ -18,7 +18,7 @@ dof = N-1;
 probH1 = 1-tcdf(t, dof) % prob mu>0
 
 % Frequentist method
-[h,pval] = ttest(x, 0, 0.95, 'right')
+[h,pval] = ttest(x, 0, 'alpha', 0.95, 'tail', 'right')
 assert(approxeq(probH1, pval))
 
 % Method based on Bayes factors
@@ -38,5 +38,4 @@ sy           = 5.9007;
 
 %[BF01, probH0] = bayesTtestTwoSample(x,y)
 [BF01, probH0] = bayesTtestTwoSample([],[],xbar,ybar,Nx,Ny,sx,sy)
-
 

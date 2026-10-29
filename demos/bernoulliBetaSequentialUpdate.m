@@ -33,8 +33,6 @@ h = verticalLine(mean(X), 'LineStyle'  , '--'    , ...
                           'LineWidth'  , 2.5     , ...
                           'Color'      , 'c'     , ...
                           'DisplayName', 'truth' );
-if ~isOctave
-    uistack(h, 'bottom');
-end
+uistackPMTK(h, 'bottom');
 legend('Location', 'NorthWest');
 printPmtkFigure betaSeqUpdate

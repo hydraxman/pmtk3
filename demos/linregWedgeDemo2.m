@@ -40,7 +40,7 @@ fontSize = {'FontSize',14};
 figure;
 mesh(x,y,p);
 shading interp;
-lighting phong;
+lightingPMTK('phong');
 material dull;
 %view([-47.5 34]);
 xlabel('X',fontSize{:});

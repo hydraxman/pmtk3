@@ -72,14 +72,12 @@ for j=1:(nr*nc)
   line([mini maxi], [mini maxi]);
   %axis square
   %grid on
-   stats = regstats(Xfull(miss,j), Ximpute(miss,j));
-  r = stats.rsquare;
+  r = regressionRSquared(Xfull(miss,j), Ximpute(miss,j));
   title(sprintf('R^2 = %5.3f', r))
 end
 suptitle(sprintf('%s, n=%d,d=%d,pc=%5.3f', ttl, n, d, pc))
 printPmtkFigure(sprintf('%s,n%dn%dpc%d', fname, n, d, round(100*pc)))
 end
-
 
 
 

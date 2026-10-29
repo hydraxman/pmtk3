@@ -89,7 +89,7 @@ return;
 %% Plotting Functions
     function plotPriorPost()
         figure;
-        plotSurface(@(h)priorFn(h), [], no, no, no, ...
+        plotSurface(priorFn, [], no, no, no, ...
             [0 1 0 1 0 0.03], priorType);
         shading interp;
         printPmtkFigure(sprintf('%healthyLevels%s', priorType));
@@ -99,7 +99,7 @@ return;
             figure;
             %scale = [0 1 0 1 0 zscale(i)];
             scale = [];
-            plotSurface(@(h,data)posteriorFn(h, data), ...
+            plotSurface(@posteriorFn, ...
                 data(1:points(i), :),yes, no, no, scale,...
                 {sprintf('Posterior, n=%d, %s', points(i), priorType)});
             shading interp;
@@ -116,7 +116,7 @@ return;
             %scale = [0 1 0 1 0 0.0002];
             %scale = [0 0.5 0 0.5 0 0.1];
             scale = [];
-            plotSurface(@(Y,X)genFn(Y,X),data(1:points(i),:),yes,yes,no,...
+            plotSurface(genFn,data(1:points(i),:),yes,yes,no,...
                 scale, ttl, false);
             fname = sprintf('healthyLevelsGen%d%s', points(i), priorType);
             printPmtkFigure(fname);
@@ -133,7 +133,7 @@ return;
             %plotSampledHypotheses(@(h,data)posteriorFn(h, ...
             %                     data(1:points(i),:)),...
             %					  data(1:points(i),:),no,ttl);
-            plotSampledHypotheses(@(h,d)posteriorFn(h,d), ...
+            plotSampledHypotheses(@posteriorFn, ...
                 data(1:points(i),:), no, ttl);
             fname = sprintf('healthyLevelsSamples%d%s',...
                 points(i), priorType);
@@ -195,7 +195,7 @@ return;
         points = [3 12];
         for i=1:length(points);
             figure;
-            plotContour(@(Y,X)genFn(Y,X),data(1:points(i),:),...
+            plotContour(genFn,data(1:points(i),:),...
                 yes,yes,no,'','','');
             title(sprintf('Bayes predictive, n=%d, %s', points(i),...
                 priorType))
@@ -266,7 +266,7 @@ return;
             surf(C,I,p, 'linewidth', 3);
         end
         camlight right;
-        lighting phong;
+        lightingPMTK('phong');
         %xlabel( 's1' );
         %ylabel( 's2');
         zlabel( 'p');

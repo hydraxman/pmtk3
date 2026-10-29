@@ -56,7 +56,7 @@ for j=1:length(S)
             margExact{i}.mu, margExact{i}.Sigma));
         subplot2(2, 2, i, 2);
         if statsToolboxInstalled()
-            ksdensity(samples(:, i));
+            ksdensityPMTK(samples(:, i));
             title(sprintf('approx m=%5.3f, v=%5.3f',...
                 mean(samples(:, i)), var(samples(:, i))));
         end

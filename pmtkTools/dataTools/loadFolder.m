@@ -1,8 +1,8 @@
-function loadFolder(folder)
-%% Ensure folder is on path, downloading its zip file if necessary from pmtkdata.googlecode.com
+function folderPath = loadFolder(folder)
+%% Ensure a local dataset folder is on the path and return its absolute path.
 
 % This file is from pmtk3.googlecode.com
 
 
-loadData(folder, [], false, false);
+folderPath = loadData(folder, 'isMatFile', false);
 end

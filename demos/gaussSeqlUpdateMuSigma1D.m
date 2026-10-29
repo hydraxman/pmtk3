@@ -38,7 +38,7 @@ for i=1:length(ns)
     % hat = posterior mean
     muHat = post.mu; 
     sigma2Hat = post.Sigma/post.dof * (post.dof/(post.dof-2));
-    h(i) = plot(muHat, sigma2Hat, 'X', 'markersize'  , 15 , ...
+    h(i) = plot(muHat, sigma2Hat, 'x', 'markersize'  , 15 , ...
       'linewidth'   , 3  , ...
       'color'       , colors(i));
     str{i} =  sprintf('N=%d',n);
@@ -49,7 +49,7 @@ for i=1:length(ns)
                            
     fn = @(x)exp(gaussInvWishartLogprob(post, x(:, 1), x(:, 2)));
     plotContour(fn, xyrange, 'ncontours', ncontours, ...
-      'color' , colors(i) ,...
+      'LineColor' , colors(i) ,...
       'linestyle', '-', ...
       'linewidth'   , 2);
     
@@ -69,5 +69,3 @@ box on
 title(sprintf('o = MLE, x = post mean, * = truth'))
 %set(gca, 'xtick', -2:2:8);
 printPmtkFigure muSigmaPost
-
-

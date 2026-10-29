@@ -110,9 +110,12 @@ xlabel('L1norm of w')
 end
 
 %% Now use path algorithm + CV
-if ~glmnetInstalled, return; end
+if exist('glmnetMex', 'file') ~= 3
+  warning('PMTK:OptionalNativeDependency', 'GLMnet is unavailable; skipping its optional path-algorithm comparison.');
+  return;
+end
 pp = preprocessorCreate();
-options = glmnetSet();
+options = glmnetDemoOptions();
 %options.lambda = lambdas;
 %options.standardize = false;
 options.nlambda = 30;

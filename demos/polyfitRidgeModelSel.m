@@ -81,7 +81,8 @@ figure; hold on
 ndx =  log(lambdas); % 1:length(lambdas);
 xlabel('log lambda')
 ylabel('mse')
-errorbar(ndx, mu, se, 'ko-','linewidth', 2, 'markersize', 12 );
+errorBars = errorbar(ndx, mu, se, 'ko-');
+set(errorBars, 'linewidth', 2, 'markersize', 12);
 title(sprintf('%d-fold cross validation, ntrain = %d', nfolds, N))
 if n <= 21
   % When N is small, CV massively over-estimates error for small 
@@ -114,12 +115,14 @@ fitFn2 = @(Xtr,ytr,lam) linregFit(Xtr, ytr, 'lambda', lam, 'preproc', pp);
   end
   
 % do it again using path algo
-if glmnetInstalled()
+if exist('glmnetMex', 'file') == 3
   [bestModel, path] = linregFitPathCv(Xtrain, ytrain, 'regtype', 'l2',  'preproc', pp,...
-    'nfolds', nfolds);
+    'nfolds', nfolds, 'options', glmnetDemoOptions());
   figure;
   %plot(path.errMean)
   plot(path.cvErr)
+else
+  warning('PMTK:OptionalNativeDependency', 'GLMnet is unavailable; skipping only its optional path-algorithm comparison.');
 end
 
 
@@ -186,4 +189,3 @@ xlabel('log lambda')
 legend('negative log marg. likelihood', 'CV estimate of MSE')
 set(gca, 'xlim', [-20 5])
 printPmtkFigure(sprintf('polyfitRidgeModelSelCVEB'))
-

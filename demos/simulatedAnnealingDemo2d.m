@@ -50,7 +50,7 @@ for i=1:length(Ns)
     xlabel('x'); ylabel('y')
     %view(-37,34);
     title(sprintf('iteration %d, temperature %5.3f', T, temperature));
-    set(get(gca, 'child'), 'FaceColor', 'interp', 'CDataMode', 'auto');
+    setHeightColorsPMTK(get(gca, 'children'));
     printPmtkFigure(sprintf('sim_anneal_samples%d', i));  
 
     ft = exp(-energySurface/temperature);
@@ -87,4 +87,3 @@ keyboard
     end
 
 end
-

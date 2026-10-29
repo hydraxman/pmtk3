@@ -2,10 +2,9 @@ function graphviz(adj, varargin)
 % Calls graphviz to generate a pretty layout of an adjacency matrix
 % You must first install graphviz from http://www.graphviz.org/
 % This function converts the adjmat to a .dot file,
-% and then calls graphviz to generate a .ps file.
-% Finally we convert this to a .pdf file.
+% and then calls Graphviz's native PDF exporter.
 % Unlike graphviz4matlab (from http://code.google.com/p/graphviz4matlab/)
-% we do not display the figure in Matlab.
+% by default we do not display the figure in Matlab.
 % This simplifies the code a lot!
 %
 % graphviz(adjMat, ...)  where ... are optional arguments
@@ -16,7 +15,9 @@ function graphviz(adj, varargin)
 % removeIsolatedNodes - [1]
 % filename - name for output file [default foo.pdf]
 % directed - [default: determine from symmetry of adj] 
-% landscape - [default 1]
+% landscape - rotate the PDF page [default 1]; PNG previews stay upright
+% preview - also render a PNG and display it in a figure [default 0]
+% engine - reviewed Graphviz layout executable [default dot]
 %
 %
 % Examples
@@ -59,10 +60,17 @@ http://www.graphviz.org/content/dot-language
 
 %}
 
-[labels, removeSelfLoops, removeIsolatedNodes, filename, directed, landscape] = ...
+[labels, removeSelfLoops, removeIsolatedNodes, filename, directed, landscape, preview, engine] = ...
     process_options(varargin,  ...
 		    'labels', [], 'removeSelfLoops', 1, ...
-		    'removeIsolatedNodes', 0, 'filename','tmp', 'directed', [], 'landscape', 1);
+		    'removeIsolatedNodes', 0, 'filename','tmp', 'directed', [], 'landscape', 1, 'preview', false, 'engine', 'dot');
+
+if ~ischar(filename) || isempty(filename) || any(filename == '"')
+    error('PMTK:GraphvizFilename', 'Expected a nonempty filename prefix without embedded quotes.');
+end
+if ~ischar(engine) || ~any(strcmp(engine, {'dot', 'neato', 'fdp', 'sfdp', 'circo', 'twopi'}))
+    error('PMTK:GraphvizEngine', 'Expected a supported Graphviz layout engine.');
+end
 
 if removeSelfLoops
   adj = setdiag(adj, 0); 
@@ -129,40 +137,20 @@ graph_to_dot(adj, 'directed', directed, ...
   'filename', tmpDOTfile, 'node_label', labels);
 
 
-dot_to_ps(tmpDOTfile, sprintf('%s.ps', filename), landscape);
-  
-
-if ~isempty(filename)
-  if ismac
-    str = '/usr/local/bin/ps2pdf';
-  else
-    str = 'ps2pdf';
-  end
-  cmd = sprintf('%s %s.ps %s.pdf', str, filename, filename);
-  status = system(cmd);
-  if status ~= 0
-    error(sprintf('error executing %s', cmd));
-  end
-  
-  
-  cmd = sprintf('rm %s.ps', filename);
-  status = system(cmd);
-  if status ~= 0
-    error(sprintf('error executing %s', cmd));
-  end
-  
- 
-  cmd = sprintf('rm %s.dot', filename);
-  status = system(cmd);
-  if status ~= 0
-    error(sprintf('error executing %s', cmd));
-  end
- 
+dot_to_output(tmpDOTfile, sprintf('%s.pdf', filename), landscape, 'pdf', engine);
+if preview
+  previewFile = sprintf('%s.png', filename);
+  dot_to_output(tmpDOTfile, previewFile, false, 'png', engine);
+  [pixels, map] = imread(previewFile);
+  figure('Units', 'pixels', 'Position', [100 100 1200 900]);
+  image(pixels);
+  if ~isempty(map), colormap(map); end
+  axis image off;
 end
 
 end
 
-function status = dot_to_ps(dotname, outname, landscape)
+function status = dot_to_output(dotname, outname, landscape, format, engine)
 
                
 % Useful options:
@@ -183,23 +171,19 @@ function status = dot_to_ps(dotname, outname, landscape)
 % http://www.graphviz.org/doc/info/attrs.html
 
  %opts = ' -Gconcentrate -Gratio=.707 -Ncolor="blue" -Ecolor="green" -Earrowsize=2 -Nstyle="filled" -Nfillcolor="#ddddff" -Nfontsize=40 ';
- opts = '-Gconcentrate  -Gratio=0.707 -Earrowsize=2 -Nfontsize=50 -Epenwidth=5';
+ opts = '-Gconcentrate=true -Gratio=0.707 -Earrowsize=2 -Nfontsize=50 -Epenwidth=5';
 if landscape
-    opts = strcat(opts,' -Glandscape ');
+    opts = strcat(opts,' -Glandscape=true ');
 end
 
-if ismac
-  dotstr = '/usr/local/bin/dot';
-else
-  dotstr = 'dot';
-end
+dotstr = engine;
 %cmd = strcat('C:\temp\graphviz-2.8\bin\dot ',opts,' -T ps -o graphVizIt.ps graphVizIt.txt ')
-cmd = sprintf('%s %s -Tps %s -o %s', dotstr, opts, dotname, outname);
+cmd = sprintf('%s %s -T%s "%s" -o "%s"', dotstr, opts, format, dotname, outname);
 %cmd = sprintf('dot -Tps %s -o %s', dotname, outname);
 %cmd = sprintf('dot %s -Tpng %s -o %s', opts, dotname, outname);
 status = system(cmd);
 if status ~= 0
-  error(sprintf('error executing %s', cmd));
+  error('PMTK:GraphvizRender', 'Graphviz failed (%d): %s', status, cmd);
 end
 end
   

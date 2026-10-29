@@ -24,7 +24,7 @@ annotation(gcf, ...
     'FontSize'      , 30             ,...
     'String'        , {'\alpha/2'}   );
 
-uistack(h, 'top');
+uistackPMTK(h, 'top');
 printPmtkFigure centralInterval;
 %%
 figure;
@@ -34,6 +34,6 @@ shade(f, 0, -1.5, 1.5, 'b', 0.005);
 shade(f, 0,  4.5, 7.5, 'b', 0.005);
 line([-4;10], [f(-1.5), f(-1.5)], 'Color', 'b', 'LineWidth', 2);
 set(gca,'XTick', [], 'YTick', f(-1.5), 'YTickLabel', 'pMIN', 'fontsize', 20);
-uistack(h, 'top');
+uistackPMTK(h, 'top');
 printPmtkFigure HPD;
 end

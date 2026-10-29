@@ -32,7 +32,7 @@ else
 end
 shading interp;
 camlight right;
-lighting phong;
+lightingPMTK('phong');
 %view([-32 50]);
 set(gca, 'xtick', 0:0.5:1, 'ytick', 0:0.5:1);
 if useLog
@@ -44,4 +44,3 @@ title(sprintf('%s=%3.2f', '\alpha', model.alpha))
 printPmtkFigure(sprintf('DirSimplex%d', model.alpha*10))
 
 end
-

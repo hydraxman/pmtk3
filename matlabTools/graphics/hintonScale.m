@@ -20,7 +20,7 @@ function [] = hintonScale(varargin)
     if(numel(varargin) > 1)
       if(numel(varargin{2}) == 2)
         [imap, ititle] = process_options(varargin{2}, 'map', 'Jet', 'title', '');
-        map{1,:} = imap; plotTitle{1,:} = ititle;
+        map{1,1} = imap; plotTitle{1,1} = ititle;
       end
       passargs = varargin{2};
       hintonScaleSingle(X, W, passargs{:});
@@ -36,7 +36,7 @@ function [] = hintonScale(varargin)
     localMinW = zeros(nplots,1); localMaxW = zeros(nplots,1);
     for i=1:nplots
       [imap, ititle] = process_options(varargin{2*i}, 'map', 'Jet', 'title', '');
-      map{i,:} = imap; plotTitle{i,:} = ititle;
+      map{i,1} = imap; plotTitle{i,1} = ititle;
       allX{i} = varargin{2*i-1}{1};
       localMinX(i) = min(min(allX{i})); localMaxX(i) = max(max(allX{i}));
       if(numel(varargin{2*i-1}) > 1)

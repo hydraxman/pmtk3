@@ -13,14 +13,13 @@ plotMarginal();
 plotConditional();
 annotate();
     function plot2d()
-        f = @(X)gaussProb(X, mu, sigma);
         [x,y] = meshgrid(-0.2:0.005:1.2, -0.2:0.005:1.2);
         [r, c]=size(x);
         data = [x(:) y(:)];
-        p = f(data);
+        p = gaussProb(data, mu, sigma);
         p = reshape(p, r, c);
         mainAx = axes('Parent', fig, 'Position', [0.3, 0.35, 0.65, 0.57]);
-        contour('Parent', mainAx, x, y, p, 'r', ...
+        contour(mainAx, x, y, p, 'r', ...
             'LineWidth', 2, 'LevelList', [4 11 15]);
         axis([0.2, 0.8, 0.2, 0.8]);
         removeTicks();
@@ -28,10 +27,9 @@ annotate();
         hold on;
     end
     function plotMarginal()
-        fmarge = @(x)gaussProb(x, mu(1), sigma(2, 2).^2);
         margeAx = axes('Parent', fig, 'Position', [0.3,0.02,0.65,0.25]);
         res = 0.45:0.0001:0.55;
-        plot(res,fmarge(res), '-b', 'LineWidth', 2, 'Parent', margeAx);
+        plot(res,gaussProb(res, mu(1), sigma(2, 2).^2), '-b', 'LineWidth', 2, 'Parent', margeAx);
         axis([0.45, 0.55, 0, 40]);
         removeTicks();
         title('P(x)', 'FontSize', 13);
@@ -40,10 +38,9 @@ annotate();
         %p(x2|x1 = 0.4
         mu_cond = mu(2) + sigma(2,1)*(sigma(1,1)^(-1))*(0.4 - mu(1));
         sigma_cond = sigma(2,2) - sigma(2,1)*(sigma(1,1)^(-1))*sigma(1,2);
-        fcond = @(x)gaussProb(x, mu_cond, sigma_cond.^2);
         condAx = axes('Parent', fig, 'Position', [0.05 0.35 0.22 0.57]);
         res = 0.43:0.001:0.465;
-        plot(res, fcond(res), 'g', 'LineWidth', 2, 'Parent', condAx);
+        plot(res, gaussProb(res, mu_cond, sigma_cond.^2), 'g', 'LineWidth', 2, 'Parent', condAx);
         axis([0.43, 0.46, 0, 80]);
         removeTicks();
         view([90 90]);
@@ -52,14 +49,13 @@ annotate();
     function annotate()
         annotation(fig, 'arrow', ...
             [0.8938 0.8938], [0.8904 0.387], 'LineWidth', 2);
-        annotation(fig, 'textbox', 'String', {'\Sigma'},...
-            'FontSize', 30, 'FitBoxToText', 'off', 'LineStyle', 'none',...
-            'Position', [0.82 0.4991 0.03025 0.07531]);
+        annotation(fig, 'textbox', [0.82 0.4991 0.03025 0.07531], 'String', {'\Sigma'},...
+            'FontSize', 30, 'FitBoxToText', 'off', 'LineStyle', 'none');
         annotation(fig, 'line', ...
             [0.4382 0.4382], [0.8571 0.373], 'LineStyle',':');
-        annotation(fig, 'textbox', 'String', ...
+        annotation(fig, 'textbox', [0.4274 0.8704 0.02331 0.04904], 'String', ...
             {'X_0'}, 'FontSize', 14, 'FitBoxToText','off', ...
-            'LineStyle','none','Position',[0.4274 0.8704 0.02331 0.04904]);
+            'LineStyle','none');
         annotation(fig, 'arrow', ...
             [0.4306 0.3125], [0.8501 0.8529], 'LineWidth', 2);
     end

@@ -20,7 +20,7 @@ trainType = 'pseudo'; % set to 'pseudo' for pseudo-likelihood, 'loopy' for loopy
 testType = 'exact'; % set to 'loopy' to test with loopy belief propagation, 'exact' for exact inference
 structureSeed = 0; % change this to generate different structures
 trainSeed = 0; % vary seed from 0:9 to get paper results
-useMex = 1; % use mex files in UGM to speed things up
+useMex = ~exist('OCTAVE_VERSION', 'builtin');
 
 % Regularization Parameters
 lambdaNode = 10; 

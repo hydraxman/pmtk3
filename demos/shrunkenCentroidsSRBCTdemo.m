@@ -24,7 +24,7 @@ for i=1:length(lambdas)
     yhatTest = predictFn(model, Xtest);
     errTrain(i) = sum(zeroOneLossFn(yhatTrain, ytrain))/nTrain;
     errTest(i) = sum(zeroOneLossFn(yhatTest, ytest))/nTest;
-    numgenes(i) = sum(model.shrunkenCentroids(:) ~= 0);
+    numgenes(i) = sum(any(model.shrunkenCentroids ~= 0, 1));
 end
 
 figure;
@@ -47,11 +47,13 @@ useSErule = false;
   figure;
 lambda = lambdas;
 xticklam=[1:8];
-xtickNgenes = numgenes(round(linspace(1,length(numgenes), length(xticklam))));
+geneTickIndices = round(linspace(1,length(numgenes), length(xticklam)));
+xtickNgenes = numgenes(geneTickIndices);
 axisH=axes;
-set(axisH,'xlabel',xlabel('Number of Genes'),'layer','top',...
-  'xaxislocation','top','xlim',[xticklam(1) xticklam(end)],'xminortick','on',...
-  'ytick',[],'yticklabel',[],'xticklabel',xtickNgenes,'xtick',xticklam);
+set(axisH,'layer','top',...
+  'xaxislocation','top','xlim',[0 lambda(end)],'xminortick','on',...
+  'ytick',[],'yticklabel',[],'xtick',lambda(geneTickIndices),'xticklabel',xtickNgenes);
+xlabel(axisH, 'Number of Genes');
 hold on
 axes('position',get(axisH,'position'),'xminortick','on','xtick',xticklam,'xticklabel',xticklam,'layer','bottom')
 hold on
@@ -67,7 +69,7 @@ ylabel('Misclassification Error','position',[-0.7 0.49 1.001])
 legend( 'Test', 'Train', 'CV', 'Location', 'Best');
 bestNdx  = find(bestDelta==lambdas);
 fprintf('best lambda=%5.3f, ngenes = %d\n', bestDelta, numgenes(bestNdx));
-line([bestDelta bestDelta], [0 1]);
+line([bestDelta bestDelta], [0 1], 'HandleVisibility', 'off');
 printPmtkFigure('shrunkenCentroidsErrVsLambda')
   
 %% Plot centroids
@@ -85,5 +87,3 @@ for g=1:numGroups
     hold off;
     printPmtkFigure(sprintf('shrunkenCentroidsClass%d', g))
 end
-
-

@@ -61,7 +61,11 @@ axis off
 minA = 0.1; maxA = 50; % modified by KPM
 %title('2d Dirichlet Distribution Visualization Tool');
 set(MYFIG, 'Visible', 'on', 'NumberTitle', 'off', 'Name', 'visDirichletGui - Jonathan Huang');
-set(MYFIG, 'DoubleBuffer', 'on');	
+if isprop(MYFIG, 'DoubleBuffer')
+    set(MYFIG, 'DoubleBuffer', 'on');
+else
+    warning('PMTK:LegacyDoubleBuffer', 'The current graphics backend manages buffering without the legacy DoubleBuffer property.');
+end
 SIMPLEXHANDLE =trisurf(D,tris(:,1),tris(:,2),tris(:,3),'LineStyle','none', ...
         'Cdata',map,'FaceColor','interp');
 %{

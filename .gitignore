@@ -1,1 +1,9 @@
 *.pyc
+.demo-runtime/
+demo-results/
+demo-results-integration/
+pmtksupportCopy/packages/
+data/recovered/
+__pycache__/
+infoOnDataSets.html
+*.tsbuildinfo

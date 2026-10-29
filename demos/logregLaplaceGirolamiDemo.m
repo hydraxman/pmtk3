@@ -84,8 +84,6 @@ wmle(1)/wmle(2)
 line([0 wmle(1)], [0 wmle(2)], 'linewidth', 2);
 printPmtkFigure('logregLaplaceGirolamiNLL')
 
-dbstop
-
 figure;
 contour(w1,w2,reshape(-Log_Joint,[n,n]),30);
 title('Log-Unnormalised Posterior', 'fontsize', fs)

@@ -1,0 +1,10 @@
+diff --git a/graphViz4Matlab/layouts/Abstractlayout.m b/graphViz4Matlab/layouts/Abstractlayout.m
+--- a/graphViz4Matlab/layouts/Abstractlayout.m
++++ b/graphViz4Matlab/layouts/Abstractlayout.m
+@@ -53,4 +53,5 @@
+    methods(Abstract = true, Access = 'protected')
+-       calcLayout(obj);     % do the actual work
++       function calcLayout(obj)
++       end
+    end
+     

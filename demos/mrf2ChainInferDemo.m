@@ -10,7 +10,7 @@ adj = chainAdjMatrix(nNodes);
 nStates = 7*ones(1,nNodes);
 
 initial = [.3 .6 .1 0 0 0 0];
-nodePot = zeros(nNodes,nStates);
+nodePot = zeros(nNodes,max(nStates));
 nodePot(1,:) = initial;
 nodePot(2:end,:) = 1;
 
@@ -51,4 +51,3 @@ map =  mrf2Map(model, clamped)
 setSeed(0);
 samples = mrf2Sample(model, 100, clamped);
 figure; imagesc(samples); colorbar;
-

@@ -75,7 +75,7 @@ axis([-5 5 -2 1.5])
 axis('square')
 set(gca,'XTick',[-4 0 4]);
 set(gca,'YTick',[-1 0 1]);
-hh=legend('\sigma = 10','\sigma = 3','\sigma = 1',2);
+hh=legend('\sigma = 10','\sigma = 3','\sigma = 1','Location','northwest');
 set(hh,'FontSize',20)
 hold off
 %set(hh,'PaperPosition', [0.25 2.5 8 6])

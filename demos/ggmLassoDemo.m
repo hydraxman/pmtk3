@@ -20,8 +20,13 @@ for i=1:L
     A = precmatToAdjmat(P, 1e-9);
     nedges(i) = sum(A(:))/2;
     ttl=sprintf('lambda=%3.2f, nedges=%d', lambda, nedges(i));
-    g = drawNetwork('-adjMat', A, '-undirected', true, ...
-        '-nodeLabels', labels, '-layout', Circlelayout());
+    if exist('OCTAVE_VERSION', 'builtin') && exist('dynamicprops', 'class') ~= 8
+        plotGraphvizStatic(A, labels, 'directed', false, 'engine', 'circo', ...
+            'filename', sprintf('glasso-sachs-%d', lambda));
+    else
+        g = drawNetwork('-adjMat', A, '-undirected', true, ...
+            '-nodeLabels', labels, '-layout', Circlelayout());
+    end
     title(ttl)
     %figure; imagesc(P); colorbar; title(ttl);
     precMat{i} = P;

@@ -35,7 +35,7 @@ CPDs = dgm.CPDs;
 G    = dgm.G; 
 query = num2cell(1:ndiseases); 
 methods = {'libdaiJtree', 'varelim', 'jtree'};
-if ~libdaiInstalled
+if ~isLibdaiInstalled()
   methods = setdiff(methods, 'libdaiJtree');
 end
 nmethods = numel(methods); 
@@ -50,4 +50,3 @@ for i=1:nmethods
     fprintf('%s:%g seconds\n', methods{i}, t); 
 end
 assert(tfequal(bels{:})); 
-

@@ -97,8 +97,8 @@ end
 function annotate
     annotation(mainFig,'arrow',[px(left+1),px(right-1)],[py(0),py(0)],'LineWidth',1.5);
     annotation(mainFig,'arrow',[px(0), px(0)],[py(bottom+1),py(top-1)],'LineWidth',1.5);
-    annotation(mainFig,'textbox','String',{'w_1'},'FontWeight','bold','FontSize',12,'FontName','Arial','FitHeightToText','off','LineStyle','none','Position',[px(right-1.5) py(-0.5) 0.04 0.04]);
-    annotation(mainFig,'textbox','String',{'w_2'},'FontWeight','bold','FontSize',12,'FontName','Arial','FitHeightToText','off','LineStyle','none','Position',[px(-0.4) py(top-1.5) 0.04 0.04]);
+    annotation(mainFig,'textbox',[px(right-1.5) py(-0.5) 0.04 0.04],'String',{'w_1'},'FontWeight','bold','FontSize',12,'FontName','Arial','FitBoxToText','off','LineStyle','none');
+    annotation(mainFig,'textbox',[px(-0.4) py(top-1.5) 0.04 0.04],'String',{'w_2'},'FontWeight','bold','FontSize',12,'FontName','Arial','FitBoxToText','off','LineStyle','none');
 end
 
 end

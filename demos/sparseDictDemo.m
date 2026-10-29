@@ -8,14 +8,18 @@
 
 %PMTKslow
 
+if exist('mexTrainDL', 'file') ~= 3
+  error('PMTK:MissingNativeDependency', 'This demo requires a compatible native SPAMS mexTrainDL extension.');
+end
+
 clear all;
 methods = {'SPCA1', 'SPCA2', 'SC', 'PCA', 'NMF'};
 %methods = {'SC'};
 p=64; % number of basis vectors
 
 if 1
-  loadFolder('pmtkImages') % for lena
-  I=double(imread('lena.png'))/255;
+  imageFolder = loadFolder('pmtkImages');
+  I=double(imread(fullfile(imageFolder, 'lena.png')))/255;
   %X=mexExtractPatches(I,12);
   X=im2col(I,[12 12],'sliding'); % 144*251,001
   X = X(:, 1:100000);  % save some space

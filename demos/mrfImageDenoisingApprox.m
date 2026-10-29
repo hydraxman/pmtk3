@@ -7,9 +7,8 @@
 % This file is from pmtk3.googlecode.com
 
 
-if ~libdaiInstalled
-    fprintf('cannot run %s without libdai; skipping\n', mfilename());
-    return;
+if ~isLibdaiInstalled()
+    error('PMTK:MissingLibdai', '%s requires the native libdai extension.', mfilename());
 end
 requireImageToolbox
 setSeed(0); 

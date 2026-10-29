@@ -61,6 +61,7 @@ regFunObj = @(wv)penalizedL2(wv,funObj,lambdaFull);
 
 % Optimize
 options.display = 'off';  
+options.useMex = exist('lbfgsC', 'file') == 3 && exist('mcholC', 'file') == 3;
 %[wv] = minFunc(regFunObj,wv, options);
 [wv] = minimizer(regFunObj,wv, options);
 [w,v] = UGM_splitWeights(wv,infoStruct);
