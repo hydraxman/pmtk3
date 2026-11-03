@@ -47,6 +47,7 @@ try {
     $email = (Invoke-Checked git @('var', 'GIT_AUTHOR_IDENT')) -replace '^.*<([^>]+)>.*$', '$1'
     Invoke-Checked git @('-C', $checkout, 'config', 'user.name', $name)
     Invoke-Checked git @('-C', $checkout, 'config', 'user.email', $email)
+    Invoke-Checked git @('-C', $checkout, 'config', 'core.autocrlf', 'false')
     # Remove only tracked publishing files in this newly owned, dedicated checkout.
     if ($existing) { Invoke-Checked git @('-C', $checkout, 'rm', '-r', '--quiet', '--ignore-unmatch', '.') }
     Write-Host 'Copying the verified static gallery with bounded parallel file I/O.'
@@ -59,8 +60,14 @@ try {
     Invoke-Checked git @('-C', $checkout, 'push', '--quiet', 'origin', 'HEAD:gh-pages')
     $hasPages = (Invoke-Checked gh @('api', "repos/$repository", '--jq', '.has_pages')).Trim()
     $method = if ($hasPages -eq 'true') { 'PUT' } else { 'POST' }
-    Invoke-Checked gh @('api', '--method', $method, "repos/$repository/pages",
-        '-f', 'build_type=legacy', '-f', 'source[branch]=gh-pages', '-f', 'source[path]=/', '--silent')
+    $configure = & gh api --method $method "repos/$repository/pages" -f 'build_type=legacy' -f 'source[branch]=gh-pages' -f 'source[path]=/' --silent 2>&1
+    if ($LASTEXITCODE -ne 0) {
+        if ($method -eq 'POST' -and ($configure | Out-String) -match 'HTTP 409') {
+            Write-Host 'GitHub activated Pages automatically after the branch push; updating its source.'
+            Invoke-Checked gh @('api', '--method', 'PUT', "repos/$repository/pages",
+                '-f', 'build_type=legacy', '-f', 'source[branch]=gh-pages', '-f', 'source[path]=/', '--silent')
+        } else { throw "Pages configuration failed: $($configure | Out-String)" }
+    }
     $site = (Invoke-Checked gh @('api', "repos/$repository/pages", '--jq', '.html_url')).Trim()
     Write-Host "Waiting for GitHub Pages: $site"
     $live = $false
