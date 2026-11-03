@@ -38,7 +38,7 @@ try {
     Write-Host "Preparing isolated publishing checkout: $checkout"
     $existing = Invoke-Checked git @('ls-remote', '--heads', $remote, 'gh-pages')
     if ($existing) {
-        Invoke-Checked git @('clone', '--quiet', '--single-branch', '--branch', 'gh-pages', $remote, $checkout)
+        Invoke-Checked git @('clone', '--config', 'core.autocrlf=false', '--quiet', '--single-branch', '--branch', 'gh-pages', $remote, $checkout)
     } else {
         Invoke-Checked git @('init', '--quiet', '--initial-branch=gh-pages', $checkout)
         Invoke-Checked git @('-C', $checkout, 'remote', 'add', 'origin', $remote)
