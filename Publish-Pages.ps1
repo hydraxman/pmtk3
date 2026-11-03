@@ -35,6 +35,7 @@ try {
     $manifest = Get-Content -LiteralPath (Join-Path $output 'publication.json') -Raw | ConvertFrom-Json
     if ($manifest.sourceCommit -ne $source) { throw 'Published provenance does not match the committed source.' }
     $checkout = Join-Path $root ('.demo-runtime\pages-publish-' + [guid]::NewGuid().ToString('N'))
+    Write-Host "Preparing isolated publishing checkout: $checkout"
     $existing = Invoke-Checked git @('ls-remote', '--heads', $remote, 'gh-pages')
     if ($existing) {
         Invoke-Checked git @('clone', '--quiet', '--single-branch', '--branch', 'gh-pages', $remote, $checkout)
@@ -48,10 +49,13 @@ try {
     Invoke-Checked git @('-C', $checkout, 'config', 'user.email', $email)
     # Remove only tracked publishing files in this newly owned, dedicated checkout.
     if ($existing) { Invoke-Checked git @('-C', $checkout, 'rm', '-r', '--quiet', '--ignore-unmatch', '.') }
-    foreach ($file in $files) { Copy-Item -LiteralPath $file.FullName -Destination $checkout -Recurse -Force }
+    Write-Host 'Copying the verified static gallery with bounded parallel file I/O.'
+    & robocopy $output $checkout /E /COPY:DAT /DCOPY:DAT /R:1 /W:1 /MT:16 /NFL /NDL /NJH /NJS /NP
+    if ($LASTEXITCODE -ge 8) { throw "Static gallery copy failed (robocopy exit $LASTEXITCODE)." }
     Invoke-Checked git @('-C', $checkout, 'add', '--all')
     Invoke-Checked git @('-C', $checkout, 'commit', '--quiet', '-m', "Publish chapter gallery from $source", '-m',
         "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>`nCopilot-Session: f12e2020-1371-416c-8456-143583b68cfc")
+    Write-Host 'Pushing the dedicated gh-pages branch.'
     Invoke-Checked git @('-C', $checkout, 'push', '--quiet', 'origin', 'HEAD:gh-pages')
     $hasPages = (Invoke-Checked gh @('api', "repos/$repository", '--jq', '.has_pages')).Trim()
     $method = if ($hasPages -eq 'true') { 'PUT' } else { 'POST' }
