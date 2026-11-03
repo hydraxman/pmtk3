@@ -1,0 +1,12 @@
+:root {
+  --paper: #fcfbf7;
+  --ink: #23352c;
+  --green: #173d38;
+  --teal: #397a5b;
+  --gold: #b99a50;
+  --muted: #778073;
+  --line: #e3e5da;
+  --sans: "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+  --serif: "Iowan Old Style", "Palatino Linotype", "Noto Serif CJK SC", "Songti SC", "SimSun", Georgia, serif;
+  --mono: Consolas, "SFMono-Regular", monospace;
+}

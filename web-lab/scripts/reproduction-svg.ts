@@ -6,6 +6,17 @@ export function renderPlotSvg(plot: VisualPlot) {
   const xs = plot.traces.flatMap(trace => trace.x.map((value, i) => typeof value === 'number' ? value : i));
   const ys = plot.traces.flatMap(trace => trace.y);
   let xmin = Math.min(...xs), xmax = Math.max(...xs), ymin = Math.min(...ys), ymax = Math.max(...ys);
+  const grids = plot.traces.map(trace => {
+    if (trace.marker?.symbol !== 'square' || !trace.mode?.includes('markers') || !trace.x.every(value => typeof value === 'number')) return undefined;
+    const columns = [...new Set(trace.x)].sort((a, b) => a - b), rows = [...new Set(trace.y)].sort((a, b) => a - b);
+    if (columns.length < 2 || rows.length < 2 || columns.length * rows.length !== trace.x.length) return undefined;
+    const spacing = (coordinates: number[]) => Math.min(...coordinates.slice(1).map((value, i) => value - coordinates[i]));
+    const dx = spacing(columns), dy = spacing(rows);
+    // Include half a cell at the boundaries so dense grids cannot cover labels or axes.
+    xmin = Math.min(xmin, columns[0] - dx / 2); xmax = Math.max(xmax, columns.at(-1)! + dx / 2);
+    ymin = Math.min(ymin, rows[0] - dy / 2); ymax = Math.max(ymax, rows.at(-1)! + dy / 2);
+    return { dx, dy };
+  });
   if (plot.traces.some(trace => trace.type === 'bar')) { ymin = Math.min(0, ymin); ymax = Math.max(0, ymax); }
   if (xmin === xmax) { xmin -= .5; xmax += .5; }
   if (ymin === ymax) { ymin -= .5; ymax += .5; }
@@ -41,12 +52,16 @@ export function renderPlotSvg(plot: VisualPlot) {
       if (trace.mode?.includes('markers')) {
         const colors = trace.marker?.color, numerical = Array.isArray(colors) ? colors : undefined;
         const min = numerical ? Math.min(...numerical) : 0, max = numerical ? Math.max(...numerical) : 1;
+        const grid = grids[index];
+        const cellWidth = grid ? grid.dx / (xmax - xmin) * (right - left) : 0;
+        const cellHeight = grid ? grid.dy / (ymax - ymin) * (bottom - top) : 0;
         values.forEach((v, i) => {
           const fraction = numerical ? (numerical[i] - min) / (max - min || 1) : 0;
           const color = numerical ? `hsl(${250 - 200 * fraction} 65% 47%)` : typeof colors === 'string' ? colors : baseColor;
           if (trace.marker?.symbol === 'square') {
             const size = Math.max(2, Math.min(18, (right - left) / Math.sqrt(values.length)));
-            svg.push(`<rect x="${x(v) - size / 2}" y="${y(trace.y[i]) - size / 2}" width="${size}" height="${size}" fill="${color}"/>`);
+            const w = grid ? cellWidth : size, h = grid ? cellHeight : size;
+            svg.push(`<rect x="${x(v) - w / 2}" y="${y(trace.y[i]) - h / 2}" width="${w}" height="${h}" fill="${color}"/>`);
           } else svg.push(`<circle cx="${x(v)}" cy="${y(trace.y[i])}" r="3" fill="${color}" opacity=".8"/>`);
         });
       }

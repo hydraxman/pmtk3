@@ -42,6 +42,56 @@ an open-source Matlab clone.) However, in a few cases we also provide wrappers t
 As you can tell by the name, PMTK3 is the third version of PMTK. Older versions are obsolete, but are briefly described
 <a href = "https://github.com/probml/pmtk3/wiki/pmtkVersions">here</a>.
 
+## Chapter-based GitHub Pages
+
+**Open the visual learning atlas: https://hydraxman.github.io/pmtk3/**
+
+The static gallery presents 563 standalone learning routes (511 successful
+source-matched Octave originals and 52 separately labelled TypeScript
+reproductions), with full-size calculated figures, search, chapter navigation
+and mobile layouts. Each chapter includes independently authored concise
+Chinese notes, a representative formula, symbol explanations, prerequisites
+and questions to guide reading the plots. These notes are not copied or
+translated textbook chapters; refer to the
+[author's book page](https://probml.github.io/pml-book/book0.html) for the book.
+
+Only the 220 confirmed demo associations in `docs/demoOutput/bookDemos` form
+the 25 chapter groups. The 350 remaining source files have a separate section;
+editorial learning-topic suggestions are not asserted to be official chapter
+memberships. Nonvisual successes remain nonvisual, and alternative methods,
+synthetic data and old-framework failures remain explicit.
+
+```powershell
+cd web-lab
+npm run pages:build
+npm run pages:preview
+# Open http://127.0.0.1:4184/pmtk3/
+npm run pages:test
+```
+
+Building the **complete** gallery requires the local `demo-results/inventory.json`
+and its successful, current-source original figure captures. The build rejects
+missing/stale originals or incomplete learning coverage; it does not substitute
+historical screenshots. A clean source checkout can calculate the 52 independent
+reproductions using the local-laboratory instructions below, but obtaining all
+original captures requires the original runtime/data setup and execution.
+The Pages client itself requires no server, Python, MATLAB or Octave.
+
+To republish from the original-results machine, commit source changes, push
+the revision to this fork's `master`, then run `.\Publish-Pages.ps1` from the
+repository root while signed in to GitHub CLI as the personal fork owner.
+The script builds and checks the project-subpath site, pushes generated files
+non-forcibly to **`gh-pages`**, configures Pages branch publishing and waits for
+the matching public publication manifest. `PAGES_TEST_URL` can point the same
+browser checks at the deployed HTTPS site (include the trailing `/pmtk3/`).
+
+Site source lives in `web-lab/pages`, with the exporter in
+`web-lab/scripts/build-pages.ts`. Source/default branches do **not** contain
+generated output: only the dedicated publishing branch holds content-addressed
+PNG/SVG assets and minimal public JSON. Each demo links to immutable source and
+records source/image hashes. No runtime paths, raw logs, datasets, credentials
+or executables are copied into the public gallery.
+
 ## Local web laboratory
 
 ### Source-only checkout and recovered visual cases

@@ -18,6 +18,9 @@
     "test:parity": "tsx scripts/check-parity.ts",
     "test:queue": "tsx scripts/smoke-queue.ts",
     "reproduce": "tsx scripts/reproduce.ts",
+    "pages:build": "vite build --config vite.pages.config.ts && tsx scripts/build-pages.ts",
+    "pages:preview": "tsx scripts/preview-pages.ts",
+    "pages:test": "playwright test --config playwright.pages.config.ts",
     "test:full": "npm run build && npm test && npm run test:parity && npm run test:queue && npm run test:browser"
   },
   "dependencies": {

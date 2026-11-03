@@ -13,5 +13,5 @@
     "types": ["node", "vite/client"],
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src", "server", "shared", "tests", "scripts", "vite.config.ts", "playwright.config.ts"]
+  "include": ["src", "server", "shared", "tests", "scripts", "pages", "vite.config.ts", "vite.pages.config.ts", "playwright.config.ts", "playwright.pages.config.ts"]
 }

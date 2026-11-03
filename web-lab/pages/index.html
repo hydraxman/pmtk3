@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173d38">
+  <meta name="description" content="按章节探索 PMTK3 概率机器学习实验：真实计算图、独立可视化复现，以及简明中文数学说明。">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'">
+  <title>PMTK · 概率学习图谱</title>
+</head>
+<body>
+  <a class="skip" href="#main">跳到正文</a>
+  <header class="topbar">
+    <a href="#/" class="brand" aria-label="PMTK 概率学习图谱首页"><span class="brand-icon">p<span>(x)</span></span><span>PMTK<span class="brand-dot">.</span><small>概率学习图谱</small></span></a>
+    <nav aria-label="主导航"><a href="#/">探索</a><a href="#/chapter/2">章节</a><a href="#/about">关于图谱</a><a href="https://github.com/hydraxman/pmtk3" target="_blank" rel="noreferrer">GitHub ↗</a></nav>
+  </header>
+  <div class="layout">
+    <aside class="sidebar"><button id="menu-toggle" type="button" aria-expanded="false" aria-controls="chapter-nav">章节目录 <span>☰</span></button>
+      <div id="chapter-nav"><p class="eyebrow">THE LEARNING MAP</p><a class="all-link" href="#/">全部实验 <span id="total-badge">…</span></a><nav id="chapters" aria-label="书籍章节"></nav>
+      <a href="#/chapter/unmapped" class="unmapped-link">其他 · 未确认章节归属 ↗</a><p class="sidebar-note">依据原项目发布目录归类。<br>数学速记为独立编写的导读。</p></div>
+    </aside>
+    <main id="main" tabindex="-1"><p class="loading" role="status">正在展开学习图谱…</p></main>
+  </div>
+  <footer class="footer"><span>PMTK · 看见概率，理解学习。</span><p>基于 Kevin Murphy 与 Matt Dunham 等作者的 PMTK3。本站说明为独立学习笔记，不是书籍正文或逐页复刻。</p><a href="#/about">来源、复现范围与许可 ↗</a></footer>
+  <script type="module" src="./main.ts"></script>
+</body>
+</html>
