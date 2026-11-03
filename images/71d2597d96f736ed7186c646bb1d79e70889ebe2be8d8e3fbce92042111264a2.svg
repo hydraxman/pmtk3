@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Euclidean k-means centroids of row-standardized profiles">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Euclidean k-means centroids of row-standardized profiles</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-1.549</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-0.9296</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.2</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-0.3099</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.4</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.3098</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.6</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.9294</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.8</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1.549</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Cluster 1</text>
+<polyline points="85,296.4986289595654 164.54545454545456,187.57426785233804 244.0909090909091,116.6257291491641 323.6363636363636,96.54649965749451 403.1818181818182,141.91541491829224 482.7272727272727,247.85998566321382 562.2727272727273,347.1159600859371 641.8181818181818,446.9483145197391 721.3636363636364,481.86382385114894 800.909090909091,470.7833915961005 880.4545454545454,391.39281252308274 960,284.7378050586681" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Cluster 2</text>
+<polyline points="85,500 164.54545454545456,464.7464110971332 244.0909090909091,420.9431848340506 323.6363636363636,384.19791549183594 403.1818181818182,357.18376491218436 482.7272727272727,319.9906862884061 562.2727272727273,269.0155440267242 641.8181818181818,236.10612748522414 721.3636363636364,194.20120568367184 800.909090909091,166.5911709570571 880.4545454545454,111.88662305845679 960,85" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">Cluster 3</text>
+<polyline points="85,132.5238932692181 164.54545454545456,154.1403220795466 244.0909090909091,226.2470636938511 323.6363636363636,328.69497002625155 403.1818181818182,422.03895877064974 482.7272727272727,474.507553288021 562.2727272727273,483.6869950777714 641.8181818181818,436.33547167234957 721.3636363636364,336.37622495447806 800.909090909091,238.20883397582412 880.4545454545454,152.62728809571792 960,124.47505893106523" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Synthetic time</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Standardized expression</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

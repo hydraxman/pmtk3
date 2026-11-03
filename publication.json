@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-11-03T01:15:06.537Z",
+  "sourceCommit": "7afe0bdff9fccb83474a4d13f7e0518a369bc863",
+  "sources": 570,
+  "runnable": 563,
+  "originalSuccesses": 511,
+  "reproductions": 52,
+  "mapped": 220,
+  "unmapped": 350,
+  "uniqueImages": 2521,
+  "chapterCount": 25,
+  "imageBytes": 62607629,
+  "provenance": "Actual source-matched successful Octave captures and newly computed TypeScript reproductions at seed 42. No historical screenshot substitution.",
+  "chapterPolicy": "Official published-output directory associations only. Other topic links are explicitly editorial study suggestions.",
+  "contents": "Original chapter summaries; no textbook text, private runtime paths, raw datasets, logs, credentials or executables."
+}

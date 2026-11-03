@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Conditional node marginals at five states">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Conditional node marginals at five states</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-5.5</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-0.5</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-4.3</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.5</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-3.1</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.5</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">-1.9</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.5</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">-0.7</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.5</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.5</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4.5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Conditional node marginals at </text>
+<rect x="85" y="85.00000000000004" width="175" height="69.16666666666666" fill="hsl(198.2190313159275 65% 47%)"/>
+<rect x="260" y="85.00000000000004" width="175" height="69.16666666666666" fill="hsl(194.71278879106507 65% 47%)"/>
+<rect x="435" y="85.00000000000004" width="175" height="69.16666666666666" fill="hsl(223.1243568657812 65% 47%)"/>
+<rect x="610" y="85.00000000000004" width="175" height="69.16666666666666" fill="hsl(215.90486448830407 65% 47%)"/>
+<rect x="785" y="85.00000000000004" width="175" height="69.16666666666666" fill="hsl(218.03895853892215 65% 47%)"/>
+<rect x="85" y="154.16666666666669" width="175" height="69.16666666666666" fill="hsl(208.4766891129151 65% 47%)"/>
+<rect x="260" y="154.16666666666669" width="175" height="69.16666666666666" fill="hsl(208.3821230669286 65% 47%)"/>
+<rect x="435" y="154.16666666666669" width="175" height="69.16666666666666" fill="hsl(219.49984552192078 65% 47%)"/>
+<rect x="610" y="154.16666666666669" width="175" height="69.16666666666666" fill="hsl(221.28953475545882 65% 47%)"/>
+<rect x="785" y="154.16666666666669" width="175" height="69.16666666666666" fill="hsl(192.35180754277673 65% 47%)"/>
+<rect x="85" y="223.33333333333331" width="175" height="69.16666666666666" fill="hsl(211.533555522559 65% 47%)"/>
+<rect x="260" y="223.33333333333331" width="175" height="69.16666666666666" fill="hsl(219.26710009302562 65% 47%)"/>
+<rect x="435" y="223.33333333333331" width="175" height="69.16666666666666" fill="hsl(211.9421285125772 65% 47%)"/>
+<rect x="610" y="223.33333333333331" width="175" height="69.16666666666666" fill="hsl(201.41580324645284 65% 47%)"/>
+<rect x="785" y="223.33333333333331" width="175" height="69.16666666666666" fill="hsl(205.84141262538532 65% 47%)"/>
+<rect x="85" y="292.5" width="175" height="69.16666666666666" fill="hsl(219.51019132227495 65% 47%)"/>
+<rect x="260" y="292.5" width="175" height="69.16666666666666" fill="hsl(198.16515365021942 65% 47%)"/>
+<rect x="435" y="292.5" width="175" height="69.16666666666666" fill="hsl(212.30155034122407 65% 47%)"/>
+<rect x="610" y="292.5" width="175" height="69.16666666666666" fill="hsl(218.58246521543543 65% 47%)"/>
+<rect x="785" y="292.5" width="175" height="69.16666666666666" fill="hsl(201.4406394708461 65% 47%)"/>
+<rect x="85" y="361.6666666666667" width="175" height="69.16666666666666" fill="hsl(197.72052864627574 65% 47%)"/>
+<rect x="260" y="361.6666666666667" width="175" height="69.16666666666666" fill="hsl(208.62358410038493 65% 47%)"/>
+<rect x="435" y="361.6666666666667" width="175" height="69.16666666666666" fill="hsl(205.4008347190873 65% 47%)"/>
+<rect x="610" y="361.6666666666667" width="175" height="69.16666666666666" fill="hsl(231.0971222170376 65% 47%)"/>
+<rect x="785" y="361.6666666666667" width="175" height="69.16666666666666" fill="hsl(207.15793031721444 65% 47%)"/>
+<rect x="85" y="430.83333333333337" width="175" height="69.16666666666666" fill="hsl(50 65% 47%)"/>
+<rect x="260" y="430.83333333333337" width="175" height="69.16666666666666" fill="hsl(250 65% 47%)"/>
+<rect x="435" y="430.83333333333337" width="175" height="69.16666666666666" fill="hsl(250 65% 47%)"/>
+<rect x="610" y="430.83333333333337" width="175" height="69.16666666666666" fill="hsl(250 65% 47%)"/>
+<rect x="785" y="430.83333333333337" width="175" height="69.16666666666666" fill="hsl(250 65% 47%)"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Column</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Negative row index</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

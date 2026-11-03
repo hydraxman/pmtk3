@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Mixed-type imputation on 20% MCAR hidden cells">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Mixed-type imputation on 20% MCAR hidden cells</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.2052</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.6</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.4104</text>
+<text x="434.99999999999994" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.2</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">0.6156</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.8</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.8208</text>
+<text x="784.9999999999999" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.4</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1.026</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Standardized continuous RMSE</text>
+<rect x="43.984375" y="85" width="82.03125" height="415" fill="#078b80"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Mean/mode</text>
+<rect x="335.65104166666663" y="226.1844250147547" width="82.03125" height="273.8155749852453" fill="#078b80"/>
+<text x="376.66666666666663" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Mixed kNN 1</text>
+<rect x="627.3177083333333" y="290.3930242110556" width="82.03125" height="209.6069757889444" fill="#078b80"/>
+<text x="668.3333333333333" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Mixed kNN 5</text>
+<rect x="918.984375" y="324.0886277247501" width="82.03125" height="175.9113722752499" fill="#078b80"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Mixed kNN 10</text>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Categorical 0/1 error</text>
+<rect x="126.015625" y="303.65806874016164" width="82.03125" height="196.34193125983836" fill="#d67135"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Mean/mode</text>
+<rect x="417.68229166666663" y="437.17058199685175" width="82.03125" height="62.82941800314825" fill="#d67135"/>
+<text x="376.66666666666663" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Mixed kNN 1</text>
+<rect x="709.3489583333333" y="464.6584523732291" width="82.03125" height="35.341547626770875" fill="#d67135"/>
+<text x="668.3333333333333" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Mixed kNN 5</text>
+<rect x="1001.015625" y="476.4389682488194" width="82.03125" height="23.56103175118062" fill="#d67135"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Mixed kNN 10</text>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Normalized Gaussian kernel">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Normalized Gaussian kernel</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-6.5</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-0.5</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-5.1</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.9</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-3.7</text>
+<text x="434.99999999999994" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.3</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">-2.3</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.7</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">-0.9</text>
+<text x="784.9999999999999" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5.1</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.5</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">6.5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Normalized Gaussian kernel</text>
+<rect x="85" y="84.99999999999997" width="125" height="59.285714285714285" fill="hsl(250 65% 47%)"/>
+<rect x="210" y="84.99999999999997" width="125" height="59.285714285714285" fill="hsl(247.5008355897327 65% 47%)"/>
+<rect x="335" y="84.99999999999997" width="125" height="59.285714285714285" fill="hsl(242.45400324612268 65% 47%)"/>
+<rect x="460" y="84.99999999999997" width="125" height="59.285714285714285" fill="hsl(239.36977272038726 65% 47%)"/>
+<rect x="585" y="84.99999999999997" width="125" height="59.285714285714285" fill="hsl(242.45400324612268 65% 47%)"/>
+<rect x="710" y="84.99999999999997" width="125" height="59.285714285714285" fill="hsl(247.5008355897327 65% 47%)"/>
+<rect x="835" y="84.99999999999997" width="125" height="59.285714285714285" fill="hsl(250 65% 47%)"/>
+<rect x="85" y="144.2857142857143" width="125" height="59.285714285714285" fill="hsl(247.5008355897327 65% 47%)"/>
+<rect x="210" y="144.2857142857143" width="125" height="59.285714285714285" fill="hsl(235.1223932317845 65% 47%)"/>
+<rect x="335" y="144.2857142857143" width="125" height="59.285714285714285" fill="hsl(210.12526899339807 65% 47%)"/>
+<rect x="460" y="144.2857142857143" width="125" height="59.285714285714285" fill="hsl(194.84897519512134 65% 47%)"/>
+<rect x="585" y="144.2857142857143" width="125" height="59.285714285714285" fill="hsl(210.12526899339807 65% 47%)"/>
+<rect x="710" y="144.2857142857143" width="125" height="59.285714285714285" fill="hsl(235.1223932317845 65% 47%)"/>
+<rect x="835" y="144.2857142857143" width="125" height="59.285714285714285" fill="hsl(247.5008355897327 65% 47%)"/>
+<rect x="85" y="203.57142857142858" width="125" height="59.285714285714285" fill="hsl(242.45400324612268 65% 47%)"/>
+<rect x="210" y="203.57142857142858" width="125" height="59.285714285714285" fill="hsl(210.12526899339807 65% 47%)"/>
+<rect x="335" y="203.57142857142858" width="125" height="59.285714285714285" fill="hsl(144.84036777428457 65% 47%)"/>
+<rect x="460" y="203.57142857142858" width="125" height="59.285714285714285" fill="hsl(104.94332513434978 65% 47%)"/>
+<rect x="585" y="203.57142857142858" width="125" height="59.285714285714285" fill="hsl(144.84036777428457 65% 47%)"/>
+<rect x="710" y="203.57142857142858" width="125" height="59.285714285714285" fill="hsl(210.12526899339807 65% 47%)"/>
+<rect x="835" y="203.57142857142858" width="125" height="59.285714285714285" fill="hsl(242.45400324612268 65% 47%)"/>
+<rect x="85" y="262.85714285714283" width="125" height="59.285714285714285" fill="hsl(239.36977272038726 65% 47%)"/>
+<rect x="210" y="262.85714285714283" width="125" height="59.285714285714285" fill="hsl(194.84897519512134 65% 47%)"/>
+<rect x="335" y="262.85714285714283" width="125" height="59.285714285714285" fill="hsl(104.94332513434978 65% 47%)"/>
+<rect x="460" y="262.85714285714283" width="125" height="59.285714285714285" fill="hsl(50 65% 47%)"/>
+<rect x="585" y="262.85714285714283" width="125" height="59.285714285714285" fill="hsl(104.94332513434978 65% 47%)"/>
+<rect x="710" y="262.85714285714283" width="125" height="59.285714285714285" fill="hsl(194.84897519512134 65% 47%)"/>
+<rect x="835" y="262.85714285714283" width="125" height="59.285714285714285" fill="hsl(239.36977272038726 65% 47%)"/>
+<rect x="85" y="322.1428571428571" width="125" height="59.285714285714285" fill="hsl(242.45400324612268 65% 47%)"/>
+<rect x="210" y="322.1428571428571" width="125" height="59.285714285714285" fill="hsl(210.12526899339807 65% 47%)"/>
+<rect x="335" y="322.1428571428571" width="125" height="59.285714285714285" fill="hsl(144.84036777428457 65% 47%)"/>
+<rect x="460" y="322.1428571428571" width="125" height="59.285714285714285" fill="hsl(104.94332513434978 65% 47%)"/>
+<rect x="585" y="322.1428571428571" width="125" height="59.285714285714285" fill="hsl(144.84036777428457 65% 47%)"/>
+<rect x="710" y="322.1428571428571" width="125" height="59.285714285714285" fill="hsl(210.12526899339807 65% 47%)"/>
+<rect x="835" y="322.1428571428571" width="125" height="59.285714285714285" fill="hsl(242.45400324612268 65% 47%)"/>
+<rect x="85" y="381.4285714285714" width="125" height="59.285714285714285" fill="hsl(247.5008355897327 65% 47%)"/>
+<rect x="210" y="381.4285714285714" width="125" height="59.285714285714285" fill="hsl(235.1223932317845 65% 47%)"/>
+<rect x="335" y="381.4285714285714" width="125" height="59.285714285714285" fill="hsl(210.12526899339807 65% 47%)"/>
+<rect x="460" y="381.4285714285714" width="125" height="59.285714285714285" fill="hsl(194.84897519512134 65% 47%)"/>
+<rect x="585" y="381.4285714285714" width="125" height="59.285714285714285" fill="hsl(210.12526899339807 65% 47%)"/>
+<rect x="710" y="381.4285714285714" width="125" height="59.285714285714285" fill="hsl(235.1223932317845 65% 47%)"/>
+<rect x="835" y="381.4285714285714" width="125" height="59.285714285714285" fill="hsl(247.5008355897327 65% 47%)"/>
+<rect x="85" y="440.71428571428567" width="125" height="59.285714285714285" fill="hsl(250 65% 47%)"/>
+<rect x="210" y="440.71428571428567" width="125" height="59.285714285714285" fill="hsl(247.5008355897327 65% 47%)"/>
+<rect x="335" y="440.71428571428567" width="125" height="59.285714285714285" fill="hsl(242.45400324612268 65% 47%)"/>
+<rect x="460" y="440.71428571428567" width="125" height="59.285714285714285" fill="hsl(239.36977272038726 65% 47%)"/>
+<rect x="585" y="440.71428571428567" width="125" height="59.285714285714285" fill="hsl(242.45400324612268 65% 47%)"/>
+<rect x="710" y="440.71428571428567" width="125" height="59.285714285714285" fill="hsl(247.5008355897327 65% 47%)"/>
+<rect x="835" y="440.71428571428567" width="125" height="59.285714285714285" fill="hsl(250 65% 47%)"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Column</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Negative row index</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

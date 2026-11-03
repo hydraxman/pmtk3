@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Lloyd distortion histories">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Lloyd distortion histories</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0.000556</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.009723</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.01889</text>
+<text x="434.99999999999994" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">7.6</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.02806</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">11.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.03723</text>
+<text x="784.9999999999999" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">15.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.04639</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">19</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">K=2</text>
+<polyline points="85,85 131.05263157894737,426.20509626441674 177.10526315789474,426.3106772934302 223.1578947368421,426.32705392327404 269.2105263157895,426.3295971720129 315.2631578947368,426.3295971720129" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">K=4</text>
+<polyline points="85,452.6448335842457 131.05263157894737,470.4410065953339 177.10526315789474,478.5857750073859 223.1578947368421,484.20755069157406 269.2105263157895,486.46375092899103 315.2631578947368,487.45335745402866 361.3157894736842,487.8026134260593 407.36842105263156,487.9540224782017 453.4210526315789,488.0426268620547 499.4736842105263,488.0848610063928 545.5263157894736,488.13222786375974 591.578947368421,488.16725800693735 637.6315789473684,488.23022123248927 683.6842105263158,488.2809401859258 729.7368421052631,488.3541002906952 775.7894736842105,488.37683976975194 821.8421052631578,488.3790060407501 867.8947368421053,488.3790060407501" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">K=8</text>
+<polyline points="85,495.0081958253557 131.05263157894737,496.71101425089927 177.10526315789474,497.9174134364552 223.1578947368421,498.693919348183 269.2105263157895,499.3105027143563 315.2631578947368,499.63741679044495 361.3157894736842,499.74377273807215 407.36842105263156,499.82066211378805 453.4210526315789,499.885545580183 499.4736842105263,499.93736806492024 545.5263157894736,499.9698134790862 591.578947368421,499.9808490267294 637.6315789473684,499.98363580365674 683.6842105263158,499.98563484475125 729.7368421052631,499.9890794751468 775.7894736842105,499.99229686805006 821.8421052631578,499.99538551769274 867.8947368421053,499.9996910136534 913.9473684210526,500 960,500" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Lloyd iteration</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">MSE</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

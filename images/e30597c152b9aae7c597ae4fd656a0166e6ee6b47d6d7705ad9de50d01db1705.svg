@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Hidden continuous values versus mixed-kNN-5 predictions">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Hidden continuous values versus mixed-kNN-5 predictions</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-2.5</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-2.5</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-1.5</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-1.5</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-0.5</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-0.5</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.5</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.5</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">1.5</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.5</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">2.5</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Held-out cells</text>
+<circle cx="823.067954553896" cy="273.09446124091994" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="711.3794043979779" cy="207.1105795713271" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="772.7165024113584" cy="190.4955540124402" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="476.3117486871006" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="237.90568319408277" cy="407.60756834859967" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="260.2487787770791" cy="360.6876354628722" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="316.3327331327551" cy="347.3685384742347" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="448.2997663309615" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="738.515715534629" cy="197.16014764514125" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="243.8799822678792" cy="407.60756834859967" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="258.8779740414525" cy="407.60756834859967" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="666.917964317505" cy="211.89096758931163" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="562.4025628001245" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="422.7972969464856" cy="286.7269041191008" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="264.2149678821932" cy="370.26548532813575" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="775.2656361376017" cy="273.09446124091994" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="794.2610508622536" cy="213.73590277684804" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="264.89601059293005" cy="403.0710793788447" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="532.9862132212386" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="701.4748013581153" cy="240.16695888416717" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="695.3127995899831" cy="197.16014764514125" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="780.6221603933568" cy="216.26143959385433" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="716.3516196291846" cy="275.8137942544359" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="490.5542462103426" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="762.3107987240279" cy="224.7749216228775" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="527.4372358115147" cy="286.7269041191008" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="656.9989402247022" cy="197.16014764514125" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="462.5123232819701" cy="286.7269041191008" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="473.8331569486785" cy="226.28001271253248" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="349.08654468670437" cy="327.1576836792865" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="242.38632241791433" cy="400.573808634441" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="298.25286898061717" cy="391.43689513146234" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="657.9018888779767" cy="240.16695888416717" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="768.4526855513128" cy="218.94198770612735" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="481.8246383697327" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="321.51020350113123" cy="407.60756834859967" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="297.3158455052969" cy="412.7891073230303" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="400.73113467176444" cy="403.0710793788447" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="280.70820036149564" cy="403.0710793788447" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="551.2922771127128" cy="286.7269041191008" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="624.0080582516273" cy="195.6396694504677" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="599.7846383215032" cy="259.5965428491695" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="335.61075280225305" cy="403.0710793788447" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="682.769485448801" cy="251.92426674020922" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="301.5322854001615" cy="289.8646972293458" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="484.3880089142514" cy="286.7269041191008" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="499.52211757649144" cy="286.7269041191008" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="686.4508964009301" cy="231.44913061885404" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="331.60200485522023" cy="404.1302440624529" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="704.5982076576671" cy="275.2357510565551" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="677.7405969187263" cy="274.0742451574668" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="499.4615728420276" cy="264.23795009370946" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="316.7323578517608" cy="407.60756834859967" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="471.2691448740882" cy="306.97261789471355" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="528.9179565739391" cy="281.1679407545808" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="703.7605373989209" cy="224.7749216228775" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="444.9129122870521" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="437.076642072749" cy="306.97261789471355" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="457.8597107833314" cy="281.1679407545808" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="371.27455793382745" cy="403.0710793788447" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="514.3042041862325" cy="286.7269041191008" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="709.5033729824993" cy="183.99248851874432" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="234.8015423970276" cy="289.8646972293458" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="738.1526401107352" cy="208.31433170494034" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="675.5240937295678" cy="266.4046235944445" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="200.66673745203798" cy="407.60756834859967" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="506.6906252517257" cy="309.4475065941907" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="408.163171669858" cy="282.9366929911531" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="443.40562510060494" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="203.17257118404137" cy="407.60756834859967" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="531.8687245969801" cy="286.7269041191008" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="472.43019307236597" cy="300.4144950238651" r="3" fill="#078b80" opacity=".8"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Identity</text>
+<polyline points="85,500 960,85" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Hidden standardized truth</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Imputed value</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

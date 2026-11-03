@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Chunked versus direct test-row means">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Chunked versus direct test-row means</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">12.87</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">25.74</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">38.61</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">51.48</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">64.34</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Chunks of 11 pixels</text>
+<rect x="57.65625" y="372.1138902379796" width="54.6875" height="127.8861097620204" fill="#078b80"/>
+<rect x="232.65625" y="88.6279747450219" width="54.6875" height="411.3720252549781" fill="#078b80"/>
+<rect x="407.65625" y="86.41087906750852" width="54.6875" height="413.5891209324915" fill="#078b80"/>
+<rect x="582.65625" y="94.27149101505586" width="54.6875" height="405.72850898494414" fill="#078b80"/>
+<rect x="757.65625" y="85" width="54.6875" height="415" fill="#078b80"/>
+<rect x="932.65625" y="283.32928606119475" width="54.6875" height="216.67071393880525" fill="#078b80"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Direct row mean</text>
+<rect x="112.34375" y="372.1138902379796" width="54.6875" height="127.8861097620204" fill="#d67135"/>
+<rect x="287.34375" y="88.6279747450219" width="54.6875" height="411.3720252549781" fill="#d67135"/>
+<rect x="462.34375" y="86.41087906750852" width="54.6875" height="413.5891209324915" fill="#d67135"/>
+<rect x="637.34375" y="94.27149101505586" width="54.6875" height="405.72850898494414" fill="#d67135"/>
+<rect x="812.34375" y="85" width="54.6875" height="415" fill="#d67135"/>
+<rect x="987.34375" y="283.32928606119475" width="54.6875" height="216.67071393880525" fill="#d67135"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Test row</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Mean intensity</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

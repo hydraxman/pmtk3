@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Bernoulli block evidence lower bound (constant omitted)">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Bernoulli block evidence lower bound (constant omitted)</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-83.94</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-25.6</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">32.75</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">16</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">91.1</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">24</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">149.4</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">32</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">207.8</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">40</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">ELBO</text>
+<polyline points="85,500 106.875,85.00000094095788 128.75,85 150.625,85 172.5,85 194.375,85 216.25,85 238.125,85 260,85 281.875,85 303.75,85 325.625,85 347.5,85 369.375,85 391.25,85 413.125,85 435,85 456.875,85 478.75,85 500.625,85 522.5,85 544.375,85 566.25,85 588.125,85 610,85 631.875,85 653.75,85 675.625,85 697.5,85 719.375,85 741.25,85 763.125,85 785,85 806.875,85 828.75,85 850.625,85 872.5,85 894.375,85 916.25,85 938.125,85 960,85" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Coordinate iteration</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">ELBO</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="First 80 local random-surfer positions">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">First 80 local random-surfer positions</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">15.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">2</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">31.6</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">3</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">47.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">4</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">63.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">5</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">79</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Visited node</text>
+<polyline points="85,417 96.07594936708861,168 107.15189873417722,417 118.22784810126582,334 129.30379746835445,85 140.37974683544303,500 151.45569620253164,168 162.53164556962025,417 173.60759493670886,251 184.68354430379748,500 195.7594936708861,417 206.83544303797467,334 217.91139240506328,251 228.9873417721519,500 240.0632911392405,85 251.13924050632912,500 262.2151898734177,85 273.29113924050637,500 284.36708860759495,417 295.44303797468353,334 306.5189873417722,168 317.5949367088607,417 328.67088607594934,334 339.746835443038,85 350.82278481012656,251 361.8987341772152,500 372.9746835443038,417 384.05063291139237,251 395.126582278481,500 406.20253164556965,85 417.27848101265823,500 428.3544303797468,417 439.43037974683546,334 450.50632911392404,168 461.5822784810127,85 472.65822784810126,500 483.73417721518985,417 494.8101265822785,334 505.8860759493671,85 516.9620253164558,500 528.0379746835443,85 539.1139240506329,500 550.1898734177214,85 561.2658227848101,500 572.3417721518987,417 583.4177215189874,251 594.493670886076,85 605.5696202531645,500 616.6455696202531,417 627.7215189873417,334 638.7974683544304,85 649.873417721519,500 660.9493670886076,417 672.0253164556963,417 683.1012658227847,251 694.1772151898734,500 705.253164556962,85 716.3291139240506,500 727.4050632911393,85 738.4810126582279,500 749.5569620253165,417 760.632911392405,334 771.7088607594936,85 782.7848101265823,500 793.8607594936709,417 804.9367088607595,334 816.0126582278481,251 827.0886075949367,500 838.1645569620254,417 849.2405063291139,334 860.3164556962025,85 871.3924050632911,500 882.4683544303797,417 893.5443037974684,334 904.620253164557,168 915.6962025316456,334 926.7721518987343,168 937.8481012658227,334 948.9240506329114,417 960,251" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Hop</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Node</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

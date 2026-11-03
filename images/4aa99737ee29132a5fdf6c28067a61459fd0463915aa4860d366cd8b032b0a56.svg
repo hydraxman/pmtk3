@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="First two PCA scores">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">First two PCA scores</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-2.746</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-2.967</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-1.934</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-1.835</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-1.123</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-0.7032</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">-0.3107</text>
+<text x="610.0000000000001" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.4286</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.5011</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.56</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1.313</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.692</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Synthetic profiles</text>
+<circle cx="300.5773625297161" cy="141.1715617224857" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="558.2832824835237" cy="463.70237269339793" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="831.9783391007807" cy="117.36354638372609" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="301.78992727964317" cy="135.20165752340102" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="587.4610138212138" cy="451.4393177572508" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="935.0702769463996" cy="116.74573451730203" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="195.03814603152148" cy="146.26647170674852" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="572.3080336394022" cy="378.46798379797656" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="855.4673198339234" cy="129.16082527147364" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="118.61652817322687" cy="121.50013224573797" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="545.1334404713127" cy="443.9074109016425" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="783.3679014369724" cy="130.05836332759566" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="157.03917112156506" cy="109.3615364713267" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="563.6221711718031" cy="310.0808360598845" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="865.0489388061342" cy="116.00949480622774" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="239.57922093711304" cy="133.44153042406822" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="515.828246636816" cy="298.37153645090876" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="839.9864665631983" cy="128.4938945117388" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="248.81858805744795" cy="118.65922907764929" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="550.0137429607155" cy="443.0308740304821" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="872.0402841352592" cy="101.88011734663473" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="181.64874395422981" cy="122.50340979573133" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="552.5696858661302" cy="370.0058466862939" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="771.7752007573596" cy="130.17632009186855" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="192.16348448406995" cy="122.3739311620617" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="535.5679012896884" cy="480.0366549485472" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="761.3231159975328" cy="125.93531622164147" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="85" cy="159.6622953615447" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="539.0682556560369" cy="395.5752426672562" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="918.4418679343852" cy="133.51546278149772" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="331.62713523194236" cy="152.32981914962397" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="578.6815887453911" cy="367.71644103272854" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="900.6917467218408" cy="119.488453793367" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="179.60101335146302" cy="150.50689461738193" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="541.205497678824" cy="355.8083541918214" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="780.5818166160981" cy="104.41076180759279" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="277.3971652865905" cy="137.6050625137807" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="578.0673954583434" cy="408.7754141974474" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="840.1943162711292" cy="120.47720945435208" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="197.20803207533697" cy="130.81870788695448" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="537.4591727673511" cy="402.7859402042709" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="821.2090249121445" cy="151.33744737778375" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="132.93027463928442" cy="137.08962553300557" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="578.4502423269516" cy="431.4591152558399" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="960" cy="105.11547200766847" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="278.73174994279225" cy="140.34515440338237" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="564.4591608810124" cy="404.24034747665235" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="888.8014426935123" cy="112.63019863544747" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="218.0223695314896" cy="150.3068783416374" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="578.7742293333422" cy="467.1146468141769" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="906.8259637030078" cy="115.08130358675345" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="184.59202302786665" cy="127.35071568330716" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="567.4447614158996" cy="500" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="778.976897771012" cy="122.50988995278215" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="152.48989755293914" cy="136.0734291971101" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="552.0927720075351" cy="314.5065109966066" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="845.1026470837345" cy="126.84791133626209" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="232.65975788730265" cy="136.4415493192662" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="593.3744573655426" cy="435.39030519114306" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="757.9507506587075" cy="124.00922157219236" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="256.2834916041069" cy="142.65816872736525" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="518.1390275761587" cy="449.4261514846236" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="916.2038631592814" cy="110.79317206291233" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="350.8569036017284" cy="112.3629155755525" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="571.6220369937245" cy="333.6970457798715" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="917.2776192149472" cy="90.16297522940079" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="142.8038020587428" cy="98.48313595400037" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="593.4121366967601" cy="402.3247534976572" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="838.9313888401387" cy="154.65498755421788" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="166.87472154803635" cy="160.32555039279742" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="559.2139997284371" cy="422.7762491978092" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="829.9353929512315" cy="120.88999233850893" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="89.4839840892325" cy="118.4372952444046" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="557.09940616354" cy="277.50753742826316" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="828.4300279496018" cy="115.34219234733143" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="294.9023955029088" cy="138.20442191626" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="544.4632343813776" cy="435.17003609812" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="885.6350406307648" cy="125.16477406745378" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="269.0432075262736" cy="139.75646846228176" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="569.6967222475762" cy="375.6125476519097" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="882.0806224371415" cy="85" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="115.63817794458366" cy="122.8957702820029" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="548.9486541296199" cy="373.96052224023543" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="901.2913725498303" cy="129.5095647599445" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="328.410316700472" cy="150.52753216128377" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="570.7617760871751" cy="498.11294455632805" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="933.3386731739445" cy="108.09801351123667" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="224.3975878172752" cy="135.8143281589454" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="575.8896452444661" cy="412.2987567329388" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="843.864516059369" cy="128.07079830805736" r="3" fill="#078b80" opacity=".8"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">PC 1 score</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">PC 2 score</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

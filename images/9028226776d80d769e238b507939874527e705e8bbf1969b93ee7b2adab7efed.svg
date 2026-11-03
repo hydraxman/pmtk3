@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Gaussian signal: block selection">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Gaussian signal: block selection</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.5832</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">1.166</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.6</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">1.75</text>
+<text x="610.0000000000001" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">2.333</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">7.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">2.916</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">9</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Truth</text>
+<rect x="68.59375" y="500" width="32.8125" height="0" fill="#078b80"/>
+<rect x="165.81597222222223" y="500" width="32.8125" height="0" fill="#078b80"/>
+<rect x="263.03819444444446" y="85" width="32.8125" height="415" fill="#078b80"/>
+<rect x="360.26041666666663" y="500" width="32.8125" height="0" fill="#078b80"/>
+<rect x="457.48263888888886" y="500" width="32.8125" height="0" fill="#078b80"/>
+<rect x="554.7048611111111" y="500" width="32.8125" height="0" fill="#078b80"/>
+<rect x="651.9270833333333" y="500" width="32.8125" height="0" fill="#078b80"/>
+<rect x="749.1493055555555" y="176.4383255424329" width="32.8125" height="323.5616744575671" fill="#078b80"/>
+<rect x="846.3715277777777" y="500" width="32.8125" height="0" fill="#078b80"/>
+<rect x="943.59375" y="500" width="32.8125" height="0" fill="#078b80"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Group lasso</text>
+<rect x="101.40625" y="500" width="32.8125" height="0" fill="#d67135"/>
+<rect x="198.62847222222223" y="500" width="32.8125" height="0" fill="#d67135"/>
+<rect x="295.85069444444446" y="138.7133698497061" width="32.8125" height="361.2866301502939" fill="#d67135"/>
+<rect x="393.07291666666663" y="500" width="32.8125" height="0" fill="#d67135"/>
+<rect x="490.29513888888886" y="500" width="32.8125" height="0" fill="#d67135"/>
+<rect x="587.5173611111111" y="500" width="32.8125" height="0" fill="#d67135"/>
+<rect x="684.7395833333333" y="500" width="32.8125" height="0" fill="#d67135"/>
+<rect x="781.9618055555555" y="217.1948366729107" width="32.8125" height="282.8051633270893" fill="#d67135"/>
+<rect x="879.1840277777777" y="500" width="32.8125" height="0" fill="#d67135"/>
+<rect x="976.40625" y="500" width="32.8125" height="0" fill="#d67135"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Group index</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">L2 norm</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

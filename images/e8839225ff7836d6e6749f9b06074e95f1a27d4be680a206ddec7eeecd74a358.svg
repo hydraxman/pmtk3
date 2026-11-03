@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Active logistic coefficients / SVM support vectors">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Active logistic coefficients / SVM support vectors</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">33.6</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.4</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">67.2</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.8</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">100.8</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.2</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">134.4</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.6</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">168</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Measured fitted count</text>
+<rect x="-24.375" y="149.22619047619048" width="218.75" height="350.7738095238095" fill="#078b80"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">L1 RBF-basis softm</text>
+<rect x="413.125" y="85" width="218.75" height="415" fill="#078b80"/>
+<text x="522.5" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">L2 RBF-basis softm</text>
+<rect x="850.625" y="416.01190476190476" width="218.75" height="83.98809523809524" fill="#078b80"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">RBF SVM (SMO)</text>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Algorithm-specific count</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

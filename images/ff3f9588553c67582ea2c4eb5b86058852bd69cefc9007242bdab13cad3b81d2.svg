@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Non-Gaussian Poisson posterior mode objective">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Non-Gaussian Poisson posterior mode objective</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">293.6</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,416.99999999999966H960" stroke="#e5ebee"/>
+<text x="75" y="420.99999999999966" text-anchor="end" font-family="sans-serif" font-size="12">299.7</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<path d="M85,334.0000000000001H960" stroke="#e5ebee"/>
+<text x="75" y="338.0000000000001" text-anchor="end" font-family="sans-serif" font-size="12">305.8</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2</text>
+<path d="M85,250.99999999999983H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999983" text-anchor="end" font-family="sans-serif" font-size="12">311.8</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3</text>
+<path d="M85,168.00000000000028H960" stroke="#e5ebee"/>
+<text x="75" y="172.00000000000028" text-anchor="end" font-family="sans-serif" font-size="12">317.9</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">324</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Negative log posterior (consta</text>
+<polyline points="85,85 260,466.8612528884919 435,499.8334889120721 610,499.9999937814213 785,499.9999999999992 960,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Damped Newton iteration</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

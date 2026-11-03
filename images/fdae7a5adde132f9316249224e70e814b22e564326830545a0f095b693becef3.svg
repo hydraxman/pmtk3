@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Design prior strength sensitivity (mean 0.7, width ≤ 0.2)">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Design prior strength sensitivity (mean 0.7, width ≤ 0.2)</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.2</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">20</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.4</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">39</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">0.6</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">58</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.8</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">77</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">96</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Beta prior strength 5</text>
+<polyline points="85,500 131.05263157894737,500 177.10526315789474,500 223.1578947368421,465.45215280261067 269.2105263157895,442.26395491661873 315.2631578947368,455.8609689020646 361.3157894736842,441.01837997528736 407.36842105263156,429.62441976691514 453.4210526315789,400.1421568803814 499.4736842105263,394.9223537463007 545.5263157894736,373.49266197055306 591.578947368421,355.5589085796457 637.6315789473684,340.40746465980453 683.6842105263158,313.88388711080415 729.7368421052631,291.08526384260017 775.7894736842105,271.3441485375339 821.8421052631578,243.22730786527387 867.8947368421053,198.43954097811303 913.9473684210526,149.87099042848786 960,85.00000000005463" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Beta prior strength 10</text>
+<polyline points="85,500 131.05263157894737,500 177.10526315789474,500 223.1578947368421,484.81239858539686 269.2105263157895,471.3250682351145 315.2631578947368,481.6745135712296 361.3157894736842,472.7964139554706 407.36842105263156,465.12747658477235 453.4210526315789,440.28959605676584 499.4736842105263,435.8458824965352 545.5263157894736,414.3771040933762 591.578947368421,394.93978158658354 637.6315789473684,377.6546327317344 683.6842105263158,345.8327819644849 729.7368421052631,317.64055074269424 775.7894736842105,292.99248133957406 821.8421052631578,258.1414497753278 867.8947368421053,204.77556471830775 913.9473684210526,151.12448632881222 960,85.000000000022" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">Beta prior strength 100</text>
+<polyline points="85,500 131.05263157894737,500 177.10526315789474,500 223.1578947368421,497.8202261344995 269.2105263157895,495.97859939070264 315.2631578947368,498.85619286576275 361.3157894736842,498.2367951490443 407.36842105263156,497.69064979399974 453.4210526315789,492.67731306512064 499.4736842105263,492.39409981265504 545.5263157894736,484.45881681975686 591.578947368421,473.5604582567954 637.6315789473684,460.2168319501497 683.6842105263158,422.5753862754041 729.7368421052631,376.4596859483576 775.7894736842105,327.7440043227381 821.8421052631578,252.21998989436764 867.8947368421053,152.29922089522552 913.9473684210526,99.95950067573636 960,85" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Future binary trials N</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Predictive probability</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Final coordinates (a stationary point need not be global)">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Final coordinates (a stationary point need not be global)</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417.0272936534035H960" stroke="#e5ebee"/>
+<text x="75" y="421.0272936534035" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.2</text>
+<path d="M85,333.98635317329826H960" stroke="#e5ebee"/>
+<text x="75" y="337.98635317329826" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4.4</text>
+<path d="M85,251.01364682670174H960" stroke="#e5ebee"/>
+<text x="75" y="255.01364682670174" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">6.6</text>
+<path d="M85,167.9727063465965H960" stroke="#e5ebee"/>
+<text x="75" y="171.9727063465965" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">8.8</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">11</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Analytic-Hessian result</text>
+<polyline points="85,85.06823413350872 164.54545454545456,85.13646826701745 244.0909090909091,85.34117066754357 323.6363636363636,85.6141072015784 403.1818181818182,86.2964485366656 482.7272727272727,87.66113120683985 562.2727272727273,90.39049654718843 641.8181818181818,96.32686616244655 721.3636363636364,109.56428806313716 800.909090909091,141.97550147977637 880.4545454545454,230.06576783952647 960,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Known global minimizer</text>
+<polyline points="85,85 164.54545454545456,85 244.0909090909091,85 323.6363636363636,85 403.1818181818182,85 482.7272727272727,85 562.2727272727273,85 641.8181818181818,85 721.3636363636364,85 800.909090909091,85 880.4545454545454,85 960,85" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Coordinate</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Value</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

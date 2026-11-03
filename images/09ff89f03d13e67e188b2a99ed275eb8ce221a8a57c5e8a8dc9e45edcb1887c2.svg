@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Precision target sensitivity (design prior mean 0.7)">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Precision target sensitivity (design prior mean 0.7)</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.2</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">20</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.4</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">39</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.6</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">58</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.8</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">77</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">96</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Width ≤ 0.15</text>
+<polyline points="85,500 131.05263157894737,500 177.10526315789474,500 223.1578947368421,500 269.2105263157895,491.40645446507534 315.2631578947368,494.67157507152945 361.3157894736842,487.59705861873067 407.36842105263156,491.22370315596606 453.4210526315789,485.4670326339113 499.4736842105263,479.7871558900568 545.5263157894736,474.43543596297854 591.578947368421,479.4021180141325 637.6315789473684,474.9265360529306 683.6842105263158,460.9009213891422 729.7368421052631,457.18169819404693 775.7894736842105,453.8010636922356 821.8421052631578,440.68398259959554 867.8947368421053,438.2358695179493 913.9473684210526,426.1038584162777 960,414.5041290903161" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Width ≤ 0.20</text>
+<polyline points="85,500 131.05263157894737,500 177.10526315789474,500 223.1578947368421,484.8123985853965 269.2105263157895,471.3250682351139 315.2631578947368,481.6745135712293 361.3157894736842,472.7964139554701 407.36842105263156,465.12747658477167 453.4210526315789,440.28959605676465 499.4736842105263,435.84588249653393 545.5263157894736,414.3771040933745 591.578947368421,394.9397815865815 637.6315789473684,377.654632731732 683.6842105263158,345.83278196448185 729.7368421052631,317.6405507426906 775.7894736842105,292.9924813395699 821.8421052631578,258.14144977532305 867.8947368421053,204.7755647183019 913.9473684210526,151.1244863288053 960,85.00000000001376" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">Width ≤ 0.25</text>
+<polyline points="85,500 131.05263157894737,500 177.10526315789474,469.228328173375 223.1578947368421,451.5502392344507 269.2105263157895,440.33222899040186 315.2631578947368,432.61358927229634 361.3157894736842,426.9854107799165 407.36842105263156,396.94658168103683 453.4210526315789,346.0359578463434 499.4736842105263,303.64934630471623 545.5263157894736,248.60489582463953 591.578947368421,171.2189515057538 637.6315789473684,85.00000000001563 683.6842105263158,85 729.7368421052631,85.00000000001131 775.7894736842105,85.00000000002228 821.8421052631578,85.00000000003928 867.8947368421053,85.00000000003064 913.9473684210526,85.00000000004036 960,85.00000000001376" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Future binary trials N</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Predictive probability</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

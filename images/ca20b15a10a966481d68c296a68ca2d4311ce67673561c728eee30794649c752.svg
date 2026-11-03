@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Learned P(word present | mixture component)">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Learned P(word present | mixture component)</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-2.5</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-0.5</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-1.9</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.9</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-1.3</text>
+<text x="434.99999999999994" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4.3</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">-0.7</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">6.7</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">-0.1</text>
+<text x="784.9999999999999" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">9.1</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.5</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">11.5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Learned P(word present | mixtu</text>
+<rect x="85" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(80.78910141071273 65% 47%)"/>
+<rect x="157.91666666666669" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(71.8135711350117 65% 47%)"/>
+<rect x="230.83333333333337" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(55.29964135369167 65% 47%)"/>
+<rect x="303.75000000000006" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(68.24537263475537 65% 47%)"/>
+<rect x="376.6666666666667" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(236.1443348378097 65% 47%)"/>
+<rect x="449.5833333333333" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(239.77955351850133 65% 47%)"/>
+<rect x="522.4999999999999" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(223.06269683631987 65% 47%)"/>
+<rect x="595.4166666666666" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(238.92052675203414 65% 47%)"/>
+<rect x="668.3333333333334" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(230.0843205052889 65% 47%)"/>
+<rect x="741.2499999999999" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(234.83561346683487 65% 47%)"/>
+<rect x="814.1666666666666" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(237.55802699355092 65% 47%)"/>
+<rect x="887.0833333333334" y="84.99999999999997" width="72.91666666666666" height="138.33333333333331" fill="hsl(250 65% 47%)"/>
+<rect x="85" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(249.33926148281031 65% 47%)"/>
+<rect x="157.91666666666669" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(232.71150543355714 65% 47%)"/>
+<rect x="230.83333333333337" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(238.7197997651914 65% 47%)"/>
+<rect x="303.75000000000006" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(226.81029724383922 65% 47%)"/>
+<rect x="376.6666666666667" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(228.24930639090238 65% 47%)"/>
+<rect x="449.5833333333333" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(235.55508529795497 65% 47%)"/>
+<rect x="522.4999999999999" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(232.51799468474184 65% 47%)"/>
+<rect x="595.4166666666666" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(229.64899021301343 65% 47%)"/>
+<rect x="668.3333333333334" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(50 65% 47%)"/>
+<rect x="741.2499999999999" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(56.02664798398169 65% 47%)"/>
+<rect x="814.1666666666666" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(60.91184460859901 65% 47%)"/>
+<rect x="887.0833333333334" y="223.33333333333334" width="72.91666666666666" height="138.33333333333331" fill="hsl(78.8474966128995 65% 47%)"/>
+<rect x="85" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(237.33100427946252 65% 47%)"/>
+<rect x="157.91666666666669" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(229.72870175100454 65% 47%)"/>
+<rect x="230.83333333333337" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(241.30815807940357 65% 47%)"/>
+<rect x="303.75000000000006" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(246.64365387224635 65% 47%)"/>
+<rect x="376.6666666666667" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(76.21941899984057 65% 47%)"/>
+<rect x="449.5833333333333" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(62.83212339013474 65% 47%)"/>
+<rect x="522.4999999999999" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(65.23550443366679 65% 47%)"/>
+<rect x="595.4166666666666" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(65.792200723891 65% 47%)"/>
+<rect x="668.3333333333334" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(242.69359502809513 65% 47%)"/>
+<rect x="741.2499999999999" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(241.03658285351148 65% 47%)"/>
+<rect x="814.1666666666666" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(241.9706096817166 65% 47%)"/>
+<rect x="887.0833333333334" y="361.66666666666674" width="72.91666666666666" height="138.33333333333331" fill="hsl(240.97174459733597 65% 47%)"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Column</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Negative row index</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Penalized training objective">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Penalized training objective</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">752</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">892.8</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5.6</text>
+<path d="M85,333.9999999999999H960" stroke="#e5ebee"/>
+<text x="75" y="337.9999999999999" text-anchor="end" font-family="sans-serif" font-size="12">1034</text>
+<text x="434.99999999999994" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">11.2</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">1174</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">16.8</text>
+<path d="M85,168.00000000000006H960" stroke="#e5ebee"/>
+<text x="75" y="172.00000000000006" text-anchor="end" font-family="sans-serif" font-size="12">1315</text>
+<text x="784.9999999999999" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">22.4</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1456</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">28</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Negative joint log posterior</text>
+<polyline points="85,85 116.25,238.79136092831789 147.5,459.1938390270325 178.75,491.5535817609805 210,497.18735719174197 241.25,498.9935386423691 272.5,499.6173914493539 303.75,499.8457511161471 335,499.93470567186785 366.25,499.97085164756567 397.5,499.98600426751915 428.75,499.99257592931536 460,499.9955658617487 491.25,499.9970256291852 522.5,499.9978104031186 553.75,499.998283269778 585,499.99860237021875 616.25,499.99883913217207 647.5,499.99902746629175 678.75,499.99918452644425 710,499.9993196501918 741.25,499.9994383231433 772.5,499.9995440086237 803.75,499.9996390363095 835,499.99972506006844 866.25,499.9998033087743 897.5,499.99987473180437 928.75,499.99994008764673 960,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Alternating Newton sweep</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Objective</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

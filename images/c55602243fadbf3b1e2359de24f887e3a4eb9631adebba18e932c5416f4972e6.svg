@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Correlation-distance average-linkage dendrogram">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Correlation-distance average-linkage dendrogram</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.2626</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">9.4</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.5253</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">18.8</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.7879</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">28.2</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">1.051</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">37.6</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1.313</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">47</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Merge 1</text>
+<polyline points="345.6382978723404,500 345.6382978723404,498.57648146411475 364.25531914893617,498.57648146411475 364.25531914893617,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Merge 2</text>
+<polyline points="438.7234042553191,500 438.7234042553191,498.295890783343 457.3404255319149,498.295890783343 457.3404255319149,500" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">Merge 3</text>
+<polyline points="941.3829787234042,500 941.3829787234042,497.94387076021235 960,497.94387076021235 960,500" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="730" y="49" font-family="sans-serif" font-size="12" fill="#326cac">Merge 4</text>
+<polyline points="513.1914893617021,500 513.1914893617021,497.92676503077126 531.8085106382978,497.92676503077126 531.8085106382978,500" fill="none" stroke="#326cac" stroke-width="2"/>
+<text x="85" y="65" font-family="sans-serif" font-size="12" fill="#c8436b">Merge 5</text>
+<polyline points="550.4255319148936,500 550.4255319148936,497.5797249298008 569.0425531914893,497.5797249298008 569.0425531914893,500" fill="none" stroke="#c8436b" stroke-width="2"/>
+<text x="300" y="65" font-family="sans-serif" font-size="12" fill="#607942">Merge 6</text>
+<polyline points="755.2127659574468,500 755.2127659574468,497.48675341940077 773.8297872340426,497.48675341940077 773.8297872340426,500" fill="none" stroke="#607942" stroke-width="2"/>
+<text x="515" y="65" font-family="sans-serif" font-size="12" fill="#078b80">Merge 7</text>
+<polyline points="475.9574468085106,500 475.9574468085106,497.3939988486454 494.5744680851064,497.3939988486454 494.5744680851064,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="730" y="65" font-family="sans-serif" font-size="12" fill="#d67135">Merge 8</text>
+<polyline points="587.6595744680851,500 587.6595744680851,497.2133939322623 606.2765957446808,497.2133939322623 606.2765957446808,500" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="85" y="81" font-family="sans-serif" font-size="12" fill="#7760b3">Merge 9</text>
+<polyline points="448.031914893617,498.295890783343 448.031914893617,496.858482754913 485.2659574468085,496.858482754913 485.2659574468085,497.3939988486454" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="300" y="81" font-family="sans-serif" font-size="12" fill="#326cac">Merge 10</text>
+<polyline points="327.02127659574467,500 327.02127659574467,496.7605076470242 354.9468085106383,496.7605076470242 354.9468085106383,498.57648146411475" fill="none" stroke="#326cac" stroke-width="2"/>
+<text x="515" y="81" font-family="sans-serif" font-size="12" fill="#c8436b">Merge 11</text>
+<polyline points="792.4468085106382,500 792.4468085106382,496.7098037358244 811.063829787234,496.7098037358244 811.063829787234,500" fill="none" stroke="#c8436b" stroke-width="2"/>
+<text x="730" y="81" font-family="sans-serif" font-size="12" fill="#607942">Merge 12</text>
+<polyline points="829.6808510638298,500 829.6808510638298,496.38320975946726 848.2978723404256,496.38320975946726 848.2978723404256,500" fill="none" stroke="#607942" stroke-width="2"/>
+<text x="85" y="97" font-family="sans-serif" font-size="12" fill="#078b80">Merge 13</text>
+<polyline points="271.17021276595744,500 271.17021276595744,496.3402939656914 289.7872340425532,496.3402939656914 289.7872340425532,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="97" font-family="sans-serif" font-size="12" fill="#d67135">Merge 14</text>
+<polyline points="233.93617021276594,500 233.93617021276594,496.29818428282294 252.5531914893617,496.29818428282294 252.5531914893617,500" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="97" font-family="sans-serif" font-size="12" fill="#7760b3">Merge 15</text>
+<polyline points="764.5212765957447,497.48675341940077 764.5212765957447,496.2544837234342 801.7553191489362,496.2544837234342 801.7553191489362,496.7098037358244" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="730" y="97" font-family="sans-serif" font-size="12" fill="#326cac">Merge 16</text>
+<polyline points="559.7340425531914,497.5797249298008 559.7340425531914,496.23918823335043 596.968085106383,496.23918823335043 596.968085106383,497.2133939322623" fill="none" stroke="#326cac" stroke-width="2"/>
+<text x="85" y="113" font-family="sans-serif" font-size="12" fill="#c8436b">Merge 17</text>
+<polyline points="866.9148936170212,500 866.9148936170212,496.12644379732836 885.531914893617,496.12644379732836 885.531914893617,500" fill="none" stroke="#c8436b" stroke-width="2"/>
+<text x="300" y="113" font-family="sans-serif" font-size="12" fill="#607942">Merge 18</text>
+<polyline points="308.4042553191489,500 308.4042553191489,496.0394657097694 340.9840425531915,496.0394657097694 340.9840425531915,496.7605076470242" fill="none" stroke="#607942" stroke-width="2"/>
+<text x="515" y="113" font-family="sans-serif" font-size="12" fill="#078b80">Merge 19</text>
+<polyline points="922.7659574468086,500 922.7659574468086,495.9916599476224 950.6914893617021,495.9916599476224 950.6914893617021,497.94387076021235" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="730" y="113" font-family="sans-serif" font-size="12" fill="#d67135">Merge 20</text>
+<polyline points="643.5106382978723,500 643.5106382978723,495.6007566360164 662.127659574468,495.6007566360164 662.127659574468,500" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="85" y="129" font-family="sans-serif" font-size="12" fill="#7760b3">Merge 21</text>
+<polyline points="522.5,497.92676503077126 522.5,495.5647928688759 578.3510638297872,495.5647928688759 578.3510638297872,496.23918823335043" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="300" y="129" font-family="sans-serif" font-size="12" fill="#326cac">Merge 22</text>
+<polyline points="838.9893617021277,496.38320975946726 838.9893617021277,495.5019203961495 876.2234042553192,495.5019203961495 876.2234042553192,496.12644379732836" fill="none" stroke="#326cac" stroke-width="2"/>
+<text x="515" y="129" font-family="sans-serif" font-size="12" fill="#c8436b">Merge 23</text>
+<polyline points="466.6489361702128,496.858482754913 466.6489361702128,495.1995531700084 550.4255319148936,495.1995531700084 550.4255319148936,495.5647928688759" fill="none" stroke="#c8436b" stroke-width="2"/>
+<text x="730" y="129" font-family="sans-serif" font-size="12" fill="#607942">Merge 24</text>
+<polyline points="280.47872340425533,496.3402939656914 280.47872340425533,494.7499550263699 324.6941489361702,494.7499550263699 324.6941489361702,496.0394657097694" fill="none" stroke="#607942" stroke-width="2"/>
+<text x="85" y="145" font-family="sans-serif" font-size="12" fill="#078b80">Merge 25</text>
+<polyline points="420.1063829787234,500 420.1063829787234,494.012003534755 508.5372340425532,494.012003534755 508.5372340425532,495.1995531700084" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="145" font-family="sans-serif" font-size="12" fill="#d67135">Merge 26</text>
+<polyline points="783.1382978723404,496.2544837234342 783.1382978723404,493.96557971733506 857.6063829787234,493.96557971733506 857.6063829787234,495.5019203961495" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="145" font-family="sans-serif" font-size="12" fill="#7760b3">Merge 27</text>
+<polyline points="699.3617021276596,500 699.3617021276596,493.49809621157686 717.9787234042553,493.49809621157686 717.9787234042553,500" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="730" y="145" font-family="sans-serif" font-size="12" fill="#326cac">Merge 28</text>
+<polyline points="904.1489361702128,500 904.1489361702128,493.48141507878637 936.7287234042553,493.48141507878637 936.7287234042553,495.9916599476224" fill="none" stroke="#326cac" stroke-width="2"/>
+<text x="85" y="161" font-family="sans-serif" font-size="12" fill="#c8436b">Merge 29</text>
+<polyline points="178.08510638297872,500 178.08510638297872,492.4818854915861 196.70212765957444,492.4818854915861 196.70212765957444,500" fill="none" stroke="#c8436b" stroke-width="2"/>
+<text x="300" y="161" font-family="sans-serif" font-size="12" fill="#607942">Merge 30</text>
+<polyline points="243.24468085106383,496.29818428282294 243.24468085106383,492.16809980151965 302.5864361702128,492.16809980151965 302.5864361702128,494.7499550263699" fill="none" stroke="#607942" stroke-width="2"/>
+<text x="515" y="161" font-family="sans-serif" font-size="12" fill="#078b80">Merge 31</text>
+<polyline points="820.372340425532,493.96557971733506 820.372340425532,491.7498385864712 920.438829787234,491.7498385864712 920.438829787234,493.48141507878637" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="730" y="161" font-family="sans-serif" font-size="12" fill="#d67135">Merge 32</text>
+<polyline points="215.3191489361702,500 215.3191489361702,491.4983028903536 272.91555851063833,491.4983028903536 272.91555851063833,492.16809980151965" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="85" y="177" font-family="sans-serif" font-size="12" fill="#7760b3">Merge 33</text>
+<polyline points="401.48936170212767,500 401.48936170212767,491.17695967986816 464.3218085106383,491.17695967986816 464.3218085106383,494.012003534755" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="300" y="177" font-family="sans-serif" font-size="12" fill="#326cac">Merge 34</text>
+<polyline points="624.8936170212766,500 624.8936170212766,490.85561940454977 652.8191489361702,490.85561940454977 652.8191489361702,495.6007566360164" fill="none" stroke="#326cac" stroke-width="2"/>
+<text x="515" y="177" font-family="sans-serif" font-size="12" fill="#c8436b">Merge 35</text>
+<polyline points="736.595744680851,500 736.595744680851,490.48811281362424 870.405585106383,490.48811281362424 870.405585106383,491.7498385864712" fill="none" stroke="#c8436b" stroke-width="2"/>
+<text x="730" y="177" font-family="sans-serif" font-size="12" fill="#607942">Merge 36</text>
+<polyline points="187.3936170212766,492.4818854915861 187.3936170212766,489.73921914473823 244.11735372340425,489.73921914473823 244.11735372340425,491.4983028903536" fill="none" stroke="#607942" stroke-width="2"/>
+<text x="85" y="193" font-family="sans-serif" font-size="12" fill="#078b80">Merge 37</text>
+<polyline points="432.905585106383,491.17695967986816 432.905585106383,489.6075884827555 638.8563829787234,489.6075884827555 638.8563829787234,490.85561940454977" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="193" font-family="sans-serif" font-size="12" fill="#d67135">Merge 38</text>
+<polyline points="708.6702127659574,493.49809621157686 708.6702127659574,487.9106359629541 803.500664893617,487.9106359629541 803.500664893617,490.48811281362424" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="193" font-family="sans-serif" font-size="12" fill="#7760b3">Merge 39</text>
+<polyline points="159.46808510638297,500 159.46808510638297,487.58661042268443 215.75548537234044,487.58661042268443 215.75548537234044,489.73921914473823" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="730" y="193" font-family="sans-serif" font-size="12" fill="#326cac">Merge 40</text>
+<polyline points="140.85106382978722,500 140.85106382978722,486.67871717464266 187.6117852393617,486.67871717464266 187.6117852393617,487.58661042268443" fill="none" stroke="#326cac" stroke-width="2"/>
+<text x="85" y="209" font-family="sans-serif" font-size="12" fill="#c8436b">Merge 41</text>
+<polyline points="382.8723404255319,500 382.8723404255319,486.57032537615027 535.8809840425532,486.57032537615027 535.8809840425532,489.6075884827555" fill="none" stroke="#c8436b" stroke-width="2"/>
+<text x="300" y="209" font-family="sans-serif" font-size="12" fill="#607942">Merge 42</text>
+<polyline points="85,500 85,486.1854680072852 103.61702127659575,486.1854680072852 103.61702127659575,500" fill="none" stroke="#607942" stroke-width="2"/>
+<text x="515" y="209" font-family="sans-serif" font-size="12" fill="#078b80">Merge 43</text>
+<polyline points="680.7446808510638,500 680.7446808510638,483.7068678314601 756.0854388297872,483.7068678314601 756.0854388297872,487.9106359629541" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="730" y="209" font-family="sans-serif" font-size="12" fill="#d67135">Merge 44</text>
+<polyline points="122.23404255319149,500 122.23404255319149,483.3646592825677 164.23142453457447,483.3646592825677 164.23142453457447,486.67871717464266" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="85" y="225" font-family="sans-serif" font-size="12" fill="#7760b3">Merge 45</text>
+<polyline points="94.30851063829788,486.1854680072852 94.30851063829788,481.6685616878875 143.23273354388297,481.6685616878875 143.23273354388297,483.3646592825677" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="300" y="225" font-family="sans-serif" font-size="12" fill="#326cac">Merge 46</text>
+<polyline points="459.37666223404256,486.57032537615027 459.37666223404256,198.02148421917371 718.4150598404256,198.02148421917371 718.4150598404256,483.7068678314601" fill="none" stroke="#326cac" stroke-width="2"/>
+<text x="515" y="225" font-family="sans-serif" font-size="12" fill="#c8436b">Merge 47</text>
+<polyline points="118.77062209109042,481.6685616878875 118.77062209109042,85 588.895861037234,85 588.895861037234,198.02148421917371" fill="none" stroke="#c8436b" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Leaf position</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">1 − correlation</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

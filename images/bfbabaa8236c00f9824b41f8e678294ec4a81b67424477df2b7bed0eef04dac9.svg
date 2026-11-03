@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="SCAD local-linear-approximation objective">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">SCAD local-linear-approximation objective</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0.2281</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,416.99999999999983H960" stroke="#e5ebee"/>
+<text x="75" y="420.99999999999983" text-anchor="end" font-family="sans-serif" font-size="12">0.2336</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5</text>
+<path d="M85,334.0000000000001H960" stroke="#e5ebee"/>
+<text x="75" y="338.0000000000001" text-anchor="end" font-family="sans-serif" font-size="12">0.2391</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">10</text>
+<path d="M85,250.99999999999991H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999991" text-anchor="end" font-family="sans-serif" font-size="12">0.2446</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">15</text>
+<path d="M85,168.00000000000017H960" stroke="#e5ebee"/>
+<text x="75" y="172.00000000000017" text-anchor="end" font-family="sans-serif" font-size="12">0.25</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">20</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.2555</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">25</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">SSE/(2n) + actual SCAD penalty</text>
+<polyline points="85,85 120,499.99999999999915 155,499.99999999999875 190,499.9999999999983 225,499.99999999999915 260,499.99999999999915 295,499.99999999999875 330,499.99999999999875 365,499.9999999999996 400,500 435,500 470,500 505,500 540,500 575,500 610,500 645,500 680,500 715,500 750,500 785,500 820,500 855,500 890,500 925,500 960,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">LLA iteration</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

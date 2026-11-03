@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="rings: genuine held-out errors (62 train / 28 test)">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">rings: genuine held-out errors (62 train / 28 test)</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.1285</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.6</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.257</text>
+<text x="434.99999999999994" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.2</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.3855</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.8</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.5139</text>
+<text x="784.9999999999999" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.4</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.6424</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">3-fold CV (training only)</text>
+<rect x="43.984375" y="85" width="82.03125" height="415" fill="#078b80"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">linear L2 softmax</text>
+<rect x="335.65104166666663" y="478.4669811320755" width="82.03125" height="21.53301886792451" fill="#078b80"/>
+<text x="376.66666666666663" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">linear Gaussian NB</text>
+<rect x="627.3177083333333" y="500" width="82.03125" height="0" fill="#078b80"/>
+<text x="668.3333333333333" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">rbf kernel ridge</text>
+<rect x="918.984375" y="500" width="82.03125" height="0" fill="#078b80"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">rbf SVM</text>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Untouched test</text>
+<rect x="126.015625" y="292.3601752021563" width="82.03125" height="207.6398247978437" fill="#d67135"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">linear L2 softmax</text>
+<rect x="417.68229166666663" y="500" width="82.03125" height="0" fill="#d67135"/>
+<text x="376.66666666666663" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">linear Gaussian NB</text>
+<rect x="709.3489583333333" y="500" width="82.03125" height="0" fill="#d67135"/>
+<text x="668.3333333333333" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">rbf kernel ridge</text>
+<rect x="1001.015625" y="500" width="82.03125" height="0" fill="#d67135"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">rbf SVM</text>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Misclassification fraction</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

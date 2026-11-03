@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Power iteration convergence">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Power iteration convergence</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">7.938e-15</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.07685</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">9.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.1537</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">19.6</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">0.2306</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">29.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.3074</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">39.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.3843</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">49</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Successive iterate L1 differen</text>
+<polyline points="85,85 102.85714285714286,256.7731854838745 120.71428571428571,391.27724138345496 138.57142857142856,433.97992268130884 156.42857142857142,462.0966772386201 174.28571428571428,482.23711119886195 192.14285714285714,489.07416824770473 210,495.68946361559847 227.85714285714283,497.9421238967593 245.71428571428572,498.96024547476185 263.57142857142856,499.4180741206046 281.42857142857144,499.6826376476149 299.2857142857143,499.8454913946451 317.14285714285717,499.89922201874504 335,499.9508508303179 352.8571428571429,499.9792874092715 370.71428571428567,499.98793951985954 388.57142857142856,499.992946256148 406.42857142857144,499.9968030111709 424.2857142857143,499.99833390773017 442.14285714285717,499.998940858286 460,499.9994641711762 477.85714285714283,499.99979136861464 495.7142857142857,499.99986836870426 513.5714285714286,499.9999195201324 531.4285714285714,499.99996556983126 549.2857142857143,499.99998145315584 567.1428571428571,499.9999884429758 585,499.9999939879646 602.8571428571429,499.99999772386946 620.7142857142858,499.99999852112325 638.5714285714286,499.9999991047314 656.4285714285713,499.99999960417307 674.2857142857142,499.9999997947593 692.1428571428571,499.99999987288606 710,499.999999932115 727.8571428571429,499.99999997350307 745.7142857142857,499.9999999833998 763.5714285714286,499.99999999008315 781.4285714285714,499.9999999954424 799.2857142857143,499.99999999776 817.1428571428572,499.9999999986139 835,499.999999999242 852.8571428571429,499.99999999970385 870.7142857142857,499.99999999982276 888.5714285714286,499.99999999989683 906.4285714285714,499.99999999995634 924.2857142857142,499.9999999999842 942.1428571428571,499.99999999999335 960,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Iteration</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">L1 difference</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

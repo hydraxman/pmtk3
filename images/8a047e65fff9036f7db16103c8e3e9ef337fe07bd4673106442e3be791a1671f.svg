@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Synthetic word loadings: penalized logistic factorization">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Synthetic word loadings: penalized logistic factorization</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-5.935</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-3.659</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-3.879</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-1.67</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-1.824</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.3183</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">0.232</text>
+<text x="610.0000000000001" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.307</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">2.288</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4.296</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">4.343</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">6.285</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Synthetic vocabulary group 1</text>
+<circle cx="892.536913559496" cy="237.53042778700149" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="794.1211843069049" cy="263.55531508034073" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="813.9200457117342" cy="270.0888136912968" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="960" cy="279.5215447285279" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="786.6146131811687" cy="246.68375815082183" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="886.8593493107584" cy="258.3111406580358" r="3" fill="#078b80" opacity=".8"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Synthetic vocabulary group 2</text>
+<circle cx="253.65547153182254" cy="403.2404311120877" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="248.5281746069059" cy="469.9149486284941" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="246.7619671577695" cy="454.26183300471774" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="85" cy="500" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="305.587549397394" cy="404.8366401326583" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="265.262383816388" cy="416.9783932366825" r="3" fill="#d67135" opacity=".8"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">Synthetic vocabulary group 3</text>
+<circle cx="232.44065881746388" cy="124.9617101672577" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="278.938576046829" cy="125.43464984859253" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="199.9656190016264" cy="85" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="260.25576009449037" cy="95.55149479612015" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="253.66056548787128" cy="142.3837308822396" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="208.41243637424844" cy="86.24836842664672" r="3" fill="#7760b3" opacity=".8"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Loading 1 (arbitrary rotation)</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Loading 2</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

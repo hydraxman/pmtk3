@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="First three principal temporal bases">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">First three principal temporal bases</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-0.5614</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-0.3735</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.2</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-0.1856</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.4</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">0.002233</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.6</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.1901</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.8</text>
+<path d="M85,84.99999999999989H960" stroke="#e5ebee"/>
+<text x="75" y="88.99999999999989" text-anchor="end" font-family="sans-serif" font-size="12">0.378</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">PC 1</text>
+<polyline points="85,350.2190680893377 164.54545454545456,393.1828414491316 244.0909090909091,413.1881962756221 323.6363636363636,408.53155714714313 403.1818181818182,370.04060372125923 482.7272727272727,296.95977528681055 562.2727272727273,214.33602205062 641.8181818181818,141.50101175753468 721.3636363636364,98.69627483258876 800.909090909091,85 880.4545454545454,100.82325405484539 960,145.69951712882607" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">PC 2</text>
+<polyline points="85,500 164.54545454545456,422.78174464758916 244.0909090909091,311.50750384231674 323.6363636363636,200.06612571351593 403.1818181818182,112.67536016209692 482.7272727272727,88.02135343471173 562.2727272727273,107.89185225237316 641.8181818181818,176.14973238328758 721.3636363636364,259.297505815465 800.909090909091,331.8571811746762 880.4545454545454,361.46841547062655 960,335.92727990212165" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">PC 3</text>
+<polyline points="85,158.04986573632272 164.54545454545456,153.9311540506452 244.0909090909091,121.67281632611349 323.6363636363636,134.03306498488433 403.1818181818182,95.52726715793165 482.7272727272727,101.48296211609579 562.2727272727273,112.0834564913875 641.8181818181818,117.43625768676696 721.3636363636364,147.56599906875857 800.909090909091,151.0905942264464 880.4545454545454,136.5834825046611 960,88.73902853766731" fill="none" stroke="#7760b3" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Synthetic time</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Unit-norm component</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

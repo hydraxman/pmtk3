@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Learned 3x3 shared convolution filters">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Learned 3x3 shared convolution filters</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-2.5</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-0.5</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-1.9</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.3</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-1.3</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.1</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">-0.7</text>
+<text x="610.0000000000001" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4.9</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">-0.1</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">6.7</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.5</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">8.5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Learned 3x3 shared convolution</text>
+<rect x="85" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(145.7276390198209 65% 47%)"/>
+<rect x="182.2222222222222" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(183.71334679421284 65% 47%)"/>
+<rect x="279.44444444444446" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(163.67802938079723 65% 47%)"/>
+<rect x="376.6666666666667" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(247.15631033425797 65% 47%)"/>
+<rect x="473.8888888888889" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(126.84826627660487 65% 47%)"/>
+<rect x="571.1111111111112" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(54.96467957563459 65% 47%)"/>
+<rect x="668.3333333333334" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(50 65% 47%)"/>
+<rect x="765.5555555555557" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(100.40698304542411 65% 47%)"/>
+<rect x="862.7777777777778" y="84.99999999999997" width="97.22222222222221" height="138.33333333333331" fill="hsl(193.35136751429354 65% 47%)"/>
+<rect x="85" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(169.8721090829955 65% 47%)"/>
+<rect x="182.2222222222222" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(203.28016634618837 65% 47%)"/>
+<rect x="279.44444444444446" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(235.45764023875537 65% 47%)"/>
+<rect x="376.6666666666667" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(173.20740902574636 65% 47%)"/>
+<rect x="473.8888888888889" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(142.90923674006683 65% 47%)"/>
+<rect x="571.1111111111112" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(88.76485188605477 65% 47%)"/>
+<rect x="668.3333333333334" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(84.58523748005814 65% 47%)"/>
+<rect x="765.5555555555557" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(76.34854564427926 65% 47%)"/>
+<rect x="862.7777777777778" y="223.33333333333334" width="97.22222222222221" height="138.33333333333331" fill="hsl(109.15503190957944 65% 47%)"/>
+<rect x="85" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(124.13976854910767 65% 47%)"/>
+<rect x="182.2222222222222" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(246.02309656955117 65% 47%)"/>
+<rect x="279.44444444444446" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(250 65% 47%)"/>
+<rect x="376.6666666666667" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(51.21300255908446 65% 47%)"/>
+<rect x="473.8888888888889" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(70.12794917177624 65% 47%)"/>
+<rect x="571.1111111111112" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(65.83225944750924 65% 47%)"/>
+<rect x="668.3333333333334" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(164.00350513378612 65% 47%)"/>
+<rect x="765.5555555555557" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(116.93698382471266 65% 47%)"/>
+<rect x="862.7777777777778" y="361.66666666666674" width="97.22222222222221" height="138.33333333333331" fill="hsl(161.54442998915326 65% 47%)"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Column</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Negative row index</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Exact ranking versus empirical visits">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Exact ranking versus empirical visits</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.0642</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.1284</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.1926</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.2568</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.321</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Exact stationary probability</text>
+<rect x="57.65625" y="85" width="54.6875" height="415" fill="#078b80"/>
+<rect x="232.65625" y="279.52764528645923" width="54.6875" height="220.47235471354077" fill="#078b80"/>
+<rect x="407.65625" y="362.2018945332044" width="54.6875" height="137.79810546679562" fill="#078b80"/>
+<rect x="582.65625" y="323.15909798427896" width="54.6875" height="176.84090201572104" fill="#078b80"/>
+<rect x="757.65625" y="416.85984873753375" width="54.6875" height="83.14015126246625" fill="#078b80"/>
+<rect x="932.65625" y="240.48484873753375" width="54.6875" height="259.51515126246625" fill="#078b80"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">30,000-hop frequency</text>
+<rect x="112.34375" y="85.88374506770958" width="54.6875" height="414.1162549322904" fill="#d67135"/>
+<rect x="287.34375" y="281.6086181064675" width="54.6875" height="218.39138189353253" fill="#d67135"/>
+<rect x="462.34375" y="361.37232131975253" width="54.6875" height="138.62767868024747" fill="#d67135"/>
+<rect x="637.34375" y="327.2432813711184" width="54.6875" height="172.75671862888157" fill="#d67135"/>
+<rect x="812.34375" y="413.9017401295821" width="54.6875" height="86.0982598704179" fill="#d67135"/>
+<rect x="987.34375" y="237.22362928438014" width="54.6875" height="262.77637071561986" fill="#d67135"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Node (zero-based)</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Probability</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

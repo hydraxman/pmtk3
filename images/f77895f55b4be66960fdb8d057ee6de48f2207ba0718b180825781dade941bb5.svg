@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Tanh convolution feature map: filter 0">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Tanh convolution feature map: filter 0</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-3.5</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-0.5</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-2.7</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.3</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-1.9</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.1</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">-1.1</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.9</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">-0.3</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.7</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.5</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.5</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Tanh convolution feature map: </text>
+<rect x="85" y="85" width="218.75" height="103.75" fill="hsl(239.54182312802484 65% 47%)"/>
+<rect x="303.75" y="85" width="218.75" height="103.75" fill="hsl(213.3934319111192 65% 47%)"/>
+<rect x="522.5" y="85" width="218.75" height="103.75" fill="hsl(50 65% 47%)"/>
+<rect x="741.25" y="85" width="218.75" height="103.75" fill="hsl(53.082972970016726 65% 47%)"/>
+<rect x="85" y="188.75" width="218.75" height="103.75" fill="hsl(215.9752379998016 65% 47%)"/>
+<rect x="303.75" y="188.75" width="218.75" height="103.75" fill="hsl(239.54182312802484 65% 47%)"/>
+<rect x="522.5" y="188.75" width="218.75" height="103.75" fill="hsl(248.75314681532006 65% 47%)"/>
+<rect x="741.25" y="188.75" width="218.75" height="103.75" fill="hsl(162.2987707039049 65% 47%)"/>
+<rect x="85" y="292.5" width="218.75" height="103.75" fill="hsl(71.91029430280861 65% 47%)"/>
+<rect x="303.75" y="292.5" width="218.75" height="103.75" fill="hsl(215.9752379998016 65% 47%)"/>
+<rect x="522.5" y="292.5" width="218.75" height="103.75" fill="hsl(250 65% 47%)"/>
+<rect x="741.25" y="292.5" width="218.75" height="103.75" fill="hsl(244.0165465794389 65% 47%)"/>
+<rect x="85" y="396.25" width="218.75" height="103.75" fill="hsl(53.082972970016726 65% 47%)"/>
+<rect x="303.75" y="396.25" width="218.75" height="103.75" fill="hsl(71.91029430280861 65% 47%)"/>
+<rect x="522.5" y="396.25" width="218.75" height="103.75" fill="hsl(234.06576549265677 65% 47%)"/>
+<rect x="741.25" y="396.25" width="218.75" height="103.75" fill="hsl(247.766464462811 65% 47%)"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Column</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Negative row index</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

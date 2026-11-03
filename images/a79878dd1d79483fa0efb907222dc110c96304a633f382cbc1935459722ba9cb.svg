@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Two independently computed MI routes">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Two independently computed MI routes</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.1385</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">7</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.277</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">14</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">0.4154</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">21</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.5539</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">28</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.6924</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">35</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Joint-table KL</text>
+<polyline points="85,500 110,85 135,286.08980031808414 160,499.651262961802 185,500 210,498.46113498523135 235,85 260,500 285,286.08980031808414 310,499.651262961802 335,500 360,498.46113498523135 385,286.08980031808414 410,286.08980031808414 435,500 460,499.3223048909089 485,500 510,498.8181456841909 535,499.651262961802 560,499.651262961802 585,499.3223048909089 610,500 635,500 660,499.4865700714127 685,500 710,500 735,500 760,500 785,500 810,500 835,498.46113498523135 860,498.46113498523135 885,498.8181456841909 910,499.4865700714127 935,500 960,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">H(X)+H(Y)−H(X,Y), indicator co</text>
+<polyline points="85,500 110,85.00000000000006 135,286.08980031808443 160,499.6512629618021 185,500 210,498.46113498523135 235,85.00000000000006 260,500 285,286.08980031808443 310,499.6512629618021 335,500 360,498.46113498523135 385,286.08980031808443 410,286.08980031808443 435,500 460,499.322304890909 485,500 510,498.81814568419094 535,499.6512629618021 560,499.6512629618021 585,499.322304890909 610,500 635,500 660,499.4865700714127 685,500 710,500 735,500 760,500 785,500 810,500 835,498.46113498523135 860,498.46113498523135 885,498.81814568419094 910,499.4865700714127 935,500 960,500" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Ordered pair index (including zero diagonal)</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">MI (nats)</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

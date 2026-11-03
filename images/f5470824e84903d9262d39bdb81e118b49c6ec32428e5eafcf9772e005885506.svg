@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Related slopes: slopes at N=32">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Related slopes: slopes at N=32</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">1.27</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">1.531</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">1.791</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.6</text>
+<path d="M85,250.99999999999991H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999991" text-anchor="end" font-family="sans-serif" font-size="12">2.052</text>
+<text x="610.0000000000001" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">2.313</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">7.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">2.573</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">9</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Truth</text>
+<circle cx="85" cy="298.0369204769313" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="182.22222222222223" cy="276.27757777219114" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="279.44444444444446" cy="326.2408680161317" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="376.66666666666663" cy="303.92064144106126" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="473.88888888888886" cy="284.4447095829063" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="571.1111111111111" cy="228.44788042402388" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="668.3333333333333" cy="276.1339763083208" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="765.5555555555555" cy="324.9720775680989" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="862.7777777777777" cy="288.7946074209286" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="960" cy="372.02671497931584" r="3" fill="#078b80" opacity=".8"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Separate</text>
+<circle cx="85" cy="177.29741486669252" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="182.22222222222223" cy="163.59433371349638" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="279.44444444444446" cy="394.0906303459369" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="376.66666666666663" cy="275.9848291506624" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="473.88888888888886" cy="276.35838516582294" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="571.1111111111111" cy="85" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="668.3333333333333" cy="500" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="765.5555555555555" cy="371.55490936582373" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="862.7777777777777" cy="400.92845163135917" r="3" fill="#d67135" opacity=".8"/>
+<circle cx="960" cy="285.91916785898354" r="3" fill="#d67135" opacity=".8"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">Pooled MAP</text>
+<circle cx="85" cy="240.8784638302505" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="182.22222222222223" cy="234.7018879105492" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="279.44444444444446" cy="338.5966149025283" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="376.66666666666663" cy="285.3611827041568" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="473.88888888888886" cy="285.5295606814967" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="571.1111111111111" cy="199.27599619958028" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="668.3333333333333" cy="386.33458382811153" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="765.5555555555555" cy="328.43878324534603" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="862.7777777777777" cy="341.6787189798955" r="3" fill="#7760b3" opacity=".8"/>
+<circle cx="960" cy="289.8390221446436" r="3" fill="#7760b3" opacity=".8"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Task</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Slope</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

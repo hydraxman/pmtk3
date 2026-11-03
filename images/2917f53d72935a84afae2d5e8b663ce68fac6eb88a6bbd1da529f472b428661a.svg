@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Real adaptive extrapolation factors">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Real adaptive extrapolation factors</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">4</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">11.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">7</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">23.6</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">10</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">35.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">13</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">47.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">16</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">59</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">OR ×2</text>
+<polyline points="85,500 99.83050847457628,472.3333333333333 114.66101694915254,417 129.49152542372883,306.33333333333337 144.32203389830508,500 159.15254237288136,472.3333333333333 173.98305084745763,500 188.81355932203388,472.3333333333333 203.64406779661016,417 218.47457627118644,500 233.3050847457627,472.3333333333333 248.135593220339,417 262.96610169491527,306.33333333333337 277.7966101694915,500 292.62711864406776,472.3333333333333 307.45762711864404,417 322.2881355932203,500 337.1186440677966,472.3333333333333 351.9491525423729,417 366.77966101694915,500 381.6101694915254,472.3333333333333 396.4406779661017,417 411.271186440678,500 426.10169491525426,472.3333333333333 440.93220338983053,417 455.76271186440675,306.33333333333337 470.59322033898303,500 485.4237288135593,472.3333333333333 500.2542372881356,500 515.0847457627119,472.3333333333333 529.9152542372881,417 544.7457627118645,500 559.5762711864406,472.3333333333333 574.4067796610169,417 589.2372881355932,500 604.0677966101695,472.3333333333333 618.8983050847457,500 633.728813559322,472.3333333333333 648.5593220338983,417 663.3898305084746,306.33333333333337 678.2203389830509,500 693.0508474576271,472.3333333333333 707.8813559322034,417 722.7118644067796,306.33333333333337 737.542372881356,85 752.3728813559321,500 767.2033898305085,500 782.0338983050848,500 796.8644067796611,500 811.6949152542373,500 826.5254237288135,472.3333333333333 841.3559322033899,417 856.1864406779661,306.33333333333337 871.0169491525425,500 885.8474576271186,472.3333333333333 900.6779661016949,500 915.5084745762712,500 930.3389830508474,500 945.1694915254237,472.3333333333333 960,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Update</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">η used</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

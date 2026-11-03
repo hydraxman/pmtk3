@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Learned intensity codebooks">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Learned intensity codebooks</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.1432</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.4</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.2864</text>
+<text x="434.99999999999994" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.8</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.4296</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4.2</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.5727</text>
+<text x="784.9999999999999" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5.6</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.7159</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">7</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">K=2</text>
+<rect x="30.3125" y="370.5372086424676" width="109.375" height="129.4627913575324" fill="#078b80"/>
+<rect x="155.3125" y="190.61651762272857" width="109.375" height="309.38348237727143" fill="#078b80"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">K=4</text>
+<rect x="112.34375" y="362.12345283725597" width="54.6875" height="137.87654716274403" fill="#d67135"/>
+<rect x="237.34375" y="288.8756868479504" width="54.6875" height="211.12431315204958" fill="#d67135"/>
+<rect x="362.34375" y="148.15803741105418" width="54.6875" height="351.8419625889458" fill="#d67135"/>
+<rect x="487.34375" y="429.4390066872238" width="54.6875" height="70.56099331277619" fill="#d67135"/>
+<text x="515" y="49" font-family="sans-serif" font-size="12" fill="#7760b3">K=8</text>
+<rect x="126.015625" y="361.2286731625817" width="27.34375" height="138.77132683741831" fill="#7760b3"/>
+<rect x="251.015625" y="316.42564338334705" width="27.34375" height="183.57435661665295" fill="#7760b3"/>
+<rect x="376.015625" y="171.4076819507021" width="27.34375" height="328.5923180492979" fill="#7760b3"/>
+<rect x="501.015625" y="401.3957666327503" width="27.34375" height="98.60423336724972" fill="#7760b3"/>
+<rect x="626.015625" y="85" width="27.34375" height="415" fill="#7760b3"/>
+<rect x="751.015625" y="269.37709799552687" width="27.34375" height="230.62290200447313" fill="#7760b3"/>
+<rect x="876.015625" y="448.36695330364364" width="27.34375" height="51.63304669635636" fill="#7760b3"/>
+<rect x="1001.015625" y="121.17181583565184" width="27.34375" height="378.82818416434816" fill="#7760b3"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Codeword index</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Intensity</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

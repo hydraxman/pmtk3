@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Held-out residuals">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Held-out residuals</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-0.5578</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-2.886</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-0.367</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">-1.118</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">-0.1761</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.6493</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.01479</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.417</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.2057</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4.185</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.3965</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5.952</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Held-out residual</text>
+<circle cx="518.9960528880395" cy="266.42822325900886" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="398.22574034889215" cy="360.60907870462836" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="375.66683155751343" cy="327.5130710734622" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="223.22502211892805" cy="340.19458614601615" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="524.8501294116162" cy="193.53728374119464" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="248.322118357579" cy="209.530725407617" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="508.3323957461406" cy="277.3170797557468" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="691.6236706815548" cy="272.7284758709329" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="205.08096374712832" cy="92.74123331658654" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="426.2720439096938" cy="400.4662795939194" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="394.0030299575271" cy="85" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="386.15047086896004" cy="274.3402625889903" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="588.196475854562" cy="281.49697819960807" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="771.3896336990798" cy="177.96928498051278" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="781.3835389952044" cy="411.0101722994768" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="617.9484559472064" cy="125.8104890892539" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="412.8071945316507" cy="285.2413435667917" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="960" cy="146.4123725832289" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="476.77941395196007" cy="227.25679789053845" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="805.3563186828999" cy="113.5567369817399" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="498.41162577438627" cy="402.27114931675504" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="147.62824282435852" cy="500" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="715.4555831102087" cy="272.0966298512107" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="530.629639195245" cy="382.33051132706487" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="202.62255437002779" cy="269.691653054562" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="85" cy="131.34625735149842" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="379.83070053882415" cy="197.37251231753817" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="377.1374320936421" cy="251.56555343776364" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="210.1535568886772" cy="392.2848073147653" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="142.08162796502194" cy="295.3808759877364" r="3" fill="#078b80" opacity=".8"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Prediction</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Observed minus predicted</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

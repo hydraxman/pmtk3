@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="One real solver, three kernels; C selected using training folds">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">One real solver, three kernels; C selected using training folds</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.09394</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.4</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.1879</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.8</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">0.2818</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.2</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.3758</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.6</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.4697</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">3-fold CV</text>
+<rect x="30.3125" y="85" width="109.375" height="415" fill="#078b80"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">linear</text>
+<rect x="467.8125" y="500" width="109.375" height="0" fill="#078b80"/>
+<text x="522.5" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">poly3</text>
+<rect x="905.3125" y="500" width="109.375" height="0" fill="#078b80"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">rbf</text>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Held-out error</text>
+<rect x="139.6875" y="216.00230414746545" width="109.375" height="283.99769585253455" fill="#d67135"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">linear</text>
+<rect x="577.1875" y="500" width="109.375" height="0" fill="#d67135"/>
+<text x="522.5" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">poly3</text>
+<rect x="1014.6875" y="500" width="109.375" height="0" fill="#d67135"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">rbf</text>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Error fraction</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

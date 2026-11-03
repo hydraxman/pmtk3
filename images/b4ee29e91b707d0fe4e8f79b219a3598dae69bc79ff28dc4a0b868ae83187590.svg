@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Observations and smoothed state probability">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Observations and smoothed state probability</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.2</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.4</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.6</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.6</text>
+<text x="610.0000000000001" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.8</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">7.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">9</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Observed symbol</text>
+<polyline points="85,500 182.22222222222223,500 279.44444444444446,85 376.66666666666663,85 473.88888888888886,85 571.1111111111111,85 668.3333333333333,500 765.5555555555555,500 862.7777777777777,85 960,85" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">P(state=1 | all observations)</text>
+<polyline points="85,436.4192849666452 182.22222222222223,353.55633813805815 279.44444444444446,116.06834636087979 376.66666666666663,95.78529415257947 473.88888888888886,95.38205931526602 571.1111111111111,110.93574293164698 668.3333333333333,293.7614670410865 765.5555555555555,294.11167881473466 862.7777777777777,112.55839081621764 960,103.22330092725207" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Time</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Symbol / probability</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

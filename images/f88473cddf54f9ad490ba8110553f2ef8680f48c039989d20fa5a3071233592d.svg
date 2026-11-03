@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Original-style NRMSE = ||error_missing|| / ||truth_missing||">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Original-style NRMSE = ||error_missing|| / ||truth_missing||</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.2182</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.4363</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">1.6</text>
+<path d="M85,250.99999999999997H960" stroke="#e5ebee"/>
+<text x="75" y="254.99999999999997" text-anchor="end" font-family="sans-serif" font-size="12">0.6545</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.8727</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">3.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">1.091</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">10% missing</text>
+<rect x="52.1875" y="95.51413251967352" width="65.625" height="404.4858674803265" fill="#078b80"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Row mean</text>
+<rect x="270.9375" y="128.12087721195752" width="65.625" height="371.8791227880425" fill="#078b80"/>
+<text x="303.75" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Column mean</text>
+<rect x="489.6875" y="400.28857664221823" width="65.625" height="99.71142335778177" fill="#078b80"/>
+<text x="522.5" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">kNN 1</text>
+<rect x="708.4375" y="381.7282091499725" width="65.625" height="118.27179085002751" fill="#078b80"/>
+<text x="741.25" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">kNN 5</text>
+<rect x="927.1875" y="468.814116421909" width="65.625" height="31.185883578091023" fill="#078b80"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Iterative rank-2 P</text>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">25% missing</text>
+<rect x="117.8125" y="85" width="65.625" height="415" fill="#d67135"/>
+<text x="85" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Row mean</text>
+<rect x="336.5625" y="117.49021055623092" width="65.625" height="382.5097894437691" fill="#d67135"/>
+<text x="303.75" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Column mean</text>
+<rect x="555.3125" y="393.44309939572906" width="65.625" height="106.55690060427094" fill="#d67135"/>
+<text x="522.5" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">kNN 1</text>
+<rect x="774.0625" y="367.1647971548276" width="65.625" height="132.83520284517238" fill="#d67135"/>
+<text x="741.25" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">kNN 5</text>
+<rect x="992.8125" y="470.1555606124456" width="65.625" height="29.844439387554416" fill="#d67135"/>
+<text x="960" y="540" text-anchor="middle" font-size="10" font-family="sans-serif">Iterative rank-2 P</text>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14"></text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Barrier continuation">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Barrier continuation</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">0.04568</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">0.1113</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">2</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.1769</text>
+<text x="435" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">4</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">0.2426</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">6</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">0.3082</text>
+<text x="785" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">8</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">0.3738</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">10</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Objective at each central-path</text>
+<polyline points="85,85 172.5,329.0803941930645 260,440.8343033830669 347.5,482.2400691336477 435,495.2135833197302 522.5,498.7762680465472 610,499.6930778353557 697.5,499.9240532315394 785,499.98191031924887 872.5,499.9963817075092 960,500" fill="none" stroke="#078b80" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Barrier stage</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Rosenbrock objective</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>

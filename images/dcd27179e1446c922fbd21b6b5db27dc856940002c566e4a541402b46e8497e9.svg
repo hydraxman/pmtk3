@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Local learn → serialize → predict educational package">
+<rect width="100%" height="100%" fill="white"/>
+<text x="85" y="28" font-family="sans-serif" font-size="19" fill="#24374a">Local learn → serialize → predict educational package</text>
+<path d="M85,500H960" stroke="#e5ebee"/>
+<text x="75" y="504" text-anchor="end" font-family="sans-serif" font-size="12">-2.886</text>
+<text x="85" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">0</text>
+<path d="M85,417H960" stroke="#e5ebee"/>
+<text x="75" y="421" text-anchor="end" font-family="sans-serif" font-size="12">-1.067</text>
+<text x="260" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">5.8</text>
+<path d="M85,334H960" stroke="#e5ebee"/>
+<text x="75" y="338" text-anchor="end" font-family="sans-serif" font-size="12">0.7514</text>
+<text x="434.99999999999994" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">11.6</text>
+<path d="M85,251H960" stroke="#e5ebee"/>
+<text x="75" y="255" text-anchor="end" font-family="sans-serif" font-size="12">2.57</text>
+<text x="610" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">17.4</text>
+<path d="M85,168H960" stroke="#e5ebee"/>
+<text x="75" y="172" text-anchor="end" font-family="sans-serif" font-size="12">4.389</text>
+<text x="784.9999999999999" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">23.2</text>
+<path d="M85,85H960" stroke="#e5ebee"/>
+<text x="75" y="89" text-anchor="end" font-family="sans-serif" font-size="12">6.208</text>
+<text x="960" y="522" text-anchor="middle" font-family="sans-serif" font-size="12">29</text>
+<path d="M85,85V500H960" fill="none" stroke="#718494"/>
+<text x="85" y="49" font-family="sans-serif" font-size="12" fill="#078b80">Observed</text>
+<circle cx="85" cy="496.5865020602436" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="115.17241379310344" cy="486.76775886027036" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="145.3448275862069" cy="477.6695017944333" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="175.51724137931035" cy="456.45999109813806" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="205.68965517241378" cy="447.06597782001967" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="235.86206896551724" cy="444.96780974608424" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="266.0344827586207" cy="427.3626020222177" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="296.2068965517242" cy="419.6862339713521" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="326.37931034482756" cy="373.36582069086575" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="356.55172413793105" cy="366.4401090866646" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="386.7241379310345" cy="364.7175794696318" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="416.8965517241379" cy="362.95293733262633" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="447.0689655172414" cy="357.7887558409251" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="477.2413793103448" cy="357.69442806071345" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="507.4137931034483" cy="351.80900122269554" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="537.5862068965517" cy="339.4627632503827" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="567.7586206896551" cy="324.6296471695812" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="597.9310344827586" cy="316.2345098889487" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="628.1034482758621" cy="307.68542773803017" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="658.2758620689655" cy="306.9431207180988" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="688.448275862069" cy="300.8847583532566" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="718.6206896551724" cy="290.5366392059765" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="748.7931034482758" cy="270.5668249495194" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="778.9655172413793" cy="240.51347837257492" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="809.1379310344828" cy="221.96976239734397" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="839.3103448275862" cy="210.91765295558446" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="869.4827586206897" cy="195.10516286593423" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="899.655172413793" cy="175.25549902577194" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="929.8275862068966" cy="152.83807436540985" r="3" fill="#078b80" opacity=".8"/>
+<circle cx="960" cy="85" r="3" fill="#078b80" opacity=".8"/>
+<text x="300" y="49" font-family="sans-serif" font-size="12" fill="#d67135">Reloaded model prediction</text>
+<polyline points="85,471.1302497802225 115.17241379310344,500 145.3448275862069,473.68707364008134 175.51724137931035,442.3079466459575 205.68965517241378,445.7795139742581 235.86206896551724,436.2823914142358 266.0344827586207,444.646260645502 296.2068965517242,424.7133793044187 326.37931034482756,366.0112683063211 356.55172413793105,355.6122848338909 386.7241379310345,365.333365362913 416.8965517241379,361.17862356544083 447.0689655172414,364.091849015324 477.2413793103448,342.6837761950778 507.4137931034483,348.89066977472396 537.5862068965517,357.5588282582539 567.7586206896551,309.42958263206066 597.9310344827586,319.4013864676915 628.1034482758621,294.57804029123247 658.2758620689655,304.8564038527094 688.448275862069,299.94077626629667 718.6206896551724,297.24222175827543 748.7931034482758,268.0414472088089 778.9655172413793,254.3266726105926 809.1379310344828,220.36459813990604 839.3103448275862,209.37879799532254 869.4827586206897,178.98797856520974 899.655172413793,183.59487054569195 929.8275862068966,167.93724281970128 960,96.65112251113135" fill="none" stroke="#d67135" stroke-width="2"/>
+<text x="522.5" y="565" text-anchor="middle" font-family="sans-serif" font-size="14">Held-out sample sorted by observed response</text>
+<text x="20" y="300" transform="rotate(-90 20 300)" text-anchor="middle" font-family="sans-serif" font-size="14">Response</text>
+<text x="20" y="590" font-family="sans-serif" font-size="11" fill="#66758b">Fresh independent TypeScript computation; not an original MATLAB execution.</text></svg>
